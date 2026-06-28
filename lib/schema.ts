@@ -123,6 +123,88 @@ export interface AtlasValue {
   role: "primary" | "coupled" | "counter";
 }
 
+// ─────────────────────── ASPECTS (schemaVersion 2) ───────────────────────
+// Phase 1 of the expansion: a generalized, additive layer on top of the flat
+// per-point fields. An AtlasPoint can carry one or more `aspects`, each a
+// thematic dimension (values synthesis, gender, religion, …) holding one or
+// more `readings`. The existing flat fields stay in place for backward
+// compatibility; the "values-synthesis" aspect is the single source of truth
+// the drawer renders for the legacy note/altReading/cost/sources content.
+
+export type AspectType =
+  | "values-synthesis"
+  | "gender"
+  | "myth"
+  | "religion"
+  | "commerce"
+  | "law"
+  | "governance"
+  | "daily-life"
+  | "architecture"
+  | "dress"
+  | "script"
+  | "art";
+
+export interface AspectTypeDef {
+  id: AspectType;
+  label: string;
+  icon?: string;
+}
+
+// English labels + 24×24 stroke glyphs matching the existing icon style.
+// i18n headings live in lib/i18n.ts (aspects group) with graceful fallback.
+export const ASPECT_TYPES: Record<AspectType, AspectTypeDef> = {
+  'values-synthesis': { id: 'values-synthesis', label: 'Values Synthesis', icon: '<circle cx="12" cy="12" r="3.2"/><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"/>' },
+  'gender':           { id: 'gender',           label: 'Gender',           icon: '<circle cx="9" cy="9" r="4.5"/><path d="M12.2 12.2L20 20"/><path d="M15 20h5v-5"/>' },
+  'myth':             { id: 'myth',             label: 'Myth & Cosmology',  icon: '<path d="M12 3a9 9 0 109 9 7 7 0 01-9-9z"/><path d="M15.5 6.5l.6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6z"/>' },
+  'religion':         { id: 'religion',         label: 'Religion',          icon: '<path d="M12 3l7 2.4v5c0 4.6-3.2 7.9-7 9.6-3.8-1.7-7-5-7-9.6v-5z"/><path d="M12 8v8M8.5 11.5h7"/>' },
+  'commerce':         { id: 'commerce',         label: 'Commerce',          icon: '<circle cx="8" cy="9" r="4"/><circle cx="15" cy="14" r="4"/><path d="M8 7.2v3.6M6.4 9h3.2"/>' },
+  'law':              { id: 'law',              label: 'Law',               icon: '<path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7l-2 5a3 3 0 006 0z"/><path d="M19 7l2 5a3 3 0 01-6 0z"/><path d="M8 21h8"/>' },
+  'governance':       { id: 'governance',       label: 'Governance',        icon: '<path d="M3 9l9-5 9 5"/><path d="M4 9h16"/><path d="M6 9v8M10 9v8M14 9v8M18 9v8"/><path d="M3 20h18"/>' },
+  'daily-life':       { id: 'daily-life',       label: 'Daily Life',        icon: '<path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/><path d="M10 19v-5h4v5"/>' },
+  'architecture':     { id: 'architecture',     label: 'Architecture',      icon: '<path d="M4 21V8l8-5 8 5v13"/><path d="M4 21h16"/><path d="M9 21v-6h6v6"/>' },
+  'dress':            { id: 'dress',            label: 'Dress & Adornment', icon: '<path d="M9 3l3 2 3-2"/><path d="M9 3L4 7l3 3v10h10V10l3-3-5-4"/>' },
+  'script':           { id: 'script',           label: 'Script & Writing',  icon: '<path d="M4 20l3-1L19 7l-2-2L5 17z"/><path d="M14.5 5.5l4 4"/><path d="M4 20l1-3"/>' },
+  'art':              { id: 'art',              label: 'Art',               icon: '<path d="M12 3a9 9 0 000 18c1.5 0 2-1 2-2 0-1.5 1-2 2-2h1a4 4 0 004-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="11" cy="7.5" r="1"/><circle cx="15.5" cy="9" r="1"/>' },
+};
+
+// One scholarly reading inside an aspect. `text` is required; everything else
+// is optional metadata. `translations` is keyed by language code (empty for now).
+export interface Reading {
+  text: string;
+  confidence?: number;
+  contested?: boolean;
+  contestNote?: string;
+  sources?: string[];
+  citationKeys?: string[];
+  translations?: Record<string, string>;
+}
+
+export interface Aspect {
+  type: AspectType;
+  readings: Reading[];
+}
+
+export interface Media {
+  url: string;
+  type: "image" | "other";
+  caption?: string;
+  attribution?: string;
+  license?: string;
+}
+
+// Structured bibliography entry; `citationKeys` on a Reading reference `key`.
+export interface Citation {
+  key: string;
+  title: string;
+  authors?: string[];
+  year?: number;
+  venue?: string;
+  doi?: string;
+  isbn?: string;
+  url?: string;
+}
+
 export interface AtlasPoint {
   id: string;
   region: string;
@@ -143,4 +225,9 @@ export interface AtlasPoint {
   successor?: string;
   artifact?: string;
   sources?: string[];
+  // Additive, optional (schemaVersion 2+).
+  schemaVersion?: number;
+  aspects?: Aspect[];
+  media?: Media[];
+  bibliography?: Citation[];
 }

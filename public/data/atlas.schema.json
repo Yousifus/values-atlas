@@ -106,6 +106,82 @@
         "items": {
           "type": "string"
         }
+      },
+      "schemaVersion": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "Data model version. Omitted/1 = legacy flat fields only; 2 = additive aspects layer present."
+      },
+      "aspects": {
+        "type": "array",
+        "description": "Generalized thematic dimensions. Additive; the values-synthesis aspect mirrors the legacy note/altReading/cost/sources content.",
+        "items": {
+          "type": "object",
+          "required": ["type", "readings"],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["values-synthesis", "gender", "myth", "religion", "commerce", "law", "governance", "daily-life", "architecture", "dress", "script", "art"]
+            },
+            "readings": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": ["text"],
+                "additionalProperties": false,
+                "properties": {
+                  "text": { "type": "string" },
+                  "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+                  "contested": { "type": "boolean" },
+                  "contestNote": { "type": "string" },
+                  "sources": { "type": "array", "items": { "type": "string" } },
+                  "citationKeys": { "type": "array", "items": { "type": "string" } },
+                  "translations": {
+                    "type": "object",
+                    "additionalProperties": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "media": {
+        "type": "array",
+        "description": "Optional associated media (images or other resources).",
+        "items": {
+          "type": "object",
+          "required": ["url", "type"],
+          "additionalProperties": false,
+          "properties": {
+            "url": { "type": "string" },
+            "type": { "type": "string", "enum": ["image", "other"] },
+            "caption": { "type": "string" },
+            "attribution": { "type": "string" },
+            "license": { "type": "string" }
+          }
+        }
+      },
+      "bibliography": {
+        "type": "array",
+        "description": "Structured bibliography; reading.citationKeys reference entry.key.",
+        "items": {
+          "type": "object",
+          "required": ["key", "title"],
+          "additionalProperties": false,
+          "properties": {
+            "key": { "type": "string" },
+            "title": { "type": "string" },
+            "authors": { "type": "array", "items": { "type": "string" } },
+            "year": { "type": "integer" },
+            "venue": { "type": "string" },
+            "doi": { "type": "string" },
+            "isbn": { "type": "string" },
+            "url": { "type": "string" }
+          }
+        }
       }
     }
   }
