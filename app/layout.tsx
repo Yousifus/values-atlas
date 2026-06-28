@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="en" data-theme="dark" className="dark">
       <head>
         {/* Fonts: Satoshi + Boska (Fontshare) and Space Mono (Google) via CDN,
             matching the original Values Atlas typography. */}
