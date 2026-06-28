@@ -6,10 +6,11 @@
 // and injected into the shadcn Sheet body via `dangerouslySetInnerHTML`. The
 // lineage rows expose `data-epid`/`data-pid` so React can rewire their clicks.
 import {
-  VALUES, EPOCHS, DRIVERS, STATUS, EVIDENCE_COLORS, type AtlasPoint,
+  VALUES, EPOCHS, DRIVERS, STATUS, EVIDENCE_COLORS, ASPECT_TYPES,
+  type AtlasPoint, type Aspect, type Reading,
 } from '@/lib/schema';
 import {
-  t, tValue, tDriver, tEpoch, tThread, tStatus, tEvidence,
+  t, tValue, tDriver, tEpoch, tThread, tStatus, tEvidence, tAspect,
 } from '@/lib/i18n';
 
 const VALUE_MAP = new Map(VALUES.map((v) => [v.id, v]));
@@ -77,6 +78,94 @@ function buildLineageHTML(d: AtlasPoint, data: AtlasPoint[]) {
   return `<div class="dsec"><div class="dsec-title">${t('lineage')} · ${tLabel}</div><div class="lineage">${inner}</div></div>`;
 }
 
+// ─────────────────────────── ASPECTS (schemaVersion 2) ───────────────────────────
+// The readings area is now structurally driven by `point.aspects[]` instead of
+// the flat note/altReading/cost fields, so future aspect types (gender, myth,
+// religion, …) render automatically. The migrated `values-synthesis` aspect is
+// the single source of truth for the legacy content — it is no longer read from
+// the flat fields here, avoiding duplicate display.
+
+// One reading card. The first reading of an aspect is the "primary" reading and
+// gets the headline card; the rest render as muted secondary cards. A confidence
+// indicator and contested flag are shown when the reading carries them.
+function buildReadingCardHTML(r: Reading, isPrimary: boolean): string {
+  const cardCls = isPrimary ? 'reading-card' : 'reading-card reading-alt';
+  const proseStyle = isPrimary ? '' : ' style="color:#c6b69d"';
+  const typeLabel = isPrimary ? `<span class="type-label">${t('readingPrimary')}</span>` : '';
+
+  const chips: string[] = [];
+  if (typeof r.confidence === 'number') {
+    chips.push(`<span>${Math.round(r.confidence * 100)}% ${t('conf')}</span>`);
+  }
+  // The primary reading's contested state is surfaced by the prominent flag box
+  // above; only flag additional readings inline to avoid duplicate display.
+  if (r.contested && !isPrimary) {
+    chips.push(`<span style="color:#e68a44">⚠ ${t('contestedTitle')}</span>`);
+  }
+  const chipsHTML = chips.length
+    ? `<div style="display:flex;gap:.65rem;flex-wrap:wrap;margin-top:.55rem;font-size:10px;font-family:var(--mono);color:var(--t3);text-transform:uppercase;letter-spacing:.06em">${chips.join('')}</div>`
+    : '';
+  const cnHTML = (r.contested && !isPrimary && r.contestNote)
+    ? `<p style="font-size:var(--xs);color:#dca078;line-height:1.55;margin-top:.5rem">${r.contestNote}</p>`
+    : '';
+
+  return `<div class="${cardCls}">${typeLabel}<div class="prose"${proseStyle}><p>${r.text}</p></div>${chipsHTML}${cnHTML}</div>`;
+}
+
+function buildAspectSectionHTML(aspect: Aspect): string {
+  if (!aspect.readings || !aspect.readings.length) return '';
+  const def = ASPECT_TYPES[aspect.type];
+  const icon = def?.icon
+    ? `<span style="display:inline-flex;width:14px;height:14px;vertical-align:-2px;margin-right:.4rem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:100%;height:100%">${def.icon}</svg></span>`
+    : '';
+  const title = `<div class="dsec-title">${icon}${tAspect(aspect.type)}</div>`;
+
+  // Prominent contested flag, driven by the primary reading (preserves the
+  // original drawer's look for contested points).
+  const primary = aspect.readings[0];
+  const contestedBox = (primary && primary.contested && primary.contestNote)
+    ? `<div class="contested-flag"><div class="icon">⚠</div><div><strong style="color:#e68a44;font-family:var(--display);font-size:var(--base);display:block;margin-bottom:.3rem">${t('contestedTitle')}</strong><p>${primary.contestNote}</p></div></div>`
+    : '';
+
+  const cards = aspect.readings.map((r, i) => buildReadingCardHTML(r, i === 0)).join('');
+  return `<div class="dsec">${title}${contestedBox}${cards}</div>`;
+}
+
+function buildAspectsHTML(d: AtlasPoint): string {
+  if (!d.aspects || !d.aspects.length) return buildLegacyReadingsHTML(d);
+  return d.aspects.map(buildAspectSectionHTML).join('');
+}
+
+// Fallback for any (pre-migration) point lacking aspects — mirrors the original
+// flat-field rendering so nothing breaks if unmigrated data appears.
+function buildLegacyReadingsHTML(d: AtlasPoint): string {
+  let html = '';
+  if (d.contested && d.contestNote) {
+    html += `<div class="contested-flag"><div class="icon">⚠</div><div><strong style="color:#e68a44;font-family:var(--display);font-size:var(--base);display:block;margin-bottom:.3rem">${t('contestedTitle')}</strong><p>${d.contestNote}</p></div></div>`;
+  }
+  html += `<div class="dsec"><div class="dsec-title">${t('secReadings')}</div>`;
+  html += `<div class="reading-card"><span class="type-label">${t('readingPrimary')}</span><div class="prose"><p>${d.note}</p></div></div>`;
+  if (d.altReading) html += `<div class="reading-card reading-alt"><span class="type-label" style="color:#a68a5c">${t('readingAlt')}</span><div class="prose" style="color:#c6b69d"><p>${d.altReading}</p></div></div>`;
+  if (d.cost) html += `<div class="reading-cost"><span class="type-label" style="color:#a85a5a">${t('readingCost')}</span><div class="prose" style="color:#d88a8a;font-size:var(--xs)"><p>${d.cost}</p></div></div>`;
+  html += `</div>`;
+  return html;
+}
+
+// Unified sources section: aggregates (de-duplicated) sources from every
+// aspect reading, falling back to the legacy flat `sources` field.
+function buildSourcesHTML(d: AtlasPoint): string {
+  let sources: string[] = [];
+  if (d.aspects && d.aspects.length) {
+    const seen = new Set<string>();
+    d.aspects.forEach((a) => a.readings.forEach((r) => {
+      (r.sources || []).forEach((s) => { if (!seen.has(s)) { seen.add(s); sources.push(s); } });
+    }));
+  }
+  if (!sources.length && d.sources && d.sources.length) sources = d.sources;
+  if (!sources.length) return '';
+  return `<div class="dsec" style="margin-top:.5rem"><div class="dsec-title">${t('secSources')}</div><div style="font-size:11px;font-family:var(--mono);color:var(--t3);line-height:1.6">${sources.join('<br>')}</div></div>`;
+}
+
 // Builds the full drawer body (everything below the sticky region header).
 export function buildDrawerBody(d: AtlasPoint, data: AtlasPoint[]): string {
   // Values section
@@ -128,23 +217,16 @@ export function buildDrawerBody(d: AtlasPoint, data: AtlasPoint[]): string {
     </div>
   </div>`;
 
-  // Contested flag
-  let contHTML = '';
-  if (d.contested) {
-    contHTML = `<div class="contested-flag"><div class="icon">⚠</div><div><strong style="color:#e68a44;font-family:var(--display);font-size:var(--base);display:block;margin-bottom:.3rem">${t('contestedTitle')}</strong><p>${d.contestNote}</p></div></div>`;
-  }
+  // Readings + contested flag — now structurally driven by point.aspects[].
+  const aspectsHTML = buildAspectsHTML(d);
 
-  // Readings
-  let readHTML = `<div class="dsec"><div class="dsec-title">${t('secReadings')}</div>`;
-  readHTML += `<div class="reading-card"><span class="type-label">${t('readingPrimary')}</span><div class="prose"><p>${d.note}</p></div></div>`;
-  if (d.altReading) readHTML += `<div class="reading-card reading-alt"><span class="type-label" style="color:#a68a5c">${t('readingAlt')}</span><div class="prose" style="color:#c6b69d"><p>${d.altReading}</p></div></div>`;
-  if (d.cost) readHTML += `<div class="reading-cost"><span class="type-label" style="color:#a85a5a">${t('readingCost')}</span><div class="prose" style="color:#d88a8a;font-size:var(--xs)"><p>${d.cost}</p></div></div>`;
-  readHTML += `</div>`;
+  // Artifact (a representative quote; not part of the aspect model).
+  const artifactHTML = d.artifact
+    ? `<div class="dsec"><div class="artifact">"${d.artifact}"</div></div>`
+    : '';
 
-  // Artifact & Sources
-  let botHTML = '';
-  if (d.artifact) botHTML += `<div class="dsec"><div class="artifact">"${d.artifact}"</div></div>`;
-  if (d.sources && d.sources.length) botHTML += `<div class="dsec" style="margin-top:.5rem"><div class="dsec-title">${t('secSources')}</div><div style="font-size:11px;font-family:var(--mono);color:var(--t3);line-height:1.6">${d.sources.join('<br>')}</div></div>`;
+  // Unified sources section (aggregated across all aspect readings).
+  const sourcesHTML = buildSourcesHTML(d);
 
-  return valHTML + compassHTML + lineageHTML + drvHTML + metaHTML + contHTML + readHTML + botHTML;
+  return valHTML + compassHTML + lineageHTML + drvHTML + metaHTML + aspectsHTML + artifactHTML + sourcesHTML;
 }
