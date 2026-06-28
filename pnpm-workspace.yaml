@@ -1,0 +1,9 @@
+allowBuilds:
+  sharp: set this to true or false
+  unrs-resolver: set this to true or false
+# Single-app project (not a monorepo). This file only carries pnpm settings,
+# which pnpm 11 reads from here instead of package.json. It approves the
+# prebuilt native packages Next/ESLint pull in so installs run non-interactively.
+onlyBuiltDependencies:
+  - sharp
+  - unrs-resolver

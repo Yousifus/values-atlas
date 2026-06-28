@@ -1,0 +1,2885 @@
+[
+  {
+    "id": "san-hg",
+    "region": "Kalahari San",
+    "thread": "africa",
+    "lat": -22,
+    "lng": 22,
+    "epoch": "hunter",
+    "values": [
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.95,
+        "role": "primary"
+      },
+      {
+        "valueId": "generosity",
+        "intensity": 0.88,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.08,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "resource_scarcity"
+    ],
+    "status": "adaptive",
+    "evidence": "ethnographic",
+    "confidence": 0.88,
+    "contested": false,
+    "note": "Fierce leveling norms prevented any hunter from translating skill into permanent status. Generosity and enforced equality co-evolved as a single anti-hoarding system. Hierarchy was the conspicuously absent value.",
+    "altReading": "Some evolutionary ecologists argue these leveling mechanisms are not \"peaceful\" but inherently coercive — egalitarianism enforced by the constant threat of collective violence against upstarts.",
+    "cost": "Exceptional hunters who repeatedly boasted were socially ostracized or sometimes killed.",
+    "artifact": "\"When a young man kills much meat, he comes to think of himself as a chief... We refuse one who boasts, for someday his pride will make him kill somebody. So we always speak of his meat as worthless. This cools his heart and makes him gentle.\"",
+    "sources": [
+      "Lee, R.B. (1979). The !Kung San.",
+      "Bowles & Gintis (2011). A Cooperative Species."
+    ]
+  },
+  {
+    "id": "inuit-hg",
+    "region": "Arctic Inuit",
+    "thread": "americas",
+    "lat": 71,
+    "lng": -52,
+    "epoch": "hunter",
+    "values": [
+      {
+        "valueId": "generosity",
+        "intensity": 0.93,
+        "role": "primary"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.05,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "resource_scarcity",
+      "resource_competition"
+    ],
+    "status": "adaptive",
+    "evidence": "ethnographic",
+    "confidence": 0.9,
+    "contested": false,
+    "note": "In a lethal cold ecology, sharing meat was not merely virtuous — it was the only mathematically viable survival strategy. Every kill was insurance against your next failure. Individualism would be a death sentence.",
+    "altReading": "Sharing rules were strictly bounded by kin and settlement group; encounters with strangers were often highly lethal.",
+    "cost": "Zero tolerance for free-riders; severe hoarding often resulted in execution or abandonment.",
+    "sources": [
+      "Boas, F. (1888). The Central Eskimo."
+    ]
+  },
+  {
+    "id": "yanomami-hg",
+    "region": "Amazon (Yanomami)",
+    "thread": "americas",
+    "lat": 3,
+    "lng": -64,
+    "epoch": "hunter",
+    "values": [
+      {
+        "valueId": "aggression",
+        "intensity": 0.8,
+        "role": "primary"
+      },
+      {
+        "valueId": "honor",
+        "intensity": 0.72,
+        "role": "coupled"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.75,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "resource_competition",
+      "weak_institutions"
+    ],
+    "status": "adaptive",
+    "evidence": "ethnographic",
+    "confidence": 0.55,
+    "contested": true,
+    "contestNote": "Napoleon Chagnon's \"fierce people\" thesis is heavily contested. Brian Ferguson argues the warfare pattern was substantially shaped by contact history, steel axes, and researcher presence, not pre-contact ecology.",
+    "note": "Inter-village raiding and revenge cycles. Aggression and in-group solidarity are the parochial-altruism twins: each raid intensifies both the internal bond and the external threat.",
+    "altReading": "The \"endemic warfare\" framing ignores the massive web of inter-village trade, feasting, and alliance-building that occupied the majority of Yanomami political life.",
+    "cost": "High adult male mortality; systemic abduction of women as reproductive resources.",
+    "sources": [
+      "Chagnon, N. (1968). Yanomamö.",
+      "Ferguson, R.B. (1995). Yanomami Warfare."
+    ]
+  },
+  {
+    "id": "papua-hg",
+    "region": "Papua Highlands",
+    "thread": "none",
+    "lat": -6,
+    "lng": 144,
+    "epoch": "hunter",
+    "values": [
+      {
+        "valueId": "solidarity",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "generosity",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "honor",
+        "intensity": 0.65,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "resource_scarcity",
+      "kinship_intensity"
+    ],
+    "status": "adaptive",
+    "evidence": "ethnographic",
+    "confidence": 0.8,
+    "contested": false,
+    "note": "Elaborate moka gift-exchange networks turned reciprocal obligation into political alliance. Solidarity here is a distributed infrastructure of mutual debt that substitutes for central institutions.",
+    "altReading": "Moka is not \"generosity\" in the altruistic sense; it is aggressive, competitive debt-imposition designed to humiliate rivals by giving them more than they can repay.",
+    "cost": "Intense pressure to produce surplus for the \"big men\" who control the exchange networks.",
+    "sources": [
+      "Strathern, A. (1971). The Rope of Moka."
+    ]
+  },
+  {
+    "id": "fertile-agr",
+    "region": "Fertile Crescent",
+    "thread": "arabia",
+    "lat": 33,
+    "lng": 44,
+    "epoch": "early-agr",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.86,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "collectivism",
+        "intensity": 0.82,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.3,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "hydraulic_coordination",
+      "resource_competition"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.8,
+    "contested": false,
+    "note": "Sedentary life created storehouses, surveyed fields, and defendable property. Law emerges where grain can be counted and stolen. The hydraulic coordination required for irrigation generated administrative hierarchy.",
+    "altReading": "James C. Scott argues early states were essentially protection rackets running on unfree labor, not benevolent coordinators of public works.",
+    "cost": "The invention of taxation, corvée labor, and the epidemiological disaster of early dense urbanization.",
+    "sources": [
+      "Scott, J.C. (2017). Against the Grain."
+    ]
+  },
+  {
+    "id": "yellow-agr",
+    "region": "Yellow River basin",
+    "thread": "china",
+    "lat": 35,
+    "lng": 113,
+    "epoch": "early-agr",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.91,
+        "role": "primary"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.08,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "hydraulic_coordination",
+      "resource_competition"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.75,
+    "contested": false,
+    "note": "Taming the flooding Yellow River required thousands of people working in coordination. The individual farmer could not survive alone. Collectivism was the ecological prerequisite, not a cultural preference.",
+    "altReading": "The \"hydraulic state\" thesis is overly deterministic; coordination could happen via local kin networks without necessarily requiring a despotic central state.",
+    "cost": "Subordination of individual movement and choice to the mass labor requirements of the river cycle.",
+    "sources": [
+      "Wittfogel, K. (1957). Oriental Despotism."
+    ]
+  },
+  {
+    "id": "andes-agr",
+    "region": "Andean terraces",
+    "thread": "americas",
+    "lat": -13,
+    "lng": -74,
+    "epoch": "early-agr",
+    "values": [
+      {
+        "valueId": "solidarity",
+        "intensity": 0.84,
+        "role": "primary"
+      },
+      {
+        "valueId": "collectivism",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.5,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "resource_scarcity",
+      "hydraulic_coordination"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.78,
+    "contested": false,
+    "note": "Ayni (reciprocal labor exchange) predates the Inca by millennia. Building terraces into sheer mountains required cooperative labor that no single family could supply. Solidarity is the technology; the terrace is the artifact.",
+    "altReading": "Vertical archipelago coordination often required coercive \"kurakas\" (lords) enforcing the labor quotas, making it less egalitarian than the concept of \"reciprocity\" implies.",
+    "cost": "Obligatory labor drafts tied communities immovably to their vertical ecological zones.",
+    "sources": [
+      "Murra, J. (1972). El control vertical..."
+    ]
+  },
+  {
+    "id": "arabia-bronze",
+    "region": "Arabian Peninsula",
+    "thread": "arabia",
+    "lat": 23,
+    "lng": 45,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "hospitality",
+        "intensity": 0.95,
+        "role": "primary"
+      },
+      {
+        "valueId": "honor",
+        "intensity": 0.9,
+        "role": "coupled"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.72,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.2,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "resource_scarcity",
+      "weak_institutions",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.85,
+    "contested": false,
+    "note": "In desert scarcity with no state, feeding a stranger (muruwwa) was survival insurance, honor competition, and diplomatic infrastructure. Karam and honor were not separate virtues — hospitality WAS a form of honor projection. The absent value — institutional law — explains why reputation had to do law's work.",
+    "altReading": "Hospitality was fundamentally aristocratic. Poor bedouin could not host lavishly; the norm primarily facilitated safe travel for wealthy merchants and powerful raiders.",
+    "cost": "The honor system was completely exclusionary; those without tribal backing had zero protection.",
+    "successor": "arabia-med",
+    "artifact": "\"A man's fire should be seen from afar, so the night traveler may find his way to meat and milk.\" (Pre-Islamic poetic ideal)",
+    "sources": [
+      "Crone, P. (2004). God's Rule."
+    ]
+  },
+  {
+    "id": "mesopotamia-bronze",
+    "region": "Mesopotamia",
+    "thread": "arabia",
+    "lat": 32,
+    "lng": 44,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.92,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.88,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.12,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "hydraulic_coordination",
+      "institutional_scale",
+      "resource_competition"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.9,
+    "contested": false,
+    "note": "The Code of Hammurabi replaced improvisational violence with codified response. But order here arrived bundled with rank — the punishment for striking a superior was categorically different from striking an equal.",
+    "altReading": "Legal codes were often monumental propaganda claiming the King provided justice, while daily life ran on unwritten customary law.",
+    "cost": "The formal legal institutionalization of slavery, debt peonage, and patriarchal ownership of women.",
+    "artifact": "\"If a seignior has knocked out the tooth of a seignior of his own rank, they shall knock out his tooth. If he has knocked out a commoner's tooth, he shall pay one-third mina of silver.\" (Hammurabi, Law 200-201)",
+    "sources": [
+      "Van De Mieroop, M. (2004). History of Ancient Near East."
+    ]
+  },
+  {
+    "id": "mycenae-bronze",
+    "region": "Mycenaean Greece",
+    "thread": "europe",
+    "lat": 38,
+    "lng": 22,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "honor",
+        "intensity": 0.92,
+        "role": "primary"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.85,
+        "role": "coupled"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.6,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.08,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "resource_competition",
+      "weak_institutions"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.8,
+    "contested": false,
+    "note": "Homeric kleos (glory) was the currency of a world without states. Worth was not internal — it was performed and witnessed. Honor and aggression are the same adaptation seen from two angles: reputation as law.",
+    "altReading": "The Homeric epics project an idealized aristocratic warrior code back onto an earlier era that may have been much more bureaucratically administered.",
+    "cost": "Endless cycle of retaliatory violence; the total destruction of conquered cities.",
+    "sources": [
+      "Finley, M.I. (1979). The World of Odysseus."
+    ]
+  },
+  {
+    "id": "athens-axial",
+    "region": "Classical Athens",
+    "thread": "europe",
+    "lat": 38,
+    "lng": 23.7,
+    "epoch": "axial",
+    "values": [
+      {
+        "valueId": "curiosity",
+        "intensity": 0.95,
+        "role": "primary"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.6,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.65,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "trade_networks",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.92,
+    "contested": false,
+    "note": "Democracy, philosophy, tragedy — Athens bet civilization on the examined life. Curiosity is the primary value; egalitarianism is its political expression.",
+    "altReading": "Athenian democracy was essentially an elite men's club funded by the tribute of the Delian League empire and the labor of a massive enslaved underclass.",
+    "cost": "Radical exclusion of women, metics, and slaves from the moral and political circle.",
+    "successor": "rome-axial",
+    "sources": [
+      "Nussbaum, M. (1986). The Fragility of Goodness."
+    ]
+  },
+  {
+    "id": "judea-axial",
+    "region": "Judea",
+    "thread": "arabia",
+    "lat": 31.5,
+    "lng": 35.5,
+    "epoch": "axial",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.92,
+        "role": "primary"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.72,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.6,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "resource_scarcity"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.82,
+    "contested": false,
+    "note": "The Hebrew prophets introduced a revolutionary link: God cares more about justice for the widow and orphan than ritual precision. Piety and egalitarianism fused.",
+    "altReading": "This prophetic egalitarianism was heavily parochial, applying strict ethical obligations to the in-group while permitting entirely different rules of engagement for outsiders.",
+    "cost": "Strict boundaries of purity and pollution that isolated the community from neighbors.",
+    "sources": [
+      "Armstrong, K. (2006). The Great Transformation."
+    ]
+  },
+  {
+    "id": "rome-axial",
+    "region": "Roman Republic",
+    "thread": "europe",
+    "lat": 41.9,
+    "lng": 12.5,
+    "epoch": "axial",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.92,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.42,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.88,
+    "contested": false,
+    "note": "Roman law introduced the concept of a portable, textual legal identity that could travel with a citizen. Order here is the technological invention of the legal person.",
+    "altReading": "Roman law was primarily a mechanism for aristocratic wealth protection, designed to safeguard patrician property against plebeian redistribution demands.",
+    "cost": "The law treated enslaved humans entirely as property (res), stripped of all legal personhood.",
+    "sources": [
+      "Kelly, J. (1992). A Short History of Western Legal Theory."
+    ]
+  },
+  {
+    "id": "ganges-axial",
+    "region": "Ganges Plain",
+    "thread": "india",
+    "lat": 25,
+    "lng": 83,
+    "epoch": "axial",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.93,
+        "role": "primary"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.65,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.4,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "resource_scarcity"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.82,
+    "contested": false,
+    "note": "The Buddha and Mahavira challenged caste hierarchy through internal liberation. The Axial Age inward turn moved the locus of worth from birth-rank to inner cultivation.",
+    "altReading": "Early Buddhism was heavily patronized by the rising merchant class, serving as an ideological wedge against the traditional Brahmin monopoly on status.",
+    "cost": "Extreme asceticism and world-denial; severing of familial bonds by mendicants.",
+    "sources": [
+      "Gombrich, R. (1988). Theravada Buddhism."
+    ]
+  },
+  {
+    "id": "zhou-axial",
+    "region": "Zhou Dynasty China",
+    "thread": "china",
+    "lat": 34,
+    "lng": 108,
+    "epoch": "axial",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.9,
+        "role": "primary"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.88,
+        "role": "coupled"
+      },
+      {
+        "valueId": "honor",
+        "intensity": 0.75,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.1,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "resource_competition"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.88,
+    "contested": false,
+    "note": "Confucius reframed collectivism around ren (benevolence) and li (ritual propriety). The self was relational — you existed through your roles, not despite them. Order was achieved not through brute force, but through internalized moral hierarchies.",
+    "altReading": "Confucianism was later weaponized by the Han and subsequent dynasties as an orthodoxy of absolute submission to state authority.",
+    "cost": "Rigid patriarchal control and the total subsumption of individual desires to family duty.",
+    "successor": "qing-em",
+    "artifact": "\"Let the ruler be a ruler, the subject a subject, the father a father, the son a son.\" (Analects 12.11)",
+    "sources": [
+      "Schwartz, B. (1985). The World of Thought in Ancient China."
+    ]
+  },
+  {
+    "id": "vikings-med",
+    "region": "Scandinavia",
+    "thread": "europe",
+    "lat": 62,
+    "lng": 10,
+    "epoch": "medieval",
+    "values": [
+      {
+        "valueId": "aggression",
+        "intensity": 0.95,
+        "role": "primary"
+      },
+      {
+        "valueId": "honor",
+        "intensity": 0.9,
+        "role": "coupled"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.72,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.15,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "resource_scarcity",
+      "open_frontier",
+      "weak_institutions"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.85,
+    "contested": false,
+    "note": "For Norse raiders, taking wealth was drengr (courage) — a legitimate economic enterprise. In a resource-poor north with no effective state monopoly, raiding was rational. Reputation for terrifying violence was your security system.",
+    "altReading": "The \"raider\" image obscures the massive Norse trading networks connecting Dublin to Baghdad, which generated far more wealth than piracy.",
+    "cost": "The slave trade (thralls) was a primary engine of the Viking economy.",
+    "successor": "scandinavia-now",
+    "sources": [
+      "Miller, W.I. (1990). Bloodtaking and Peacemaking."
+    ]
+  },
+  {
+    "id": "arabia-med",
+    "region": "Arabian heartland",
+    "thread": "arabia",
+    "lat": 21,
+    "lng": 40,
+    "epoch": "medieval",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.9,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.88,
+        "role": "coupled"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.25,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "weak_institutions",
+      "resource_scarcity",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.85,
+    "contested": false,
+    "note": "The Islamic synthesis unified fragmented tribal raiding culture under divine law (Sharia) and universal brotherhood (umma). The age of chaotic ghazw (raiding) gave way to structured obligation. Aggression became the counter value — the thing being regulated.",
+    "altReading": "The \"universal brotherhood\" was quickly fractured by elite political civil wars (fitna) that re-inscribed tribal and factional hierarchies over the egalitarian ideal.",
+    "cost": "Strict codification of gender hierarchies and the status of non-Muslim subjects (dhimmi).",
+    "successor": "piety-reform",
+    "sources": [
+      "Lapidus, I. (2002). A History of Islamic Societies."
+    ]
+  },
+  {
+    "id": "mongol-med",
+    "region": "Mongol Steppe",
+    "thread": "steppe",
+    "lat": 47,
+    "lng": 105,
+    "epoch": "medieval",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.82,
+        "role": "primary"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.85,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.6,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.35,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "open_frontier",
+      "weak_institutions",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.8,
+    "contested": false,
+    "note": "The Yasa banned inter-tribal raiding, codified religious tolerance, and selected commanders by merit over lineage. The Pax Mongolica secured the Silk Road under a single legal order. Aggression built the empire; law held it. The steppe produced one of history's largest free-trade zones.",
+    "altReading": "A revisionist view stresses the terror: the order was enforced by mass collective punishment and the destruction of entire cities that resisted, and the \"tolerance\" was partly a military strategy to neutralize religious resistance.",
+    "cost": "The annihilation of the Khwarezmian Empire, Baghdad, and millions of civilians who resisted conquest.",
+    "artifact": "\"He ordered that all religions were to be respected and that no preference was to be shown to any of them.\" (Juvaini on Genghis Khan)",
+    "sources": [
+      "Atwood, C. (2004). Encyclopedia of Mongolia.",
+      "Allsen, T. (2001). Culture and Conquest."
+    ]
+  },
+  {
+    "id": "polynesia-med",
+    "region": "Polynesia (Pacific)",
+    "thread": "none",
+    "lat": -17.7,
+    "lng": -149.4,
+    "epoch": "medieval",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "honor",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.3,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "open_frontier",
+      "trade_networks",
+      "resource_scarcity"
+    ],
+    "status": "adaptive",
+    "evidence": "ethnographic",
+    "confidence": 0.75,
+    "contested": false,
+    "note": "Mana (sacred power) and tapu (restriction) ran a society without centralized police: tapu did law's work by making transgression a cosmic violation. The same culture mastered wayfinding — navigating open ocean by star paths and swells. Sacred order and empirical knowledge were one system.",
+    "altReading": "Mana/tapu encoded steep rank and gender restriction; a leveling reading misses that the sacred order was also a hierarchy-enforcing technology.",
+    "cost": "Commoners could be summarily executed by chiefs for violating complex tapu rules.",
+    "sources": [
+      "Finney, B. (1994). Voyage of Rediscovery.",
+      "Sahlins, M. (1985). Islands of History."
+    ]
+  },
+  {
+    "id": "slave-trade-em",
+    "region": "Atlantic world",
+    "thread": "europe",
+    "lat": 18,
+    "lng": -38,
+    "epoch": "early-mod",
+    "values": [
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.97,
+        "role": "primary"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.04,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "resource_competition",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.97,
+    "contested": false,
+    "note": "The Transatlantic Slave Trade industrialized human hierarchy. The moral circle contracted deliberately across centuries of law, theology, and economic theory.",
+    "altReading": "Some economic historians argue the trade was driven less by a specific ideological hierarchy and more by ruthless capitalist profit-maximization that retrofitted racism as a post-hoc justification.",
+    "cost": "The commodification, torture, and social death of over 12 million kidnapped Africans.",
+    "successor": "haiti-mod",
+    "sources": [
+      "Patterson, O. (1982). Slavery and Social Death."
+    ]
+  },
+  {
+    "id": "igbo-em",
+    "region": "Igboland (West Africa)",
+    "thread": "africa",
+    "lat": 6,
+    "lng": 7,
+    "epoch": "early-mod",
+    "values": [
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.88,
+        "role": "primary"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.72,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.15,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "kinship_intensity",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "ethnographic",
+    "confidence": 0.7,
+    "contested": true,
+    "contestNote": "The \"purely stateless\" model is contested. Nri ritual kingship and Igbo-Ukwu archaeology show sacred-authority forms existed, complicating a flat egalitarian reading.",
+    "note": "Precolonial Igbo society ran dense population, commerce, and law through village assemblies and earned titles — governance without kings. It is the clearest case that ORDER does not require HIERARCHY. Authority was separated from power; the colonizers, finding no chiefs, had to invent them.",
+    "altReading": "Romanticized \"African democracy\" readings understate real inequalities of gender, age, and domestic slavery (osu) within these societies.",
+    "cost": "Decision-making by consensus could be slow and highly factionalized.",
+    "artifact": "\"Igbo enwe eze\" (The Igbo have no king).",
+    "sources": [
+      "Afigbo, A.E. (1981). Ropes of Sand.",
+      "Ayittey, G.N. (2006). Indigenous African Institutions."
+    ]
+  },
+  {
+    "id": "mexica-em",
+    "region": "Mexica (Tenochtitlan)",
+    "thread": "americas",
+    "lat": 19.4,
+    "lng": -99.1,
+    "epoch": "early-mod",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.9,
+        "role": "primary"
+      },
+      {
+        "valueId": "collectivism",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.72,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.1,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "resource_competition"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.72,
+    "contested": true,
+    "contestNote": "The scale of sacrifice is disputed (numbers in colonial sources are likely exaggerated), and \"protein deficiency\" or \"political terror\" explanations are largely rejected by specialists. The emic frame is reciprocity/debt, not cruelty.",
+    "note": "In the Mexica worldview the gods immolated themselves to kindle the Fifth Sun, placing humanity in perpetual debt. Sacrifice was nextlahualli — debt-payment — the apex of an economy of cosmic offerings. Worth came from ritually correct reciprocity, not individual assertion.",
+    "altReading": "European chroniclers, and some modern accounts, read the same practices as evidence of a uniquely violent theocracy — a framing shaped by conquest-era propaganda.",
+    "cost": "The systemic capture and execution of thousands of war captives to fuel the state cult.",
+    "sources": [
+      "Carrasco, D. (2000). City of Sacrifice.",
+      "Maffie, J. (2014). Aztec Philosophy."
+    ]
+  },
+  {
+    "id": "qing-em",
+    "region": "Qing China",
+    "thread": "china",
+    "lat": 39,
+    "lng": 116,
+    "epoch": "early-mod",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.88,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.82,
+        "role": "coupled"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.08,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "hydraulic_coordination",
+      "kinship_intensity",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.82,
+    "contested": false,
+    "note": "Imperial Confucianism made family loyalty a state religion. Filial piety was legally enforced. Beating a parent remained a capital crime. High kinship intensity directly mapped to collectivism and low impersonal trust.",
+    "altReading": "Late Qing society had a vibrant commercial individualism and dense networks of private guilds that operated largely outside state control.",
+    "cost": "Extreme constraints on women (e.g., foot binding) and total subordination of youth to elders.",
+    "successor": "china-now",
+    "sources": [
+      "Schulz et al. (2019). Science.",
+      "Ebrey, P. (1996). Cambridge Illustrated History of China."
+    ]
+  },
+  {
+    "id": "haiti-mod",
+    "region": "Haiti",
+    "thread": "americas",
+    "lat": 19,
+    "lng": -72,
+    "epoch": "industrial",
+    "values": [
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.95,
+        "role": "primary"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.82,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.75,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.03,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "colonial_pressure",
+      "resource_competition"
+    ],
+    "status": "reactive",
+    "evidence": "textual",
+    "confidence": 0.92,
+    "contested": false,
+    "note": "The Haitian Revolution was the first successful large-scale slave revolt — a reactive egalitarianism, born directly in opposition to hierarchy. Aggression here is not the opposite of egalitarianism; it is its instrument.",
+    "altReading": "Post-revolutionary Haiti quickly calcified into a new military hierarchy, with leaders imposing forced labor systems nearly identical to the plantations they had overthrown.",
+    "cost": "A devastating war of annihilation, followed by crushing international isolation and debt.",
+    "sources": [
+      "James, C.L.R. (1938). The Black Jacobins."
+    ]
+  },
+  {
+    "id": "abolition-brit",
+    "region": "Britain (Abolition)",
+    "thread": "europe",
+    "lat": 53,
+    "lng": -2,
+    "epoch": "industrial",
+    "values": [
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.88,
+        "role": "primary"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.65,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.05,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "secularism_threat"
+    ],
+    "status": "reactive",
+    "evidence": "textual",
+    "confidence": 0.88,
+    "contested": false,
+    "note": "Abolitionism is one of history's clearest documented moral circle expansions. A society decided that an entrenched, profitable institution was inherently evil — driven partly by Quaker moral philosophy and Enlightenment universalism.",
+    "altReading": "The \"Eric Williams thesis\" argues abolition happened because West Indian slavery was becoming economically obsolete under early industrial capitalism, not primarily due to moral awakening.",
+    "cost": "The British government paid massive financial \"compensation\" to the slave owners, not the enslaved.",
+    "successor": "un-now",
+    "sources": [
+      "Hochschild, A. (2005). Bury the Chains."
+    ]
+  },
+  {
+    "id": "piety-reform",
+    "region": "Islamic reform movements",
+    "thread": "arabia",
+    "lat": 25,
+    "lng": 48,
+    "epoch": "modern",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.9,
+        "role": "primary"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.72,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.1,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "colonial_pressure",
+      "secularism_threat"
+    ],
+    "status": "reactivated",
+    "evidence": "textual",
+    "confidence": 0.82,
+    "contested": false,
+    "note": "19th/20th century Islamic reform movements (Wahhabism, Salafism, Tanzimat) intensified piety as an identity marker against colonial secularism. This is reactivation: an existing value revived and sharpened by external threat. The ecological driver is no longer desert scarcity but epistemic and political threat.",
+    "altReading": "These movements were as much about centralizing state power against local tribal autonomy as they were about resisting external colonialism.",
+    "cost": "The suppression of local, syncretic, and mystical Islamic traditions (like Sufism) in favor of a rigid, standardized orthodoxy.",
+    "successor": "arabia-now",
+    "sources": [
+      "Hourani, A. (1983). Arabic Thought in the Liberal Age."
+    ]
+  },
+  {
+    "id": "usa-frontier-mod",
+    "region": "USA (Frontier)",
+    "thread": "americas",
+    "lat": 40,
+    "lng": -100,
+    "epoch": "modern",
+    "values": [
+      {
+        "valueId": "individualism",
+        "intensity": 0.92,
+        "role": "primary"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.75,
+        "role": "coupled"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.65,
+        "role": "coupled"
+      },
+      {
+        "valueId": "collectivism",
+        "intensity": 0.15,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "open_frontier",
+      "resource_competition"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.9,
+    "contested": false,
+    "note": "Manifest Destiny and the frontier myth. The belief in individual grit \"taming\" a wilderness. Individualism becomes the defining civic religion, decoupled from the dense kin networks of the Old World.",
+    "altReading": "The \"rugged individualist\" frontier was actually heavily subsidized by massive federal land grants, military clearance of indigenous peoples, and state-backed railroad capital.",
+    "cost": "The near-total expropriation and genocide of indigenous North American populations.",
+    "successor": "sv-now",
+    "sources": [
+      "Turner, F.J. (1893). The Significance of the Frontier in American History."
+    ]
+  },
+  {
+    "id": "un-now",
+    "region": "UN / Geneva (Global)",
+    "thread": "europe",
+    "lat": 46,
+    "lng": 8,
+    "epoch": "now",
+    "values": [
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.88,
+        "role": "primary"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.82,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.08,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "technological_surplus"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.8,
+    "contested": true,
+    "contestNote": "Universal rights frameworks are widely contested in practice: the gap between proclaimed norms and state behavior is large. Whether this constitutes genuine moral progress or rhetorical cover for continued hierarchy is debated.",
+    "note": "The UN Declaration is the culmination of a long moral circle expansion — the consensus that rights belong to humans by default. The counter value (hierarchy) still operates; its institutional illegitimacy is itself historic.",
+    "altReading": "Critical legal scholars argue the human rights regime primarily protects Western property and capital interests under the guise of universal moral law.",
+    "cost": "The erosion of local sovereignties and alternative, non-individualist moral frameworks.",
+    "artifact": "\"All human beings are born free and equal in dignity and rights.\" (UDHR, Article 1)",
+    "sources": [
+      "Moyn, S. (2010). The Last Utopia."
+    ]
+  },
+  {
+    "id": "sv-now",
+    "region": "Silicon Valley",
+    "thread": "americas",
+    "lat": 37.4,
+    "lng": -122,
+    "epoch": "now",
+    "values": [
+      {
+        "valueId": "individualism",
+        "intensity": 0.95,
+        "role": "primary"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.85,
+        "role": "coupled"
+      },
+      {
+        "valueId": "collectivism",
+        "intensity": 0.1,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "technological_surplus",
+      "open_frontier"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.82,
+    "contested": false,
+    "note": "Disruption ideology is individualism as cosmology. The lone founder \"changing the world\" is the frontier myth reencoded as venture capital. Curiosity is its engine. The ecological driver is an informational frontier rather than a geographic one.",
+    "altReading": "The \"lone genius\" narrative obscures that the entire tech ecosystem rests on foundational state-funded military research (ARPANET, GPS, microchips).",
+    "cost": "Algorithmic surveillance, gig-economy precarity, and the hollowing out of local civic infrastructure.",
+    "sources": [
+      "Morozov, E. (2013). To Save Everything, Click Here."
+    ]
+  },
+  {
+    "id": "scandinavia-now",
+    "region": "Scandinavia",
+    "thread": "europe",
+    "lat": 62,
+    "lng": 15,
+    "epoch": "now",
+    "values": [
+      {
+        "valueId": "solidarity",
+        "intensity": 0.88,
+        "role": "primary"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.84,
+        "role": "coupled"
+      },
+      {
+        "valueId": "collectivism",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.28,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "technological_surplus"
+    ],
+    "status": "residual",
+    "evidence": "textual",
+    "confidence": 0.85,
+    "contested": false,
+    "note": "Viking raiding solidarity has metamorphosed into welfare-state institutionalized generosity. The original driver (resource scarcity) is gone. The value persists as law, tax, and civic identity — residual status in its most visible form.",
+    "altReading": "The high-trust solidarity of the Nordic model may be highly dependent on ethnic homogeneity, and is currently straining under modern migration patterns.",
+    "cost": "High taxation and strong conformity pressures (Jante Law) that discourage individual standing out.",
+    "sources": [
+      "Gelfand, M. (2018). Rule Makers, Rule Breakers."
+    ]
+  },
+  {
+    "id": "arabia-now",
+    "region": "Saudi Arabia",
+    "thread": "arabia",
+    "lat": 24,
+    "lng": 45,
+    "epoch": "now",
+    "values": [
+      {
+        "valueId": "hospitality",
+        "intensity": 0.84,
+        "role": "primary"
+      },
+      {
+        "valueId": "honor",
+        "intensity": 0.82,
+        "role": "coupled"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.18,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "kinship_intensity"
+    ],
+    "status": "residual",
+    "evidence": "textual",
+    "confidence": 0.82,
+    "contested": false,
+    "note": "Karam persists not because the desert is still lethal but because the value was absorbed into identity, theology, and etiquette. The driver (desert scarcity) is gone; the value remains as cultural DNA. This is residual status: a value that outlived the pressure that built it.",
+    "altReading": "State-led modernization (Vision 2030) is rapidly replacing kinship-based honor networks with state nationalism and consumer individualism.",
+    "cost": "Strong social pressure to maintain public face (sharaf), often at the expense of individual autonomy.",
+    "sources": [
+      "Altorki, S. (1986). Women in Saudi Arabia."
+    ]
+  },
+  {
+    "id": "china-now",
+    "region": "Modern China",
+    "thread": "china",
+    "lat": 39,
+    "lng": 116,
+    "epoch": "now",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.92,
+        "role": "primary"
+      },
+      {
+        "valueId": "collectivism",
+        "intensity": 0.85,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.25,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "technological_surplus"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.85,
+    "contested": false,
+    "note": "The synthesis of ancient statecraft with modern digital infrastructure. Order and collectivism are maintained not just by ideology but by technological surveillance and algorithmic social credit. Individualism exists in the consumer sphere but is strictly bounded politically.",
+    "altReading": "Beneath the monolith of state order, an intensely hyper-competitive, individualistic \"involution\" (neijian) defines the actual lived experience of the younger generation.",
+    "cost": "The total subsumption of individual privacy and dissent to state stability.",
+    "sources": [
+      "Schmitt, D. (2020). The Digital Totalitarian State."
+    ]
+  },
+  {
+    "id": "neo-assyria",
+    "region": "Neo-Assyrian Empire",
+    "thread": "arabia",
+    "lat": 36.4,
+    "lng": 43.2,
+    "epoch": "iron",
+    "values": [
+      {
+        "valueId": "aggression",
+        "intensity": 0.92,
+        "role": "primary"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.85,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.82,
+        "role": "coupled"
+      },
+      {
+        "valueId": "generosity",
+        "intensity": 0.12,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "military_revolution",
+      "metallurgy",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.84,
+    "contested": false,
+    "note": "The first true military superpower ran on iron weapons, mass deportation, and calculated terror. Assyrian kings advertised atrocity in palace reliefs — aggression was not chaos but a deliberate instrument of imperial order. Iron metallurgy turned violence into a repeatable technology of rule.",
+    "altReading": "Assyria also built the ancient world's most sophisticated road and logistics system and the great library of Ashurbanipal — the terror narrative obscures a precocious administrative state.",
+    "cost": "Wholesale population transfers and the documented flaying of rebel leaders as official state policy.",
+    "artifact": "\"I built a pillar over against the city gate, and I flayed all the chief men who had revolted, and I covered the pillar with their skins.\" (Ashurnasirpal II)",
+    "sources": [
+      "Liverani, M. (2017). Assyria: The Imperial Mission."
+    ]
+  },
+  {
+    "id": "phoenicia",
+    "region": "Phoenician city-states",
+    "thread": "none",
+    "lat": 33.3,
+    "lng": 35.2,
+    "epoch": "iron",
+    "values": [
+      {
+        "valueId": "curiosity",
+        "intensity": 0.82,
+        "role": "primary"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.6,
+        "role": "coupled"
+      },
+      {
+        "valueId": "honor",
+        "intensity": 0.45,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.3,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "maritime_expansion",
+      "trade_networks",
+      "literacy"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.72,
+    "contested": false,
+    "note": "Cramped on a thin coast, the Phoenicians turned outward to the sea. To run credit and cargo across the Mediterranean they needed a script any merchant could learn — so they distilled writing into ~22 letters. The alphabet is curiosity industrialized: knowledge made cheap, portable, and democratic.",
+    "altReading": "The 'inventors of the alphabet' framing flattens a long Levantine script evolution; the Phoenicians refined and spread, more than singly invented, the system.",
+    "cost": "A commercial elite whose wealth rested partly on a brisk trade in enslaved people across the sea lanes.",
+    "sources": [
+      "Aubet, M.E. (2001). The Phoenicians and the West."
+    ]
+  },
+  {
+    "id": "vedic-india",
+    "region": "Vedic North India",
+    "thread": "india",
+    "lat": 27,
+    "lng": 80,
+    "epoch": "iron",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.9,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.6,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.12,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "monumental_religion",
+      "kinship_intensity",
+      "metallurgy"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.68,
+    "contested": false,
+    "note": "As iron tools cleared the Gangetic forests, Vedic society hardened ritual rank into the emerging varna order. Piety and hierarchy fused: cosmic purity was mapped onto birth, and sacrifice bound the social order to the gods. The hymn of Purusha imagines society itself as a body divided into ranks.",
+    "altReading": "The rigidity of 'caste' is partly a later, colonial-era codification; early varna may have been more porous and occupational than the textual ideal suggests.",
+    "cost": "The seeding of a hereditary purity hierarchy that would exclude millions for millennia.",
+    "artifact": "\"The Brahmin was his mouth, the arms were made the Rajanya, his thighs the Vaishya, from his feet the Shudra was born.\" (Rigveda, Purusha Sukta 10.90)",
+    "sources": [
+      "Thapar, R. (2002). Early India."
+    ]
+  },
+  {
+    "id": "scythians",
+    "region": "Scythian Steppe",
+    "thread": "steppe",
+    "lat": 48,
+    "lng": 35,
+    "epoch": "iron",
+    "values": [
+      {
+        "valueId": "honor",
+        "intensity": 0.88,
+        "role": "primary"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.82,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.5,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.2,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "nomadic_mobility",
+      "open_frontier",
+      "metallurgy"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.66,
+    "contested": false,
+    "note": "Mounted, iron-armed nomads of the Pontic steppe measured worth in horses, kurgan burials, and trophies taken from enemies. Mobility made wealth raidable and rank performative — honor did the work of law across a borderless grassland.",
+    "altReading": "Lavish 'royal' kurgans heaped with gold show the steppe was not flatly egalitarian; a warrior aristocracy concentrated horses and treasure.",
+    "cost": "Endemic raiding and the ritual killing of retainers and horses to accompany chiefs into death.",
+    "sources": [
+      "Cunliffe, B. (2019). The Scythians."
+    ]
+  },
+  {
+    "id": "nok",
+    "region": "Nok culture (West Africa)",
+    "thread": "africa",
+    "lat": 9.5,
+    "lng": 8,
+    "epoch": "iron",
+    "values": [
+      {
+        "valueId": "curiosity",
+        "intensity": 0.72,
+        "role": "primary"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.58,
+        "role": "coupled"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.52,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "metallurgy",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.5,
+    "contested": true,
+    "contestNote": "Nok chronology and the independence of West African iron-smelting are actively debated; dating and social organization remain uncertain from a thin archaeological record.",
+    "note": "One of the earliest iron-working cultures of West Africa also left arresting terracotta sculpture. Mastery of the furnace and the kiln points to specialized craft, surplus, and an experimental material culture flowering far from the river-valley states.",
+    "altReading": "With almost no textual record, any reading of Nok 'values' is an inference from artifacts; the social structure behind the sculptures is largely unknown.",
+    "cost": "Iron smelting demanded enormous quantities of charcoal — an early driver of regional deforestation.",
+    "sources": [
+      "Breunig, P. (2014). Nok: African Sculpture in Archaeological Context."
+    ]
+  },
+  {
+    "id": "rome-empire",
+    "region": "Roman Empire",
+    "thread": "europe",
+    "lat": 41.9,
+    "lng": 12.5,
+    "epoch": "imperial",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.95,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.75,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.45,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.2,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "trade_networks",
+      "military_revolution"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.9,
+    "contested": false,
+    "note": "Where the Republic improvised, the Empire systematized: standing legions, provincial administration, aqueducts, and a road network that made the 'Roman peace' a logistical fact. Order scaled into infrastructure — the empire was a machine for converting conquest into durable institutions.",
+    "altReading": "The Pax Romana was peace for the core paid for by the periphery — extraction, slavery, and the violent suppression of provincial revolt underwrote the marble.",
+    "cost": "An economy resting on mass slavery and the spectacle killing of the arena.",
+    "successor": "byzantium-med",
+    "artifact": "\"They make a desert and call it peace.\" (Tacitus, voicing a Briton's view of Rome)",
+    "sources": [
+      "Beard, M. (2015). SPQR."
+    ]
+  },
+  {
+    "id": "han-china",
+    "region": "Han Dynasty China",
+    "thread": "china",
+    "lat": 34.3,
+    "lng": 108.9,
+    "epoch": "imperial",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.9,
+        "role": "primary"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.85,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.1,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "literacy",
+      "hydraulic_coordination"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.85,
+    "contested": false,
+    "note": "The Han fused Legalist machinery with a Confucian veneer, then staffed the state through a literate bureaucracy. Collectivism became administrative: registered households, state granaries, and a civil order in which the family, not the individual, was the smallest unit of the state.",
+    "altReading": "Behind the Confucian rhetoric, the Han ran a hard Legalist apparatus of registration, conscription, and collective punishment.",
+    "cost": "Mass corvée labor and a household-registration system that bound peasants to land and tax.",
+    "sources": [
+      "Lewis, M.E. (2007). The Early Chinese Empires: Qin and Han."
+    ]
+  },
+  {
+    "id": "sasanian-persia",
+    "region": "Sasanian Persia",
+    "thread": "none",
+    "lat": 32,
+    "lng": 52,
+    "epoch": "imperial",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.88,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.15,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "monumental_religion",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.72,
+    "contested": false,
+    "note": "The Sasanians made Zoroastrianism a state church, welding throne and altar: the king ruled by divine fire, and a hereditary priesthood policed orthodoxy. Piety here is institutional — an official religion underwriting a rigid order of priests, warriors, scribes, and commoners.",
+    "altReading": "The empire was strikingly plural in practice — Christians, Jews, and Manichaeans lived under it — so the 'state church' could be more aspiration than total control.",
+    "cost": "Periodic persecution of religious minorities and heretics, including the followers of Mani and the egalitarian preacher Mazdak.",
+    "sources": [
+      "Daryaee, T. (2009). Sasanian Persia."
+    ]
+  },
+  {
+    "id": "teotihuacan",
+    "region": "Teotihuacan",
+    "thread": "americas",
+    "lat": 19.7,
+    "lng": -98.8,
+    "epoch": "imperial",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.1,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "monumental_religion",
+      "hydraulic_coordination",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.6,
+    "contested": true,
+    "contestNote": "Teotihuacan left no decipherable writing and no clear royal portraits; whether it was ruled by kings, councils, or a corporate collective is genuinely unresolved.",
+    "note": "A city of perhaps 100,000 laid out on a rigid grid and housing its people in standardized apartment compounds, with no obvious dynasty glorified in its art. Many scholars read a deliberately anonymous, collective order — monumental religion organizing the masses without a cult of the individual ruler.",
+    "altReading": "The apparent 'collectivism' may simply reflect our inability to read its politics; the absence of king-portraits is not proof of egalitarian rule.",
+    "cost": "Evidence of mass dedicatory sacrifice beneath the great pyramids; the city ended in deliberate, fiery destruction — possibly internal revolt.",
+    "sources": [
+      "Cowgill, G. (2015). Ancient Teotihuacan."
+    ]
+  },
+  {
+    "id": "aksum",
+    "region": "Kingdom of Aksum",
+    "thread": "africa",
+    "lat": 14.1,
+    "lng": 38.7,
+    "epoch": "imperial",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.8,
+        "role": "primary"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.6,
+        "role": "coupled"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.5,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "trade_networks",
+      "maritime_expansion",
+      "monumental_religion"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.65,
+    "contested": false,
+    "note": "Commanding the Red Sea trade between Rome and India, Aksum minted its own gold coinage, raised giant carved stelae, and — around 330 CE — became one of the first states on earth to adopt Christianity. Piety and commerce arrived together; the new faith was stamped onto the coins that ran the trade.",
+    "altReading": "Christianization may have been as much a diplomatic alignment with Rome and a tool of royal centralization as a spiritual conversion.",
+    "cost": "Prosperity was tethered to long-distance trade; when the sea routes shifted, the inland capital withered.",
+    "sources": [
+      "Phillipson, D. (2012). Foundations of an African Civilisation."
+    ]
+  },
+  {
+    "id": "xiongnu",
+    "region": "Xiongnu Confederation",
+    "thread": "steppe",
+    "lat": 46,
+    "lng": 100,
+    "epoch": "imperial",
+    "values": [
+      {
+        "valueId": "honor",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.4,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "nomadic_mobility",
+      "open_frontier",
+      "military_revolution"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.6,
+    "contested": false,
+    "note": "The first great steppe confederation forced Han China to pay tribute and marry off princesses. Mounted archery turned mobility into leverage: the Xiongnu extracted from a sedentary empire without conquering it. Honor and raid-solidarity bound a fluid tribal coalition under a single Chanyu.",
+    "altReading": "Much of what we 'know' is filtered through hostile Han chroniclers who cast the nomads as barbarian foils to civilization.",
+    "cost": "A predatory political economy dependent on extracting tribute and trade concessions through the threat of devastation.",
+    "successor": "mongol-med",
+    "sources": [
+      "Di Cosmo, N. (2002). Ancient China and Its Enemies."
+    ]
+  },
+  {
+    "id": "victorian-britain",
+    "region": "Victorian Britain",
+    "thread": "europe",
+    "lat": 51.5,
+    "lng": -0.1,
+    "epoch": "industrial",
+    "values": [
+      {
+        "valueId": "curiosity",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.25,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "industrialization",
+      "institutional_scale",
+      "colonial_pressure"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.85,
+    "contested": false,
+    "note": "Steam, railways, and the factory turned curiosity into a profit engine and Britain into the workshop of the world. Progress was the era's faith — but it arrived welded to a steep class hierarchy at home and an extractive empire abroad. Innovation and inequality industrialized together.",
+    "altReading": "Victorian 'progress' was underwritten by colonial extraction and a domestic working class living in conditions Engels documented as catastrophic.",
+    "cost": "Child labor, slum mortality, and famines (notably in India) administered under laissez-faire dogma.",
+    "sources": [
+      "Hobsbawm, E. (1975). The Age of Capital."
+    ]
+  },
+  {
+    "id": "meiji-japan",
+    "region": "Meiji Japan",
+    "thread": "none",
+    "lat": 35.7,
+    "lng": 139.7,
+    "epoch": "industrial",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.88,
+        "role": "primary"
+      },
+      {
+        "valueId": "collectivism",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.2,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "industrialization",
+      "military_revolution",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.85,
+    "contested": false,
+    "note": "Facing Western gunboats, Meiji Japan chose to industrialize on its own terms — importing railways, constitutions, and conscript armies while binding them to emperor-worship and collective duty. Order and curiosity were mobilized from above: modernization as a national survival project rather than an individualist liberation.",
+    "altReading": "The 'miracle' rested on rural immiseration, the squeezing of the peasantry, and an emergent militarism that would later turn catastrophic.",
+    "cost": "Heavy taxation of farmers to fund industry, and the forging of an aggressive imperial state.",
+    "sources": [
+      "Gordon, A. (2003). A Modern History of Japan."
+    ]
+  },
+  {
+    "id": "industrial-usa",
+    "region": "Gilded Age USA",
+    "thread": "americas",
+    "lat": 40.7,
+    "lng": -74,
+    "epoch": "industrial",
+    "values": [
+      {
+        "valueId": "individualism",
+        "intensity": 0.9,
+        "role": "primary"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.5,
+        "role": "coupled"
+      },
+      {
+        "valueId": "collectivism",
+        "intensity": 0.2,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "industrialization",
+      "open_frontier",
+      "technological_surplus"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.85,
+    "contested": false,
+    "note": "The Gilded Age fused frontier individualism with industrial scale: self-made magnates, patent fever, and a continental market. The lone striver became the national myth even as railroads, trusts, and immigrant factory labor did the actual building.",
+    "altReading": "The 'self-made man' was often a robber baron whose fortune depended on land grants, monopoly, and the brutal suppression of organized labor.",
+    "cost": "Company towns, the Haymarket and Homestead violence, and an immense concentration of wealth.",
+    "sources": [
+      "White, R. (2017). The Republic for Which It Stands."
+    ]
+  },
+  {
+    "id": "ottoman-tanzimat",
+    "region": "Ottoman Tanzimat",
+    "thread": "arabia",
+    "lat": 41,
+    "lng": 29,
+    "epoch": "industrial",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.55,
+        "role": "coupled"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.5,
+        "role": "coupled"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.35,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "industrialization",
+      "secularism_threat",
+      "colonial_pressure"
+    ],
+    "status": "reactive",
+    "evidence": "textual",
+    "confidence": 0.75,
+    "contested": false,
+    "note": "Under European pressure, the late Ottoman state launched the Tanzimat: secular law codes, equal legal status for non-Muslims, conscription, and Western-style ministries. Order was re-engineered top-down to save the empire — a defensive modernization that quietly demoted religious law in favor of the bureaucratic state.",
+    "altReading": "Granting legal equality strained the millet system and, paradoxically, helped ignite the nationalist and sectarian tensions that tore the empire apart.",
+    "cost": "Centralization crushed local and tribal autonomy and piled on crippling European debt.",
+    "sources": [
+      "Hanioğlu, M.Ş. (2008). A Brief History of the Late Ottoman Empire."
+    ]
+  },
+  {
+    "id": "zulu-kingdom",
+    "region": "Zulu Kingdom",
+    "thread": "africa",
+    "lat": -28.5,
+    "lng": 31,
+    "epoch": "industrial",
+    "values": [
+      {
+        "valueId": "aggression",
+        "intensity": 0.9,
+        "role": "primary"
+      },
+      {
+        "valueId": "honor",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.75,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.15,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "military_revolution",
+      "resource_competition",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.68,
+    "contested": false,
+    "note": "Shaka forged scattered chiefdoms into a centralized military state through tactical revolution — the short stabbing spear, the age-regiment, and relentless drill. Aggression here is institutional: a standing army and disciplined order, not chaotic raiding, reshaped a whole region in the upheaval of the Mfecane.",
+    "altReading": "Colonial sources sensationalized Shaka's 'despotism'; the scale of the Mfecane and his personal cruelty are both disputed, and partly served to justify later conquest.",
+    "cost": "Militarization and the regional displacement and bloodshed of the Mfecane.",
+    "sources": [
+      "Hamilton, C. (1998). Terrific Majesty."
+    ]
+  },
+  {
+    "id": "socialist-movement",
+    "region": "Industrial Labour Movement",
+    "thread": "europe",
+    "lat": 52.5,
+    "lng": 13.4,
+    "epoch": "industrial",
+    "values": [
+      {
+        "valueId": "solidarity",
+        "intensity": 0.9,
+        "role": "primary"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.85,
+        "role": "coupled"
+      },
+      {
+        "valueId": "collectivism",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.15,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "industrialization",
+      "institutional_scale"
+    ],
+    "status": "reactive",
+    "evidence": "textual",
+    "confidence": 0.8,
+    "contested": false,
+    "note": "The factory created its own antithesis: a working class that discovered collective power in the strike and the union. Nineteenth-century socialism is reactive solidarity — egalitarianism organized explicitly against industrial hierarchy. Class consciousness was a value engineered to counter the value of the owners.",
+    "altReading": "The movement splintered immediately — reformist social democrats versus revolutionaries — over whether to capture the state or smash it.",
+    "cost": "Bitter repression, failed uprisings, and a schism that would shape the bloodiest politics of the next century.",
+    "artifact": "\"Workers of the world, unite! You have nothing to lose but your chains.\" (Marx & Engels, 1848)",
+    "sources": [
+      "Hobsbawm, E. (1987). The Age of Empire."
+    ]
+  },
+  {
+    "id": "mali-med",
+    "region": "Mali Empire",
+    "thread": "africa",
+    "lat": 16.8,
+    "lng": -3,
+    "epoch": "medieval",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.8,
+        "role": "primary"
+      },
+      {
+        "valueId": "generosity",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.65,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.2,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "trade_networks",
+      "monumental_religion",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.72,
+    "contested": false,
+    "note": "Mali sat astride the trans-Saharan gold-and-salt trade, and its emperors fused commerce, Islam, and spectacular largesse. Mansa Musa's hajj reportedly flooded Cairo with so much gold that he crashed its price — generosity as statecraft, piety as the connective tissue of a Saharan order centered on Timbuktu's scholars.",
+    "altReading": "Mali's wealth and the gold-distributing pilgrim image come largely from external Arab chroniclers; the empire also ran on slavery and tribute beneath the splendor.",
+    "cost": "An economy entwined with the trans-Saharan trade in enslaved people.",
+    "artifact": "\"So much gold did he spread in Cairo that he ruined its value.\" (al-Umari, 14th c.)",
+    "sources": [
+      "Gomez, M. (2018). African Dominion."
+    ]
+  },
+  {
+    "id": "byzantium-med",
+    "region": "Byzantine Empire",
+    "thread": "europe",
+    "lat": 41,
+    "lng": 28.9,
+    "epoch": "medieval",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.82,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.15,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "monumental_religion",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.8,
+    "contested": false,
+    "note": "The eastern half of Rome that did not fall, Byzantium fused imperial law (Justinian's Code) with Orthodox Christianity into a single sacred order — the emperor as God's vicegerent, the liturgy as statecraft. It preserved and codified Roman order for a thousand more years beneath a dome of gold.",
+    "altReading": "The 'caesaropapist' image is overdrawn; church and throne often clashed bitterly, as in the Iconoclasm crisis.",
+    "cost": "Theological disputes became state violence; deviation from orthodoxy could be treated as treason.",
+    "sources": [
+      "Herrin, J. (2007). Byzantium."
+    ]
+  },
+  {
+    "id": "persia-axial",
+    "region": "Achaemenid Persia",
+    "thread": "none",
+    "lat": 29.9,
+    "lng": 52.9,
+    "epoch": "axial",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.6,
+        "role": "coupled"
+      },
+      {
+        "valueId": "generosity",
+        "intensity": 0.45,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.3,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "trade_networks",
+      "hydraulic_coordination"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.8,
+    "contested": false,
+    "note": "The Achaemenids governed the largest empire yet seen not by erasing its peoples but by administering them: satrapies, a royal road, standardized coinage, and a policy of religious tolerance. Cyrus restored exiled peoples and their temples — order through pluralism rather than forced uniformity.",
+    "altReading": "Cyrus's 'human rights' reputation (the Cylinder) is partly a modern projection; it was conventional royal propaganda of benevolent conquest.",
+    "cost": "Tolerance served control — local elites were co-opted, and revolt was still answered with exemplary force.",
+    "artifact": "\"I returned the gods to their sacred cities… and gathered all their inhabitants and restored their dwellings.\" (Cyrus Cylinder)",
+    "sources": [
+      "Briant, P. (2002). From Cyrus to Alexander."
+    ]
+  },
+  {
+    "id": "mughal-em",
+    "region": "Mughal India",
+    "thread": "india",
+    "lat": 27.2,
+    "lng": 78,
+    "epoch": "early-mod",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.78,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.6,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.3,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "monumental_religion",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.78,
+    "contested": false,
+    "note": "The Mughals ruled a vast, religiously plural subcontinent by blending Persian administration, Islamic kingship, and — under Akbar — an experimental tolerance that abolished the jizya tax and convened debates among the faiths. Order was held by syncretic accommodation; the Taj Mahal is its piety in marble.",
+    "altReading": "Akbar's tolerance was reversed under Aurangzeb, whose reimposition of orthodoxy and the jizya strained the empire toward fracture — tolerance was a policy, not a fixed value.",
+    "cost": "An extractive land-revenue system and ruinously expensive wars of expansion.",
+    "sources": [
+      "Richards, J.F. (1993). The Mughal Empire."
+    ]
+  },
+  {
+    "id": "gandhi-india",
+    "region": "Gandhian India",
+    "thread": "india",
+    "lat": 23,
+    "lng": 72.5,
+    "epoch": "modern",
+    "values": [
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.08,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "colonial_pressure",
+      "monumental_religion",
+      "institutional_scale"
+    ],
+    "status": "reactive",
+    "evidence": "textual",
+    "confidence": 0.85,
+    "contested": false,
+    "note": "Gandhi fused spiritual discipline with mass politics: satyagraha turned nonviolence into a weapon against empire, and the anti-untouchability campaign turned egalitarianism into a religious duty. Aggression is the explicit counter-value — moral force staked against both colonial and caste hierarchy.",
+    "altReading": "Gandhi's record on caste (his clashes with Ambedkar) and his idealization of village life are sharply criticized; his egalitarianism had real blind spots.",
+    "cost": "Nonviolent strategy demanded immense suffering from participants and could not prevent the bloodbath of Partition.",
+    "artifact": "\"An eye for an eye only ends up making the whole world blind.\" (attributed to Gandhi)",
+    "sources": [
+      "Guha, R. (2018). Gandhi: The Years That Changed the World."
+    ]
+  },
+  {
+    "id": "soviet-russia",
+    "region": "Soviet Union",
+    "thread": "none",
+    "lat": 55.75,
+    "lng": 37.6,
+    "epoch": "modern",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.92,
+        "role": "primary"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.85,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.05,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "industrialization",
+      "institutional_scale"
+    ],
+    "status": "reactive",
+    "evidence": "textual",
+    "confidence": 0.82,
+    "contested": false,
+    "note": "The Bolsheviks tried to engineer collectivism by decree: abolish private property, plan the whole economy, and forge a 'New Soviet Man.' Egalitarian in proclamation, the project became an order maintained by a vast coercive apparatus — a reactive collectivism built explicitly against capitalist individualism.",
+    "altReading": "Beneath the egalitarian rhetoric a new hierarchy (the nomenklatura) hardened, and 'collective' ownership meant ownership by the party-state.",
+    "cost": "Forced-collectivization famines, the Gulag, and the terror of the purges.",
+    "sources": [
+      "Fitzpatrick, S. (1994). The Russian Revolution."
+    ]
+  },
+  {
+    "id": "southafrica-now",
+    "region": "South Africa (Ubuntu)",
+    "thread": "africa",
+    "lat": -29,
+    "lng": 24,
+    "epoch": "now",
+    "values": [
+      {
+        "valueId": "solidarity",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.78,
+        "role": "coupled"
+      },
+      {
+        "valueId": "generosity",
+        "intensity": 0.65,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.18,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "kinship_intensity",
+      "institutional_scale"
+    ],
+    "status": "reactivated",
+    "evidence": "textual",
+    "confidence": 0.72,
+    "contested": false,
+    "note": "Post-apartheid South Africa elevated ubuntu — 'a person is a person through other persons' — into a constitutional and restorative-justice ideal. An older relational ethic of solidarity was deliberately revived as the moral language of reconciliation against the residue of racial hierarchy. This is reactivation: an indigenous value sharpened into nation-building doctrine.",
+    "altReading": "Critics argue ubuntu became political branding that papered over enduring economic inequality and did little to redistribute apartheid-era wealth.",
+    "cost": "Restorative ideals coexist with some of the world's highest measured inequality and violent crime.",
+    "artifact": "\"Umuntu ngumuntu ngabantu\" — a person is a person through other persons.",
+    "sources": [
+      "Tutu, D. (1999). No Future Without Forgiveness."
+    ]
+  },
+  {
+    "id": "natufian-agr",
+    "region": "Natufian Levant",
+    "thread": "none",
+    "lat": 32.7,
+    "lng": 35.3,
+    "epoch": "early-agr",
+    "values": [
+      {
+        "valueId": "solidarity",
+        "intensity": 0.8,
+        "role": "primary"
+      },
+      {
+        "valueId": "generosity",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.2,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "kinship_intensity",
+      "resource_scarcity"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.6,
+    "contested": true,
+    "contestNote": "Whether Natufian feasting signals incipient hierarchy or pure communal sharing is debated.",
+    "note": "Among the first sedentary foragers, Natufian communities pooled wild cereals and buried their dead together — solidarity as the glue of staying put before farming.",
+    "altReading": "Lavish burials may hint at emergent status distinctions, not flat egalitarianism.",
+    "cost": "Sedentism tied identity to place, making groups vulnerable to local crop failure.",
+    "sources": [
+      "Bar-Yosef, O. (1998). The Natufian Culture in the Levant."
+    ]
+  },
+  {
+    "id": "catalhoyuk-agr",
+    "region": "Çatalhöyük, Anatolia",
+    "thread": "none",
+    "lat": 37.67,
+    "lng": 32.83,
+    "epoch": "early-agr",
+    "values": [
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.15,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "kinship_intensity",
+      "monumental_religion"
+    ],
+    "status": "residual",
+    "evidence": "archaeological",
+    "confidence": 0.62,
+    "contested": false,
+    "note": "A dense Neolithic town with near-identical houses and no palaces — ritual life ran through the household, not a priestly elite.",
+    "altReading": "Some read the bull and goddess imagery as a shared cosmology binding an egalitarian commune.",
+    "cost": "Crowded mud-brick living spread disease and required constant rebuilding.",
+    "sources": [
+      "Hodder, I. (2006). The Leopard’s Tale: Revealing the Mysteries of Çatalhöyük."
+    ]
+  },
+  {
+    "id": "indus-bronze",
+    "region": "Indus Valley (Harappa)",
+    "thread": "india",
+    "lat": 30.63,
+    "lng": 72.86,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.2,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "hydraulic_coordination",
+      "trade_networks",
+      "institutional_scale"
+    ],
+    "status": "residual",
+    "evidence": "archaeological",
+    "confidence": 0.58,
+    "contested": true,
+    "contestNote": "The near-absence of palaces and weaponry fuels debate over how a city this large was governed.",
+    "note": "Grid-planned cities with standardized bricks, public drains and no monumental rulers — order expressed as infrastructure rather than kings.",
+    "altReading": "Uniformity may reflect a merchant oligarchy or distributed councils rather than a single state.",
+    "cost": "Heavy reliance on river systems left cities exposed when monsoon patterns shifted.",
+    "sources": [
+      "Kenoyer, J.M. (1998). Ancient Cities of the Indus Valley Civilization."
+    ]
+  },
+  {
+    "id": "egypt-bronze",
+    "region": "Old Kingdom Egypt",
+    "thread": "none",
+    "lat": 29.98,
+    "lng": 31.13,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.95,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.85,
+        "role": "coupled"
+      },
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.1,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "hydraulic_coordination",
+      "monumental_religion",
+      "institutional_scale"
+    ],
+    "status": "residual",
+    "evidence": "archaeological",
+    "confidence": 0.8,
+    "contested": false,
+    "note": "The Nile’s predictable flood underwrote a god-king whose pyramids fused divine kingship, mass labor and cosmic order into stone.",
+    "altReading": "Pyramid-building may have been as much a redistribution and nation-building project as pure coercion.",
+    "cost": "Total investment in royal afterlife concentrated wealth and locked society into rigid castes.",
+    "sources": [
+      "Kemp, B. (2006). Ancient Egypt: Anatomy of a Civilization."
+    ]
+  },
+  {
+    "id": "shang-bronze",
+    "region": "Shang Dynasty China",
+    "thread": "china",
+    "lat": 36.1,
+    "lng": 114.35,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.9,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.15,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "metallurgy",
+      "monumental_religion",
+      "kinship_intensity"
+    ],
+    "status": "residual",
+    "evidence": "archaeological",
+    "confidence": 0.72,
+    "contested": false,
+    "note": "Shang power ran on ancestor worship and oracle-bone divination, cast in the era’s finest ritual bronzes — piety to the dead as the engine of the living state.",
+    "altReading": "Royal divination may have been a political monopoly on communicating with ancestors as much as sincere devotion.",
+    "cost": "Ritual demanded human sacrifice and vast bronze hoards drawn from the labor of many.",
+    "sources": [
+      "Keightley, D. (2000). The Ancestral Landscape."
+    ]
+  },
+  {
+    "id": "hadza-hg",
+    "region": "Hadza, East Africa",
+    "thread": "africa",
+    "lat": -3.8,
+    "lng": 35.1,
+    "epoch": "hunter",
+    "values": [
+      {
+        "valueId": "egalitarianism",
+        "intensity": 0.95,
+        "role": "primary"
+      },
+      {
+        "valueId": "generosity",
+        "intensity": 0.85,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.05,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "resource_scarcity",
+      "open_frontier",
+      "kinship_intensity"
+    ],
+    "status": "adaptive",
+    "evidence": "ethnographic",
+    "confidence": 0.85,
+    "contested": false,
+    "note": "Immediate-return foragers who share meat on demand and walk away from anyone who tries to dominate — egalitarianism enforced by mobility itself.",
+    "altReading": "Demand-sharing can be read as a tolerated-theft equilibrium rather than pure altruism.",
+    "cost": "Flat structures make large-scale coordination and accumulation nearly impossible.",
+    "sources": [
+      "Marlowe, F. (2010). The Hadza: Hunter-Gatherers of Tanzania."
+    ]
+  },
+  {
+    "id": "arnhem-hg",
+    "region": "Arnhem Land, Australia",
+    "thread": "none",
+    "lat": -12.5,
+    "lng": 134,
+    "epoch": "hunter",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.15,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "kinship_intensity",
+      "resource_scarcity"
+    ],
+    "status": "adaptive",
+    "evidence": "ethnographic",
+    "confidence": 0.7,
+    "contested": false,
+    "note": "Aboriginal Dreaming binds law, land and kin into one sacred order — the deepest continuous cultural thread on Earth, where country itself is ancestral.",
+    "altReading": "Western categories of “religion” poorly capture a system that is simultaneously law, ecology and genealogy.",
+    "cost": "Obligations to country and kin tightly constrain individual movement and choice.",
+    "sources": [
+      "Stanner, W.E.H. (1979). White Man Got No Dreaming."
+    ]
+  },
+  {
+    "id": "tokugawa-em",
+    "region": "Tokugawa Japan",
+    "thread": "none",
+    "lat": 35.68,
+    "lng": 139.69,
+    "epoch": "early-mod",
+    "values": [
+      {
+        "valueId": "order",
+        "intensity": 0.9,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.85,
+        "role": "coupled"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.2,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "weak_institutions",
+      "literacy"
+    ],
+    "status": "residual",
+    "evidence": "textual",
+    "confidence": 0.78,
+    "contested": false,
+    "note": "Two centuries of enforced peace under a frozen four-class order — stability bought with closed borders and a samurai bureaucracy turned to ink and ledgers.",
+    "altReading": "Rigid status law coexisted with a booming merchant culture that quietly inverted the official hierarchy.",
+    "cost": "Sealing the country preserved order but left Japan technologically exposed by the 1850s.",
+    "sources": [
+      "Totman, C. (1993). Early Modern Japan."
+    ]
+  },
+  {
+    "id": "dutch-em",
+    "region": "Dutch Golden Age",
+    "thread": "europe",
+    "lat": 52.37,
+    "lng": 4.9,
+    "epoch": "early-mod",
+    "values": [
+      {
+        "valueId": "curiosity",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.3,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "maritime_expansion",
+      "trade_networks",
+      "colonial_pressure"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.8,
+    "contested": true,
+    "contestNote": "The era’s tolerance and science sat atop a brutal colonial trading empire — historians weigh the two unevenly.",
+    "note": "A merchant republic where shareholding, microscopes and oil paint flourished together — curiosity financed by the world’s first stock market.",
+    "altReading": "“Tolerance” was often pragmatic commerce, extended unevenly and revoked when profits demanded.",
+    "cost": "Prosperity rested on the VOC’s violence in Asia and complicity in the slave trade.",
+    "sources": [
+      "Schama, S. (1987). The Embarrassment of Riches."
+    ]
+  },
+  {
+    "id": "weimar-modern",
+    "region": "Weimar Germany",
+    "thread": "europe",
+    "lat": 52.52,
+    "lng": 13.4,
+    "epoch": "modern",
+    "values": [
+      {
+        "valueId": "individualism",
+        "intensity": 0.8,
+        "role": "primary"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.75,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.3,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "secularism_threat",
+      "weak_institutions",
+      "technological_surplus"
+    ],
+    "status": "reactive",
+    "evidence": "textual",
+    "confidence": 0.74,
+    "contested": false,
+    "note": "A short, electric burst of artistic and sexual freedom over a hollow state — radical individualism flourishing precisely because institutions had lost their grip.",
+    "altReading": "The same weak institutions that freed the avant-garde also opened the door to its violent reaction.",
+    "cost": "Cultural openness without stable institutions proved fatally fragile.",
+    "sources": [
+      "Gay, P. (1968). Weimar Culture: The Outsider as Insider."
+    ]
+  },
+  {
+    "id": "harlem-modern",
+    "region": "Harlem Renaissance, USA",
+    "thread": "americas",
+    "lat": 40.81,
+    "lng": -73.95,
+    "epoch": "modern",
+    "values": [
+      {
+        "valueId": "solidarity",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.2,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "trade_networks",
+      "literacy",
+      "technological_surplus"
+    ],
+    "status": "reactive",
+    "evidence": "textual",
+    "confidence": 0.78,
+    "contested": false,
+    "note": "A migration-fed flowering of Black literature, jazz and pride that forged collective identity as a creative act against exclusion.",
+    "altReading": "Patronage from white audiences shaped what art could be made and seen, complicating its autonomy.",
+    "cost": "Dependence on outside patrons and the coming Depression cut the movement short.",
+    "sources": [
+      "Huggins, N.I. (1971). Harlem Renaissance."
+    ]
+  }
+]
