@@ -42,3 +42,6 @@ Values-Atlas.zip
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
+.env*
