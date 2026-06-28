@@ -25,6 +25,9 @@ export interface LangPack {
   drivers: Record<string, string>;
   status: Record<string, StatusEntry>;
   evidence: Record<string, string>;
+  // Aspect-type headings (schemaVersion 2). English-only for now; other
+  // languages fall back to English gracefully (translated in a later phase).
+  aspects?: Record<string, string>;
   tour: TourStep[];
 }
 
@@ -80,6 +83,7 @@ const DICT: Record<string, LangPack> = {
     drivers: { resource_scarcity:'Resource scarcity', pathogen_load:'Pathogen pressure', open_frontier:'Open frontier', resource_competition:'Resource competition', metallurgy:'Metallurgy / iron', maritime_expansion:'Maritime expansion', nomadic_mobility:'Nomadic mobility', weak_institutions:'Weak institutions', kinship_intensity:'Kinship intensity', hydraulic_coordination:'Hydraulic coordination', institutional_scale:'Institutional scale', trade_networks:'Trade networks', literacy:'Literacy / writing', monumental_religion:'Monumental religion', military_revolution:'Military revolution', colonial_pressure:'Colonial pressure', industrialization:'Industrialization', secularism_threat:'Secularism threat', technological_surplus:'Tech surplus' },
     status: { adaptive:{label:'Adaptive',desc:'Currently driven by a live ecological or institutional pressure.'}, residual:{label:'Residual',desc:'The original driver is gone; the value persists as culture, etiquette, identity, or law.'}, reactive:{label:'Reactive',desc:'Emerged in opposition to another value or as a corrective to a dominant norm.'}, reactivated:{label:'Reactivated',desc:'Deliberately revived as an identity marker, often in response to an external threat.'} },
     evidence: { ethnographic:'ethnographic', textual:'textual', archaeological:'archaeological', inferred:'inferred', speculative:'speculative' },
+    aspects: { 'values-synthesis':'Values Synthesis', gender:'Gender', myth:'Myth & Cosmology', religion:'Religion', commerce:'Commerce', law:'Law', governance:'Governance', 'daily-life':'Daily Life', architecture:'Architecture', dress:'Dress & Adornment', script:'Script & Writing', art:'Art' },
     tour: [
       { title:'Welcome to Values Atlas', body:'An interactive map of how human values — generosity, honor, piety, curiosity — emerge and shift across civilizations and deep time. Here is a quick tour.' },
       { title:'The map', body:'Each marker is a human value taking root in a specific place and era. Bigger, brighter markers mean the value burned hotter there.' },
@@ -587,9 +591,11 @@ export function initLang(): string {
 }
 
 function pick(group: keyof LangPack, id: string): string {
-  const cur = DICT[lang] && (DICT[lang][group] as Record<string, string>)[id];
+  const grp = DICT[lang] && (DICT[lang][group] as Record<string, string> | undefined);
+  const cur = grp && grp[id];
   if (cur != null) return cur as string;
-  const en = (DICT.en[group] as Record<string, string>)[id];
+  const enGrp = DICT.en[group] as Record<string, string> | undefined;
+  const en = enGrp && enGrp[id];
   return en != null ? (en as string) : id;
 }
 
@@ -599,6 +605,7 @@ export function tDriver(id: string): string { return pick('drivers', id); }
 export function tEpoch(id: string): string { return pick('epochs', id); }
 export function tThread(id: string): string { return pick('threads', id); }
 export function tEvidence(id: string): string { return pick('evidence', id); }
+export function tAspect(id: string): string { return pick('aspects', id); }
 export function tStatus(id: string): StatusEntry {
   const cur = DICT[lang] && DICT[lang].status && DICT[lang].status[id];
   return cur || DICT.en.status[id] || { label: id, desc: '' };
