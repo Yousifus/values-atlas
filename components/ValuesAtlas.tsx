@@ -161,7 +161,6 @@ export default function ValuesAtlas() {
   const mapElRef = useRef<HTMLDivElement>(null);
   const ctrlRef = useRef<AtlasMap | null>(null);
   const stateRef = useRef<AtlasState>({ data, epoch, lens, thread, activeValues });
-  const sheetBodyRef = useRef<HTMLDivElement>(null);
 
   const activeKey = useMemo(
     () => VALUES.map((v) => (activeValues.has(v.id) ? '1' : '0')).join(''),
@@ -246,23 +245,17 @@ export default function ValuesAtlas() {
     return () => clearInterval(iv);
   }, [isPlaying]);
 
-  // ── Rewire lineage-row clicks inside the drawer body (built as HTML). ──
-  useEffect(() => {
-    const el = sheetBodyRef.current;
-    if (!el) return;
-    const rows = Array.from(el.querySelectorAll<HTMLButtonElement>('.lin-row'));
-    const handlers = rows.map((btn) => {
-      const handler = () => {
-        const epid = btn.getAttribute('data-epid');
-        const pid = btn.getAttribute('data-pid');
-        if (epid && epid !== epoch) setEpoch(epid);
-        if (pid) setOpenId(pid);
-      };
-      btn.addEventListener('click', handler);
-      return [btn, handler] as const;
-    });
-    return () => handlers.forEach(([btn, h]) => btn.removeEventListener('click', h));
-  }, [drawerBodyHTML, epoch]);
+  // Walk the lineage: clicking a lineage row jumps to that epoch and re-opens
+  // the drawer on that era's point. Event delegation reliably catches clicks
+  // bubbling from the HTML injected via dangerouslySetInnerHTML.
+  function onDrawerClick(e: React.MouseEvent<HTMLDivElement>) {
+    const row = (e.target as HTMLElement).closest('.lin-row');
+    if (!row) return;
+    const epid = row.getAttribute('data-epid');
+    const pid = row.getAttribute('data-pid');
+    if (epid && epid !== epoch) setEpoch(epid);
+    if (pid) setOpenId(pid);
+  }
 
   function changeLang(code: string) {
     setI18nLang(code);
@@ -469,7 +462,7 @@ export default function ValuesAtlas() {
             <SheetDescription className="sr-only">{t('secReadings')}</SheetDescription>
             <div
               className="drawer-body"
-              ref={sheetBodyRef}
+              onClick={onDrawerClick}
               dangerouslySetInnerHTML={{ __html: drawerBodyHTML }}
             />
           </SheetContent>
