@@ -141,7 +141,9 @@
                   "translations": {
                     "type": "object",
                     "additionalProperties": { "type": "string" }
-                  }
+                  },
+                  "license": { "type": "string", "description": "SPDX or human-readable license of the source this reading draws on (provenance)." },
+                  "sourceDataset": { "type": "string", "description": "Identifier of the originating dataset/source for this reading (provenance)." }
                 }
               }
             }
@@ -179,7 +181,9 @@
             "venue": { "type": "string" },
             "doi": { "type": "string" },
             "isbn": { "type": "string" },
-            "url": { "type": "string" }
+            "url": { "type": "string" },
+            "license": { "type": "string", "description": "SPDX or human-readable license of the cited source (provenance)." },
+            "sourceDataset": { "type": "string", "description": "Identifier of the originating dataset/source for this citation (provenance)." }
           }
         }
       }

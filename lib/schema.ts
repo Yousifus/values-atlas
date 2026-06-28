@@ -178,6 +178,10 @@ export interface Reading {
   sources?: string[];
   citationKeys?: string[];
   translations?: Record<string, string>;
+  // Provenance (Path A): records where this reading is drawn from and under
+  // what license, so forkers can see attribution and filter by reuse rights.
+  license?: string;
+  sourceDataset?: string;
 }
 
 export interface Aspect {
@@ -203,6 +207,10 @@ export interface Citation {
   doi?: string;
   isbn?: string;
   url?: string;
+  // Provenance (Path A): the originating dataset/source and its license, so
+  // provenance stays transparent and reuse rights are explicit per citation.
+  license?: string;
+  sourceDataset?: string;
 }
 
 export interface AtlasPoint {

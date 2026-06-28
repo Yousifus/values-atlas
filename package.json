@@ -2,6 +2,7 @@
   "name": "values-atlas",
   "version": "4.0.0",
   "private": true,
+  "license": "MIT",
   "description": "An interactive map of how human values emerge, couple, and shift across geography and deep time.",
   "scripts": {
     "dev": "next dev",

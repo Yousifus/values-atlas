@@ -242,3 +242,16 @@ Throughout, the contribution model stays simple and transparent: **edit `public/
 3. Open a pull request.
 
 Every PR gets an automatic Vercel preview URL, so changes are easy to see before they merge. Adding or correcting a data point requires no build step or code change — just edit the JSON.
+
+---
+
+## License
+
+The Values Atlas is **dual-licensed** so the project stays permissive and forkable:
+
+- **Code → [MIT](./LICENSE).** The app, build tooling, and scripts.
+- **Data → [CC-BY-4.0](./public/data/LICENSE).** The dataset in `public/data/` (attribution required; commercial use allowed).
+
+The atlas core is deliberately kept permissive so anyone — human or AI agent, now or decades from now — can re-host it. Restrictively-licensed external sources (e.g. CC-BY-NC, CC-BY-NC-SA, WVS) are **never** bulk-embedded into the core; they're used as cited, transformative summaries, with any genuinely-copied data quarantined into separately-licensed sidecar files. Each reading and citation can record its `sourceDataset` and `license` so provenance is transparent and forkers can filter by what they may reuse.
+
+See **[`LICENSING.md`](./LICENSING.md)** for the full policy.

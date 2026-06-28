@@ -1,0 +1,51 @@
+Values Atlas — Dataset License
+================================
+
+SPDX-License-Identifier: CC-BY-4.0
+
+The Values Atlas dataset in this directory (including `atlas.json` and any
+future data files in this folder and its subfolders) is licensed under the
+Creative Commons Attribution 4.0 International License (CC-BY-4.0).
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+You are free to:
+
+  - Share — copy and redistribute the material in any medium or format.
+  - Adapt — remix, transform, and build upon the material for any purpose,
+    even commercially.
+
+Under the following terms:
+
+  - Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor endorses
+    you or your use.
+
+How to attribute the Values Atlas
+---------------------------------
+
+  "Values Atlas" by Yousef / Values Atlas, licensed under CC-BY-4.0.
+  Source: https://github.com/Yousifus/values-atlas
+  Live:   https://values-atlas.vercel.app
+
+Scope and provenance
+--------------------
+
+This CC-BY-4.0 license applies to the original Values Atlas dataset — the
+curated structure, syntheses, and coded values authored for this project.
+Factual data points are not themselves copyrightable; this license governs
+the database and the original expression within it.
+
+The atlas core is deliberately kept permissive and forkable. External sources
+are NOT bulk-embedded here. Where a reading draws on a restrictively-licensed
+source (e.g. CC-BY-NC, CC-BY-NC-SA, WVS), that source is used only as a cited,
+transformative summary, and each reading/citation records its own `license`
+and `sourceDataset` so forkers can see provenance and filter by what they may
+reuse. Any genuinely-copied coded values from a restricted source are
+quarantined into separately-licensed sidecar files (e.g.
+`public/data/sidecars/<source>.json`), each carrying its own license header,
+and are never folded into this CC-BY-4.0 core.
+
+See `LICENSING.md` at the repository root for the full policy.
