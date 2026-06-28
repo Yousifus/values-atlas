@@ -1,3 +1,116 @@
+/* ════════════════════════════════════════════════════════════════════
+   TAILWIND v4 + shadcn/ui layer
+   ────────────────────────────────────────────────────────────────────
+   Tailwind and the shadcn design tokens are layered ON TOP of the
+   original Values Atlas CSS (kept verbatim further below). The atlas
+   rules are intentionally *unlayered* so they win the cascade over
+   Tailwind's `@layer base` / Preflight — the cartographic look is
+   preserved exactly while shadcn components inherit the same palette.
+
+   The shadcn tokens are derived 1:1 from the atlas palette so the
+   components feel like the same atlas, not a generic starter:
+     --bg #0e0d0b   surfaces #161412/#1e1c18/#26231e/#302d26
+     borders #38352d/#524e43   text #edebe6/#a6a196/#666155
+     gold accent #d0b25e / #e8cc7a
+   ════════════════════════════════════════════════════════════════════ */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* shadcn design tokens — mapped from the atlas palette (always-dark app). */
+:root,
+.dark {
+  --radius: 12px; /* matches the atlas --r12 */
+
+  --background: #0e0d0b;          /* --bg  */
+  --foreground: #edebe6;          /* --t1  */
+
+  --card: #161412;                /* --s1  */
+  --card-foreground: #edebe6;     /* --t1  */
+  --popover: #1e1c18;             /* --s2  */
+  --popover-foreground: #edebe6;  /* --t1  */
+
+  --primary: #d0b25e;             /* --gold */
+  --primary-foreground: #161412;  /* --ti   */
+
+  --secondary: #1e1c18;           /* --s2  */
+  --secondary-foreground: #edebe6;
+
+  --muted: #26231e;               /* --s3  */
+  --muted-foreground: #a6a196;    /* --t2  */
+
+  --accent: #302d26;              /* --s4  */
+  --accent-foreground: #e8cc7a;   /* --gold2 */
+
+  --destructive: #cc4a4a;
+  --destructive-foreground: #edebe6;
+
+  --border: #38352d;              /* --b1  */
+  --input: #38352d;               /* --b1  */
+  --ring: #d0b25e;                /* --gold */
+
+  --sidebar: #161412;
+  --sidebar-foreground: #edebe6;
+  --sidebar-primary: #d0b25e;
+  --sidebar-primary-foreground: #161412;
+  --sidebar-accent: #26231e;
+  --sidebar-accent-foreground: #e8cc7a;
+  --sidebar-border: #38352d;
+  --sidebar-ring: #d0b25e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-sans: "Satoshi", "Helvetica Neue", sans-serif;
+  --font-serif: "Boska", Georgia, serif;
+  --font-mono: "Space Mono", monospace;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   ORIGINAL VALUES ATLAS CSS (verbatim, unlayered — authoritative)
+   Everything below drives the cartographic map look, markers, drawer,
+   timeline, mobile sheet, guided tour, and RTL. Do not refactor; shadcn
+   components are themed via the tokens above to match it.
+   ════════════════════════════════════════════════════════════════════ */
 :root{
   --bg:#0e0d0b;--s1:#161412;--s2:#1e1c18;--s3:#26231e;--s4:#302d26;
   --b1:#38352d;--b2:#524e43;--t1:#edebe6;--t2:#a6a196;--t3:#666155;--ti:#161412;
