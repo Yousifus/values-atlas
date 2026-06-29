@@ -24629,5 +24629,122 @@
         "license": "Copyright (facts cited; cite-don't-copy)"
       }
     ]
+  },
+  {
+    "id": "meroe-axial",
+    "region": "Kingdom of Kush (Meroe)",
+    "thread": "africa",
+    "lat": 16.93,
+    "lng": 33.72,
+    "epoch": "axial",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.75,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.72,
+        "role": "coupled"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.55,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "literacy",
+      "monumental_religion",
+      "metallurgy",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.55,
+    "contested": true,
+    "note": "The Kingdom of Kush (Napatan then Meroitic, c. 700 BCE-350 CE) was a literate, iron-working Nile state that briefly ruled Egypt as the 25th Dynasty and then flourished independently from Meroe. Sacral kingship (including ruling queens, the kandakes), an Amun and Apedemak temple cult, royal pyramid burials, and the development of an indigenous Meroitic script define its values profile.",
+    "altReading": "Older scholarship framed Kush as a derivative of Egypt; current work stresses its distinct institutions and indigenous innovations, so an 'Egyptianizing piety' reading can understate Meroitic originality.",
+    "cost": "A surplus-extracting sacral monarchy whose monumental and mortuary display rested on subject labor.",
+    "schemaVersion": 2,
+    "sources": [
+      "Welsby, D. A. (1996). The Kingdom of Kush. British Museum Press.",
+      "Edwards, D. N. (2004). The Nubian Past. Routledge."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Kush combined a temple-centered piety (Amun inherited from Egypt, the lion-god Apedemak as a distinctly Kushite cult) with sacral kingship and an emergent literate bureaucracy. Iron-working and Nile/Red Sea trade underwrote a state that both absorbed and reworked Egyptian models.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "Value intensities and the piety/hierarchy balance are interpretive, and the degree of Egyptian versus indigenous character is debated — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "welsby1996kush",
+              "edwards2004nubian"
+            ]
+          },
+          {
+            "text": "Alt reading: long framed as a pale copy of Egypt, Kush is now stressed for indigenous institutions, so an 'Egyptianizing' reading risks understating Meroitic originality."
+          },
+          {
+            "text": "The Shadow / Cost: monumental temples and royal pyramids were sustained by surplus extraction and subject labor."
+          }
+        ]
+      },
+      {
+        "type": "script",
+        "readings": [
+          {
+            "text": "By around the 2nd century BCE Meroe developed the Meroitic script, an indigenous alphabetic system (with hieroglyphic and cursive forms) — one of the earliest writing systems native to sub-Saharan Africa, though the language remains only partly understood.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "welsby1996kush"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "religion",
+        "readings": [
+          {
+            "text": "State religion paired the inherited Amun cult with the indigenous warrior lion-god Apedemak, while rulers were buried beneath steep royal pyramids at sites such as Meroe and Nuri — fusing Nilotic monumental religion with local tradition.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "welsby1996kush",
+              "edwards2004nubian"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "welsby1996kush",
+        "title": "The Kingdom of Kush: The Napatan and Meroitic Empires",
+        "authors": [
+          "Derek A. Welsby"
+        ],
+        "year": 1996,
+        "venue": "British Museum Press",
+        "isbn": "9780714109862",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      },
+      {
+        "key": "edwards2004nubian",
+        "title": "The Nubian Past: An Archaeology of the Sudan",
+        "authors": [
+          "David N. Edwards"
+        ],
+        "year": 2004,
+        "venue": "Routledge",
+        "isbn": "9780415369879",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
   }
 ]
