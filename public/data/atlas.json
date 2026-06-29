@@ -23861,5 +23861,115 @@
         "sourceDataset": "D-PLACE-Pulotu"
       }
     ]
+  },
+  {
+    "id": "inca-early-mod",
+    "region": "Inca Empire (Cusco)",
+    "thread": "americas",
+    "lat": -13.52,
+    "lng": -71.98,
+    "epoch": "early-mod",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.82,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hospitality",
+        "intensity": 0.6,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "hydraulic_coordination",
+      "trade_networks",
+      "military_revolution"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.6,
+    "contested": true,
+    "note": "Tawantinsuyu fused ayllu reciprocity (ayni) with state command: the mit'a labor tax built roads, terraces, and qollqa storehouses, while a decimal administration recorded by quipu organized people and goods across the largest empire of the pre-Columbian Americas. State feasting redistributed maize beer as a political bond, making generosity an instrument of rule under a divine Sapa Inca.",
+    "altReading": "What reads as benevolent redistribution was also coercive extraction: resettled mitmaqkuna populations, conscripted labor, and a sacralized elite whose 'reciprocity' the provinces could not refuse.",
+    "cost": "Forced resettlement, military conquest of resistant polities, and ritual killing (capacocha) of children at the empire's margins.",
+    "schemaVersion": 2,
+    "sources": [
+      "D'Altroy, T. N. (2014). The Incas (2nd ed.). Wiley-Blackwell."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Tawantinsuyu fused ayllu reciprocity (ayni) with state command: the mit'a labor tax built roads, terraces, and storehouses, while decimal administration recorded by quipu coordinated people and goods at imperial scale. State-sponsored feasting turned generosity into a tool of rule under the divine Sapa Inca.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Intensities and the collectivism/hierarchy weighting are an interpretive reading of Andean reciprocity and statecraft — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "daltroy2014incas"
+            ]
+          },
+          {
+            "text": "Alt reading: what looks like benevolent redistribution was also coercion — resettled mitmaqkuna, conscripted labor, and an elite whose reciprocity the provinces could not decline."
+          },
+          {
+            "text": "The Shadow / Cost: forced resettlement, conquest, and the ritual killing (capacocha) of children at the empire's frontiers."
+          }
+        ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "Administration was organized decimally (units nominally of 10 to 10,000 households) and recorded on knotted-cord quipu, enabling census, tribute, and labor allocation without alphabetic writing — an unusually bureaucratic state for a non-literate society.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "The crosswalk from decimal/quipu administration to an 'order' value intensity is interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "daltroy2014incas"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "The economy ran on redistribution rather than markets: the state claimed labor (not goods) through mit'a, stockpiled the surplus in qollqa storehouses along the road network, and reallocated it for provisioning, ritual, and emergencies.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Characterizing the Inca economy as non-market redistribution is a defensible but interpretive synthesis — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "daltroy2014incas"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "daltroy2014incas",
+        "title": "The Incas (2nd ed.)",
+        "authors": [
+          "Terence N. D'Altroy"
+        ],
+        "year": 2014,
+        "venue": "Wiley-Blackwell",
+        "isbn": "9781444331158",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
   }
 ]
