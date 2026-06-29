@@ -24850,5 +24850,111 @@
         "license": "Copyright (facts cited; cite-don't-copy)"
       }
     ]
+  },
+  {
+    "id": "monte-alban-axial",
+    "region": "Monte Alban (Oaxaca Valley)",
+    "thread": "americas",
+    "lat": 17.04,
+    "lng": -96.77,
+    "epoch": "axial",
+    "values": [
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.78,
+        "role": "primary"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.62,
+        "role": "coupled"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.55,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "literacy",
+      "monumental_religion",
+      "institutional_scale",
+      "resource_competition"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.55,
+    "contested": true,
+    "note": "Founded around 500 BCE on a hilltop above the Oaxaca Valley, Monte Alban was a 'disembedded capital' for an emergent Zapotec state, carrying one of the earliest Mesoamerican writing and calendar systems. Its carved 'danzantes' and Building J conquest slabs read as elite propaganda of domination and military victory.",
+    "altReading": "The 'danzantes' are variously interpreted as slain captives, sacrificial victims, or even medical/ritual figures, so reading them straightforwardly as conquest propaganda is contested.",
+    "cost": "State formation here is bound up with coercion and the commemoration of conquered or sacrificed enemies.",
+    "schemaVersion": 2,
+    "sources": [
+      "Marcus, J., & Flannery, K. V. (1996). Zapotec Civilization. Thames & Hudson."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Monte Alban's foundation as a hilltop capital above competing valley centers marks emergent state hierarchy, advertised through monumental building, early writing, and martial iconography. The profile reads as hierarchy coupled to militarism and the novelty of glyphic literacy.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "Value intensities and the militarism reading depend on contested interpretations of the carved monuments — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "marcusflannery1996zapotec"
+            ]
+          },
+          {
+            "text": "Alt reading: the 'danzantes' have been read as captives, sacrificial victims, or ritual/medical figures, so treating them as conquest propaganda is only one interpretation."
+          },
+          {
+            "text": "The Shadow / Cost: early statehood here is entangled with coercion and the public commemoration of defeated or sacrificed enemies."
+          }
+        ]
+      },
+      {
+        "type": "script",
+        "readings": [
+          {
+            "text": "Zapotec carved monuments bear some of the earliest writing and calendrical notation in Mesoamerica (a 260-day ritual count among them), placing Monte Alban near the origins of New World literacy.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Claims to the 'earliest' Mesoamerican writing are debated relative to Olmec and other early scripts — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "marcusflannery1996zapotec"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "Settlement-pattern survey suggests Monte Alban was deliberately founded on neutral high ground as a 'disembedded capital' integrating formerly competing valley polities under a new political center.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "The 'disembedded capital' model is an influential but interpretive reconstruction of Zapotec state formation — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "marcusflannery1996zapotec"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "marcusflannery1996zapotec",
+        "title": "Zapotec Civilization: How Urban Society Evolved in Mexico's Oaxaca Valley",
+        "authors": [
+          "Joyce Marcus",
+          "Kent V. Flannery"
+        ],
+        "year": 1996,
+        "venue": "Thames & Hudson",
+        "isbn": "9780500050781",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
   }
 ]
