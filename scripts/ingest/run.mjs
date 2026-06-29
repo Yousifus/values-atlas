@@ -30,8 +30,10 @@ const MODULES = {
   pulotu: { fn: pulotu, source: SOURCES.pulotu.sourceDataset, pointIdPrefix: 'pulotu-' },
 };
 
-// Fixed run order: Phase A (geo/value backbone) first, then Phase B.
-const ORDER = ['reba', 'drh', 'maddison', 'pulotu'];
+// Fixed run order: add new points (Pulotu) first so the enrichment sources
+// (Reba/DRH/Maddison) see the complete atlas and their contributions persist.
+// (Selecting a subset, e.g. `run.mjs reba drh`, still only runs those.)
+const ORDER = ['pulotu', 'reba', 'drh', 'maddison'];
 
 async function main() {
   const args = process.argv.slice(2);

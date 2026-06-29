@@ -23,6 +23,11 @@ work is merged to production.
 - **Idempotent.** Re-running strips a source's prior contributions (tagged
   readings/bibliography by `sourceDataset`; new points by id prefix) and
   recomputes deterministically. See `run.mjs --check`.
+- **Run order.** The orchestrator adds new points (Pulotu) **first**, then runs
+  the enrichment sources (Reba → DRH → Maddison) across the complete atlas, so
+  Reba's geo/temporal backbone can also attach to nearby Pulotu points where a
+  recorded urban centre falls in range. New Pulotu point ids (`pulotu-…`) are
+  slugified to `[a-z0-9-]` to satisfy the schema id pattern.
 
 ## Shared deterministic rules (`lib.mjs`)
 

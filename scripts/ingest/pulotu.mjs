@@ -50,6 +50,9 @@ const WARFARE_AGG = { 1: 0.8, 2: 0.6, 3: 0.4, 4: 0.2 };
 
 const yearLabel = (y) => (y < 0 ? `${-y} BCE` : `${y} CE`);
 
+// Slugify a Pulotu society id into a schema-valid atlas id ([a-z0-9-]).
+const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
 export async function run(atlas) {
   const societies = parseCSVObjects(await download('pulotu_societies.csv', `${BASE}/societies.csv`));
   const data = parseCSVObjects(await download('pulotu_data.csv', `${BASE}/data.csv`));
@@ -162,7 +165,7 @@ export async function run(atlas) {
     }
 
     const point = {
-      id: `pulotu-${soc.ID}`,
+      id: `pulotu-${slug(soc.ID)}`,
       region: soc.Name,
       thread: 'none',
       lat,
