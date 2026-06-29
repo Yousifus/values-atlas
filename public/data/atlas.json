@@ -24196,5 +24196,108 @@
         "license": "Copyright (facts cited; cite-don't-copy)"
       }
     ]
+  },
+  {
+    "id": "cahokia-medieval",
+    "region": "Cahokia (American Bottom)",
+    "thread": "americas",
+    "lat": 38.66,
+    "lng": -90.06,
+    "epoch": "medieval",
+    "values": [
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.72,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.68,
+        "role": "coupled"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.55,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "monumental_religion",
+      "institutional_scale",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.5,
+    "contested": true,
+    "note": "Cahokia (c. 1050-1350 CE) was the largest pre-Columbian settlement north of Mexico — a planned city of earthen mounds and plazas around Monks Mound, integrated by mass feasting and a shared cosmology. Elite power is visible in the staged, partly sacrificial burials of Mound 72, even as the degree of centralization remains debated.",
+    "altReading": "Whether Cahokia was a true state, a powerful chiefdom, or a more heterarchical ritual confederation is genuinely contested; 'hierarchy as primary' takes one side of an open argument.",
+    "cost": "Evidence from Mound 72 for retainer/sacrificial killing tied to elite mortuary ritual.",
+    "schemaVersion": 2,
+    "sources": [
+      "Pauketat, T. R. (2009). Cahokia: Ancient America's Great City on the Mississippi. Viking."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Cahokia fused emergent chiefly hierarchy with monumental religion and large-scale feasting: a planned mound-and-plaza city that drew people and goods across the mid-continent and bound them through ritual integration. Mound 72 shows that elite authority could be lethal.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Coding hierarchy as primary is interpretive — the chiefdom-versus-state question is unresolved — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "pauketat2009cahokia"
+            ]
+          },
+          {
+            "text": "Alt reading: Cahokia may have been less a centralized state than a powerful chiefdom or ritual confederation, in which 'hierarchy' coexisted with considerable local autonomy."
+          },
+          {
+            "text": "The Shadow / Cost: the staged burials of Mound 72 include apparent retainer/sacrificial killing linked to elite mortuary display."
+          }
+        ]
+      },
+      {
+        "type": "architecture",
+        "readings": [
+          {
+            "text": "The city was laid out around vast earthen platform mounds — Monks Mound is the largest pre-Columbian earthwork north of Mexico — fronting planned open plazas used for gatherings and games.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "pauketat2009cahokia"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "religion",
+        "readings": [
+          {
+            "text": "Mound, plaza, and post alignments appear to encode a layered cosmology, and mass feasting episodes (visible in dense refuse pits) suggest religion and commensality were central instruments of integration.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Reconstructing Mississippian cosmology and the political role of feasting is interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "pauketat2009cahokia"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "pauketat2009cahokia",
+        "title": "Cahokia: Ancient America's Great City on the Mississippi",
+        "authors": [
+          "Timothy R. Pauketat"
+        ],
+        "year": 2009,
+        "venue": "Viking",
+        "isbn": "9780670020904",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
   }
 ]
