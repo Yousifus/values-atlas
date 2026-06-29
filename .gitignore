@@ -45,3 +45,6 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# ingestion pipeline cached raw source downloads (re-fetchable, not committed)
+/scripts/ingest/.cache

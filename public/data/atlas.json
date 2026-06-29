@@ -538,7 +538,8 @@
     "drivers": [
       "hydraulic_coordination",
       "institutional_scale",
-      "resource_competition"
+      "resource_competition",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -571,6 +572,51 @@
             "text": "The Shadow / Cost: The formal legal institutionalization of slavery, debt peonage, and patriarchal ownership of women."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the bronze era: Nippur, ~30,000 inhabitants c. 2250 BCE. Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -699,6 +745,51 @@
             "text": "The Shadow / Cost: Radical exclusion of women, metics, and slaves from the moral and political circle."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the axial era: Athens, ~155,000 inhabitants c. 430 BCE (largest of 5 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -728,7 +819,8 @@
     ],
     "drivers": [
       "institutional_scale",
-      "resource_scarcity"
+      "resource_scarcity",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -760,6 +852,51 @@
             "text": "The Shadow / Cost: Strict boundaries of purity and pollution that isolated the community from neighbors."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the axial era: Jerusalem, ~49,000 inhabitants c. 430 BCE (largest of 5 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -821,6 +958,51 @@
             "text": "The Shadow / Cost: The law treated enslaved humans entirely as property (res), stripped of all legal personhood."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the axial era: Rome, ~35,000 inhabitants c. 430 BCE (largest of 2 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -850,7 +1032,8 @@
     ],
     "drivers": [
       "institutional_scale",
-      "resource_scarcity"
+      "resource_scarcity",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -882,6 +1065,51 @@
             "text": "The Shadow / Cost: Extreme asceticism and world-denial; severing of familial bonds by mendicants."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the axial era: Patna, ~350,000 inhabitants c. 200 BCE (largest of 3 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -916,7 +1144,8 @@
     ],
     "drivers": [
       "institutional_scale",
-      "resource_competition"
+      "resource_competition",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -950,6 +1179,51 @@
             "text": "The Shadow / Cost: Rigid patriarchal control and the total subsumption of individual desires to family duty."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the axial era: Xian, ~400,000 inhabitants c. 200 BCE. Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -1053,7 +1327,8 @@
     "drivers": [
       "weak_institutions",
       "resource_scarcity",
-      "institutional_scale"
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -1086,6 +1361,51 @@
             "text": "The Shadow / Cost: Strict codification of gender hierarchies and the status of non-Muslim subjects (dhimmi)."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the medieval era: Mecca, ~80,000 inhabitants c. 800 CE. Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -1121,7 +1441,8 @@
     "drivers": [
       "open_frontier",
       "weak_institutions",
-      "trade_networks"
+      "trade_networks",
+      "institutional_scale"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -1156,6 +1477,56 @@
             "text": "The Shadow / Cost: The annihilation of the Khwarezmian Empire, Baghdad, and millions of civilians who resisted conquest."
           }
         ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "DRH / Standard Cross-Cultural Sample of Religion codes the corresponding entry \"Khalka Mongols\" at social-complexity level: state (centralized polity). This corroborates the point's hierarchical, law-and-order institutional structure.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Interpretive crosswalk from a DRH/SCCSR entry to this atlas civilization-at-epoch point — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "slingerland2020-drh",
+              "sccsr-zenodo"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "DRH-SCCSR"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "slingerland2020-drh",
+        "title": "The Database of Religious History: Coding the Sacred",
+        "authors": [
+          "Slingerland, E.",
+          "Atkinson, Q. D.",
+          "Ember, C. R.",
+          "Sheehan, O.",
+          "Muthukrishna, M.",
+          "Bollinger, R.",
+          "Henrich, J."
+        ],
+        "year": 2020,
+        "venue": "Journal of Cognitive Historiography",
+        "doi": "10.1558/jch.39061",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
+      },
+      {
+        "key": "sccsr-zenodo",
+        "title": "Standard Cross-Cultural Sample of Religion (SCCSR) data dump",
+        "authors": [
+          "Database of Religious History"
+        ],
+        "year": 2025,
+        "venue": "Zenodo",
+        "doi": "10.5281/zenodo.14967261",
+        "url": "https://zenodo.org/records/14967261",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
       }
     ]
   },
@@ -1321,7 +1692,8 @@
     ],
     "drivers": [
       "kinship_intensity",
-      "trade_networks"
+      "trade_networks",
+      "institutional_scale"
     ],
     "status": "adaptive",
     "evidence": "ethnographic",
@@ -1358,6 +1730,51 @@
             "text": "The Shadow / Cost: Decision-making by consensus could be slow and highly factionalized."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the early-mod era: Benin, ~65,000 inhabitants c. 1668 CE. Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.6,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -1392,7 +1809,8 @@
     ],
     "drivers": [
       "institutional_scale",
-      "resource_competition"
+      "resource_competition",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -1428,6 +1846,51 @@
             "text": "The Shadow / Cost: The systemic capture and execution of thousands of war captives to fuel the state cult."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the early-mod era: Mexico City, ~85,000 inhabitants c. 1700 CE (largest of 10 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -1463,7 +1926,8 @@
     "drivers": [
       "hydraulic_coordination",
       "kinship_intensity",
-      "institutional_scale"
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -1498,6 +1962,51 @@
             "text": "The Shadow / Cost: Extreme constraints on women (e.g., foot binding) and total subordination of youth to elders."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the early-mod era: Beijing, ~706,861 inhabitants c. 1579 CE (largest of 3 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -1532,7 +2041,8 @@
     ],
     "drivers": [
       "colonial_pressure",
-      "resource_competition"
+      "resource_competition",
+      "institutional_scale"
     ],
     "status": "reactive",
     "evidence": "textual",
@@ -1564,6 +2074,51 @@
             "text": "The Shadow / Cost: A devastating war of annihilation, followed by crushing international isolation and debt."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the industrial era: Cap-Haitien, ~20,000 inhabitants c. 1790 CE. Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -1593,7 +2148,8 @@
     ],
     "drivers": [
       "institutional_scale",
-      "secularism_threat"
+      "secularism_threat",
+      "trade_networks"
     ],
     "status": "reactive",
     "evidence": "textual",
@@ -1626,6 +2182,51 @@
             "text": "The Shadow / Cost: The British government paid massive financial \"compensation\" to the slave owners, not the enslaved."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the industrial era: London, ~2,362,236 inhabitants c. 1851 CE (largest of 30 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -1722,7 +2323,9 @@
     ],
     "drivers": [
       "open_frontier",
-      "resource_competition"
+      "resource_competition",
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -1755,6 +2358,51 @@
             "text": "The Shadow / Cost: The near-total expropriation and genocide of indigenous North American populations."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the modern era: Lincoln, ~40,000 inhabitants c. 1900 CE. Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.4,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -1784,7 +2432,8 @@
     ],
     "drivers": [
       "institutional_scale",
-      "technological_surplus"
+      "technological_surplus",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -1819,6 +2468,51 @@
             "text": "The Shadow / Cost: The erosion of local sovereignties and alternative, non-individualist moral frameworks."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the now era: Milan, ~3,800,000 inhabitants c. 1975 CE (largest of 5 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -1848,7 +2542,9 @@
     ],
     "drivers": [
       "technological_surplus",
-      "open_frontier"
+      "open_frontier",
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -1880,6 +2576,51 @@
             "text": "The Shadow / Cost: Algorithmic surveillance, gig-economy precarity, and the hollowing out of local civic infrastructure."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the now era: San Francisco, ~4,400,000 inhabitants c. 1975 CE (largest of 2 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -2045,7 +2786,8 @@
     ],
     "drivers": [
       "institutional_scale",
-      "technological_surplus"
+      "technological_surplus",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -2077,6 +2819,51 @@
             "text": "The Shadow / Cost: The total subsumption of individual privacy and dissent to state stability."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the now era: Beijing, ~5,200,000 inhabitants c. 1975 CE (largest of 7 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -2145,6 +2932,56 @@
             "text": "The Shadow / Cost: Wholesale population transfers and the documented flaying of rebel leaders as official state policy."
           }
         ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "DRH / Standard Cross-Cultural Sample of Religion codes the corresponding entry \"Neo-Assyrian Scholars\" at social-complexity level: empire (large multi-ethnic polity). This corroborates the point's hierarchical, law-and-order institutional structure.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Interpretive crosswalk from a DRH/SCCSR entry to this atlas civilization-at-epoch point — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "slingerland2020-drh",
+              "sccsr-zenodo"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "DRH-SCCSR"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "slingerland2020-drh",
+        "title": "The Database of Religious History: Coding the Sacred",
+        "authors": [
+          "Slingerland, E.",
+          "Atkinson, Q. D.",
+          "Ember, C. R.",
+          "Sheehan, O.",
+          "Muthukrishna, M.",
+          "Bollinger, R.",
+          "Henrich, J."
+        ],
+        "year": 2020,
+        "venue": "Journal of Cognitive Historiography",
+        "doi": "10.1558/jch.39061",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
+      },
+      {
+        "key": "sccsr-zenodo",
+        "title": "Standard Cross-Cultural Sample of Religion (SCCSR) data dump",
+        "authors": [
+          "Database of Religious History"
+        ],
+        "year": 2025,
+        "venue": "Zenodo",
+        "doi": "10.5281/zenodo.14967261",
+        "url": "https://zenodo.org/records/14967261",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
       }
     ]
   },
@@ -2180,7 +3017,8 @@
     "drivers": [
       "maritime_expansion",
       "trade_networks",
-      "literacy"
+      "literacy",
+      "institutional_scale"
     ],
     "status": "adaptive",
     "evidence": "archaeological",
@@ -2212,6 +3050,51 @@
             "text": "The Shadow / Cost: A commercial elite whose wealth rested partly on a brisk trade in enslaved people across the sea lanes."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the iron era: Hazor, ~24,000 inhabitants c. 1600 BCE (largest of 2 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -2479,6 +3362,99 @@
             "text": "The Shadow / Cost: An economy resting on mass slavery and the spectacle killing of the arena."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the imperial era: Rome, ~450,000 inhabitants c. 100 CE (largest of 3 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "DRH / Standard Cross-Cultural Sample of Religion codes the corresponding entry \"Roman private religion\" at social-complexity level: empire (large multi-ethnic polity). This corroborates the point's hierarchical, law-and-order institutional structure.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Interpretive crosswalk from a DRH/SCCSR entry to this atlas civilization-at-epoch point — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "slingerland2020-drh",
+              "sccsr-zenodo"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "DRH-SCCSR"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "slingerland2020-drh",
+        "title": "The Database of Religious History: Coding the Sacred",
+        "authors": [
+          "Slingerland, E.",
+          "Atkinson, Q. D.",
+          "Ember, C. R.",
+          "Sheehan, O.",
+          "Muthukrishna, M.",
+          "Bollinger, R.",
+          "Henrich, J."
+        ],
+        "year": 2020,
+        "venue": "Journal of Cognitive Historiography",
+        "doi": "10.1558/jch.39061",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
+      },
+      {
+        "key": "sccsr-zenodo",
+        "title": "Standard Cross-Cultural Sample of Religion (SCCSR) data dump",
+        "authors": [
+          "Database of Religious History"
+        ],
+        "year": 2025,
+        "venue": "Zenodo",
+        "doi": "10.5281/zenodo.14967261",
+        "url": "https://zenodo.org/records/14967261",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
       }
     ]
   },
@@ -2514,7 +3490,8 @@
     "drivers": [
       "institutional_scale",
       "literacy",
-      "hydraulic_coordination"
+      "hydraulic_coordination",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -2546,6 +3523,99 @@
             "text": "The Shadow / Cost: Mass corvée labor and a household-registration system that bound peasants to land and tax."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the imperial era: Xian, ~80,000 inhabitants c. 361 CE. Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "DRH / Standard Cross-Cultural Sample of Religion codes the corresponding entry \"Han Confucianism\" at social-complexity level: empire (large multi-ethnic polity). This corroborates the point's hierarchical, law-and-order institutional structure.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Interpretive crosswalk from a DRH/SCCSR entry to this atlas civilization-at-epoch point — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "slingerland2020-drh",
+              "sccsr-zenodo"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "DRH-SCCSR"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "slingerland2020-drh",
+        "title": "The Database of Religious History: Coding the Sacred",
+        "authors": [
+          "Slingerland, E.",
+          "Atkinson, Q. D.",
+          "Ember, C. R.",
+          "Sheehan, O.",
+          "Muthukrishna, M.",
+          "Bollinger, R.",
+          "Henrich, J."
+        ],
+        "year": 2020,
+        "venue": "Journal of Cognitive Historiography",
+        "doi": "10.1558/jch.39061",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
+      },
+      {
+        "key": "sccsr-zenodo",
+        "title": "Standard Cross-Cultural Sample of Religion (SCCSR) data dump",
+        "authors": [
+          "Database of Religious History"
+        ],
+        "year": 2025,
+        "venue": "Zenodo",
+        "doi": "10.5281/zenodo.14967261",
+        "url": "https://zenodo.org/records/14967261",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
       }
     ]
   },
@@ -2647,7 +3717,8 @@
     "drivers": [
       "monumental_religion",
       "hydraulic_coordination",
-      "institutional_scale"
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "archaeological",
@@ -2681,6 +3752,51 @@
             "text": "The Shadow / Cost: Evidence of mass dedicatory sacrifice beneath the great pyramids; the city ended in deliberate, fiery destruction — possibly internal revolt."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the imperial era: Teotihuacan, ~125,000 inhabitants c. 500 CE. Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -2846,7 +3962,8 @@
     "drivers": [
       "industrialization",
       "institutional_scale",
-      "colonial_pressure"
+      "colonial_pressure",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -2878,6 +3995,51 @@
             "text": "The Shadow / Cost: Child labor, slum mortality, and famines (notably in India) administered under laissez-faire dogma."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the industrial era: London, ~2,362,236 inhabitants c. 1851 CE (largest of 42 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -2913,7 +4075,8 @@
     "drivers": [
       "industrialization",
       "military_revolution",
-      "institutional_scale"
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -2945,6 +4108,51 @@
             "text": "The Shadow / Cost: Heavy taxation of farmers to fund industry, and the forging of an aggressive imperial state."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the industrial era: Tokyo, ~788,000 inhabitants c. 1854 CE (largest of 4 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -2980,7 +4188,9 @@
     "drivers": [
       "industrialization",
       "open_frontier",
-      "technological_surplus"
+      "technological_surplus",
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -3012,6 +4222,51 @@
             "text": "The Shadow / Cost: Company towns, the Haymarket and Homestead violence, and an immense concentration of wealth."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the industrial era: New York, ~645,845 inhabitants c. 1850 CE (largest of 6 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -3047,7 +4302,9 @@
     "drivers": [
       "industrialization",
       "secularism_threat",
-      "colonial_pressure"
+      "colonial_pressure",
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "reactive",
     "evidence": "textual",
@@ -3079,6 +4336,51 @@
             "text": "The Shadow / Cost: Centralization crushed local and tribal autonomy and piled on crippling European debt."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the industrial era: Istanbul, ~785,000 inhabitants c. 1850 CE (largest of 8 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -3180,7 +4482,8 @@
     ],
     "drivers": [
       "industrialization",
-      "institutional_scale"
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "reactive",
     "evidence": "textual",
@@ -3213,6 +4516,51 @@
             "text": "The Shadow / Cost: Bitter repression, failed uprisings, and a schism that would shape the bloodiest politics of the next century."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the industrial era: Berlin, ~446,000 inhabitants c. 1850 CE (largest of 14 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -3281,6 +4629,51 @@
             "text": "The Shadow / Cost: An economy entwined with the trans-Saharan trade in enslaved people."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the medieval era: Tombouctou, ~10,000 inhabitants c. 1300 CE. Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -3348,6 +4741,51 @@
             "text": "The Shadow / Cost: Theological disputes became state violence; deviation from orthodoxy could be treated as treason."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the medieval era: Istanbul, ~400,000 inhabitants c. 622 CE (largest of 4 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -3416,6 +4854,51 @@
             "text": "The Shadow / Cost: Tolerance served control — local elites were co-opted, and revolt was still answered with exemplary force."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the axial era: Perspolis, ~50,000 inhabitants c. 430 BCE. Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -3483,6 +4966,51 @@
             "text": "The Shadow / Cost: An extractive land-revenue system and ruinously expensive wars of expansion."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the early-mod era: Delhi, ~1,250,000 inhabitants c. 1375 CE (largest of 6 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -3518,7 +5046,8 @@
     "drivers": [
       "colonial_pressure",
       "monumental_religion",
-      "institutional_scale"
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "reactive",
     "evidence": "textual",
@@ -3551,6 +5080,51 @@
             "text": "The Shadow / Cost: Nonviolent strategy demanded immense suffering from participants and could not prevent the bloodbath of Partition."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the modern era: Ahmedabad, ~758,000 inhabitants c. 1950 CE (largest of 12 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -3585,7 +5159,8 @@
     ],
     "drivers": [
       "industrialization",
-      "institutional_scale"
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "reactive",
     "evidence": "textual",
@@ -3617,6 +5192,51 @@
             "text": "The Shadow / Cost: Forced-collectivization famines, the Gulag, and the terror of the purges."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the modern era: Moscow, ~5,100,000 inhabitants c. 1950 CE (largest of 8 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -3897,6 +5517,11 @@
         "valueId": "egalitarianism",
         "intensity": 0.1,
         "role": "counter"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.7,
+        "role": "coupled"
       }
     ],
     "drivers": [
@@ -3934,6 +5559,56 @@
             "text": "The Shadow / Cost: Total investment in royal afterlife concentrated wealth and locked society into rigid castes."
           }
         ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "DRH / Standard Cross-Cultural Sample of Religion codes the corresponding entry \"Ancient Egypt\" at social-complexity level: empire (large multi-ethnic polity). This corroborates the point's hierarchical, law-and-order institutional structure.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Interpretive crosswalk from a DRH/SCCSR entry to this atlas civilization-at-epoch point — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "slingerland2020-drh",
+              "sccsr-zenodo"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "DRH-SCCSR"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "slingerland2020-drh",
+        "title": "The Database of Religious History: Coding the Sacred",
+        "authors": [
+          "Slingerland, E.",
+          "Atkinson, Q. D.",
+          "Ember, C. R.",
+          "Sheehan, O.",
+          "Muthukrishna, M.",
+          "Bollinger, R.",
+          "Henrich, J."
+        ],
+        "year": 2020,
+        "venue": "Journal of Cognitive Historiography",
+        "doi": "10.1558/jch.39061",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
+      },
+      {
+        "key": "sccsr-zenodo",
+        "title": "Standard Cross-Cultural Sample of Religion (SCCSR) data dump",
+        "authors": [
+          "Database of Religious History"
+        ],
+        "year": 2025,
+        "venue": "Zenodo",
+        "doi": "10.5281/zenodo.14967261",
+        "url": "https://zenodo.org/records/14967261",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
       }
     ]
   },
@@ -3959,12 +5634,18 @@
         "valueId": "individualism",
         "intensity": 0.15,
         "role": "counter"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.7,
+        "role": "coupled"
       }
     ],
     "drivers": [
       "metallurgy",
       "monumental_religion",
-      "kinship_intensity"
+      "kinship_intensity",
+      "institutional_scale"
     ],
     "status": "residual",
     "evidence": "archaeological",
@@ -3996,6 +5677,56 @@
             "text": "The Shadow / Cost: Ritual demanded human sacrifice and vast bronze hoards drawn from the labor of many."
           }
         ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "DRH / Standard Cross-Cultural Sample of Religion codes the corresponding entry \"Chinese State Religion (Shang and Western Zhou)\" at social-complexity level: empire (large multi-ethnic polity). This corroborates the point's hierarchical, law-and-order institutional structure.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Interpretive crosswalk from a DRH/SCCSR entry to this atlas civilization-at-epoch point — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "slingerland2020-drh",
+              "sccsr-zenodo"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "DRH-SCCSR"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "slingerland2020-drh",
+        "title": "The Database of Religious History: Coding the Sacred",
+        "authors": [
+          "Slingerland, E.",
+          "Atkinson, Q. D.",
+          "Ember, C. R.",
+          "Sheehan, O.",
+          "Muthukrishna, M.",
+          "Bollinger, R.",
+          "Henrich, J."
+        ],
+        "year": 2020,
+        "venue": "Journal of Cognitive Historiography",
+        "doi": "10.1558/jch.39061",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
+      },
+      {
+        "key": "sccsr-zenodo",
+        "title": "Standard Cross-Cultural Sample of Religion (SCCSR) data dump",
+        "authors": [
+          "Database of Religious History"
+        ],
+        "year": 2025,
+        "venue": "Zenodo",
+        "doi": "10.5281/zenodo.14967261",
+        "url": "https://zenodo.org/records/14967261",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "DRH-SCCSR"
       }
     ]
   },
@@ -4149,7 +5880,8 @@
     "drivers": [
       "institutional_scale",
       "weak_institutions",
-      "literacy"
+      "literacy",
+      "trade_networks"
     ],
     "status": "residual",
     "evidence": "textual",
@@ -4181,6 +5913,51 @@
             "text": "The Shadow / Cost: Sealing the country preserved order but left Japan technologically exposed by the 1850s."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the early-mod era: Tokyo, ~689,000 inhabitants c. 1701 CE (largest of 4 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -4211,7 +5988,8 @@
     "drivers": [
       "maritime_expansion",
       "trade_networks",
-      "colonial_pressure"
+      "colonial_pressure",
+      "institutional_scale"
     ],
     "status": "adaptive",
     "evidence": "textual",
@@ -4245,6 +6023,51 @@
             "text": "The Shadow / Cost: Prosperity rested on the VOC’s violence in Asia and complicity in the slave trade."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the early-mod era: Amsterdam, ~212,000 inhabitants c. 1685 CE (largest of 27 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -4275,7 +6098,9 @@
     "drivers": [
       "secularism_threat",
       "weak_institutions",
-      "technological_surplus"
+      "technological_surplus",
+      "institutional_scale",
+      "trade_networks"
     ],
     "status": "reactive",
     "evidence": "textual",
@@ -4307,6 +6132,51 @@
             "text": "The Shadow / Cost: Cultural openness without stable institutions proved fatally fragile."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the modern era: Berlin, ~4,013,000 inhabitants c. 1925 CE (largest of 43 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   },
@@ -4337,7 +6207,8 @@
     "drivers": [
       "trade_networks",
       "literacy",
-      "technological_surplus"
+      "technological_surplus",
+      "institutional_scale"
     ],
     "status": "reactive",
     "evidence": "textual",
@@ -4369,6 +6240,51 @@
             "text": "The Shadow / Cost: Dependence on outside patrons and the coming Depression cut the movement short."
           }
         ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Reba, Reitsma & Seto (2016) map an urban settlement near here in the modern era: Philadelphia, ~17,600,000 inhabitants c. 1914 CE (largest of 32 urban centres mapped nearby in this epoch). Indicates standing urban scale and trade-network integration.",
+            "confidence": 0.8,
+            "citationKeys": [
+              "reba2016-urbanization",
+              "reba2018-sedac"
+            ],
+            "license": "CC-BY-4.0",
+            "sourceDataset": "Reba-2016-urbanization"
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "reba2016-urbanization",
+        "title": "Spatializing 6,000 years of global urbanization from 3700 BC to AD 2000",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2016,
+        "venue": "Scientific Data",
+        "doi": "10.1038/sdata.2016.34",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
+      },
+      {
+        "key": "reba2018-sedac",
+        "title": "Historical Urban Population: 3700 BC - AD 2000 (Version 1.00)",
+        "authors": [
+          "Reba, M.",
+          "Reitsma, F.",
+          "Seto, K. C."
+        ],
+        "year": 2018,
+        "venue": "NASA SEDAC / Harvard Dataverse",
+        "doi": "10.7910/DVN/LMCQGX",
+        "license": "CC-BY-4.0",
+        "sourceDataset": "Reba-2016-urbanization"
       }
     ]
   }

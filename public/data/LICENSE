@@ -48,4 +48,22 @@ quarantined into separately-licensed sidecar files (e.g.
 `public/data/sidecars/<source>.json`), each carrying its own license header,
 and are never folded into this CC-BY-4.0 core.
 
+Incorporated permissive (CC-BY-4.0) sources
+--------------------------------------------
+
+This dataset incorporates facts and coded variables from external datasets that
+are themselves licensed CC-BY-4.0, with attribution recorded per reading/citation
+(`sourceDataset` + `license`) and listed in `SOURCES.md`:
+
+  - Database of Religious History — SCCSR (Slingerland et al.; Zenodo
+    doi:10.5281/zenodo.14967261)
+  - Reba, Reitsma & Seto, Historical Urban Population 3700 BC–AD 2000
+    (doi:10.1038/sdata.2016.34; doi:10.7910/DVN/LMCQGX)
+  - Maddison Project Database 2023 (Bolt & van Zanden; doi:10.1111/joes.12618)
+  - D-PLACE "Pulotu" (Watts et al.; doi:10.1371/journal.pone.0136783)
+
+Because all four are CC-BY-4.0 (the same license as this dataset), incorporating
+them keeps the atlas core fully permissive and forkable. See `SOURCES.md` for
+full attribution and `scripts/ingest/MAPPING.md` for the mapping rules.
+
 See `LICENSING.md` at the repository root for the full policy.
