@@ -24299,5 +24299,114 @@
         "license": "Copyright (facts cited; cite-don't-copy)"
       }
     ]
+  },
+  {
+    "id": "yamnaya-bronze",
+    "region": "Pontic-Caspian Steppe",
+    "thread": "steppe",
+    "lat": 48,
+    "lng": 42,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "honor",
+        "intensity": 0.78,
+        "role": "primary"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.65,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hospitality",
+        "intensity": 0.62,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.6,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "nomadic_mobility",
+      "open_frontier",
+      "metallurgy",
+      "kinship_intensity"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.45,
+    "contested": true,
+    "note": "The Yamnaya horizon (c. 3300-2600 BCE) spread wagon-and-horse mobile pastoralism across the Pontic-Caspian steppe, marking elite men with individual kurgan (barrow) burials and weapons. It is widely read as the deep root of later steppe value-complexes — warrior honor, raiding, and guest-host/patron-client bonds — and is linked to the dispersal of early Indo-European languages.",
+    "altReading": "Much of the 'warrior honor' reading is reconstructed from mortuary display plus comparative Indo-European philology, not from direct testimony; the social meaning of kurgans is inferred, not observed.",
+    "cost": "A mobile, weapon-bearing elite culture in which raiding and feud could be routine instruments of status.",
+    "schemaVersion": 2,
+    "sources": [
+      "Anthony, D. W. (2007). The Horse, the Wheel, and Language. Princeton University Press."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Wagon transport and the horse let Yamnaya households exploit the open steppe, dispersing herding families while concentrating prestige in individual male kurgan burials with weapons. The reading is a warrior-honor ethos coupled to mobility, raiding, and guest-host reciprocity.",
+            "confidence": 0.45,
+            "contested": true,
+            "contestNote": "Values are inferred from mortuary archaeology and comparative Indo-European reconstruction rather than direct evidence; intensities are interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "anthony2007horse"
+            ]
+          },
+          {
+            "text": "Alt reading: the honor/raiding complex leans heavily on philological reconstruction and the display logic of kurgans, so it may project later steppe stereotypes back onto the Bronze Age."
+          },
+          {
+            "text": "The Shadow / Cost: a weapon-bearing mobile elite for whom raiding and feud could be normal means of acquiring status."
+          }
+        ]
+      },
+      {
+        "type": "myth",
+        "readings": [
+          {
+            "text": "Yamnaya is a leading candidate for the speakers of early Indo-European, and comparative reconstruction of those traditions (patron-client oaths, guest-host obligation, heroic praise) is often used to flesh out steppe values — a powerful but indirect line of inference.",
+            "confidence": 0.4,
+            "contested": true,
+            "contestNote": "Mapping reconstructed Indo-European institutions onto the Yamnaya archaeological horizon is contested — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "anthony2007horse"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "daily-life",
+        "readings": [
+          {
+            "text": "Subsistence centered on herding cattle and sheep across grassland, with wheeled wagons enabling residence away from river valleys; diet, mobility, and dispersed kin households defined everyday life.",
+            "confidence": 0.55,
+            "contested": false,
+            "citationKeys": [
+              "anthony2007horse"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "anthony2007horse",
+        "title": "The Horse, the Wheel, and Language: How Bronze-Age Riders from the Eurasian Steppes Shaped the Modern World",
+        "authors": [
+          "David W. Anthony"
+        ],
+        "year": 2007,
+        "venue": "Princeton University Press",
+        "isbn": "9780691058870",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
   }
 ]
