@@ -20,7 +20,7 @@
       "thread": {
         "type": "string",
         "description": "Civilization thread for filtering",
-        "enum": ["arabia", "china", "india", "europe", "steppe", "africa", "americas", "none"]
+        "enum": ["arabia", "china", "india", "europe", "steppe", "africa", "americas", "oceania", "none"]
       },
       "lat": {
         "type": "number",
