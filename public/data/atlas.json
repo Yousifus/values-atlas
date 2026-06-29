@@ -24525,5 +24525,109 @@
         "license": "Copyright (facts cited; cite-don't-copy)"
       }
     ]
+  },
+  {
+    "id": "hawaii-early-mod",
+    "region": "Hawaiian Islands",
+    "thread": "oceania",
+    "lat": 19.6,
+    "lng": -155.5,
+    "epoch": "early-mod",
+    "values": [
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.72,
+        "role": "coupled"
+      },
+      {
+        "valueId": "honor",
+        "intensity": 0.6,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "monumental_religion",
+      "hydraulic_coordination",
+      "institutional_scale",
+      "resource_competition"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.55,
+    "contested": true,
+    "note": "Pre-contact Hawai'i (c. 1600-1795 CE) is a textbook case of primary state formation in isolation: a steep ali'i/maka'ainana rank order enforced by the kapu system, divine paramount chiefs, and a heiau temple cult, supported by intensified irrigated and dryland agriculture. Kirch argues these 'archaic states' crossed the threshold from chiefship to kingship before sustained European contact.",
+    "altReading": "Whether late pre-contact Hawai'i had truly become a 'state' versus an unusually complex chiefdom is debated; the label depends on contested definitions of statehood.",
+    "cost": "A sacred ruling order in which kapu violations could be punished by death and surplus was extracted from commoner cultivators.",
+    "schemaVersion": 2,
+    "sources": [
+      "Kirch, P. V. (2010). How Chiefs Became Kings. University of California Press."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Hawaiian society coupled a steep hereditary hierarchy (ali'i over maka'ainana, policed by kapu) to a sacralized chiefship and temple cult, financed by agricultural intensification. Competition for mana among chiefs drove an honor dimension alongside the dominant hierarchy.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "Value intensities and the 'archaic state' framing are interpretive; the chiefdom-versus-state status is contested — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "kirch2010chiefs"
+            ]
+          },
+          {
+            "text": "Alt reading: late pre-contact Hawai'i may be better described as an unusually complex chiefdom than a state, depending on how statehood is defined."
+          },
+          {
+            "text": "The Shadow / Cost: a sacred order in which kapu breaches could be capital and chiefly elites extracted surplus from commoner farmers."
+          }
+        ]
+      },
+      {
+        "type": "religion",
+        "readings": [
+          {
+            "text": "Monumental heiau (temple platforms), a priesthood, and the worship of akua underwrote chiefly authority; ritual cycles tied the legitimacy of paramount chiefs to divine sanction.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "kirch2010chiefs"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "Islands were divided into radial land units (ahupua'a) running mountain-to-sea, administered by chiefly appointees (konohiki) who managed labor and tribute — an administrative apparatus beyond simple kin authority.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "Reading the ahupua'a/konohiki system as evidence of state-level administration is interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "kirch2010chiefs"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "kirch2010chiefs",
+        "title": "How Chiefs Became Kings: Divine Kingship and the Rise of Archaic States in Ancient Hawai'i",
+        "authors": [
+          "Patrick V. Kirch"
+        ],
+        "year": 2010,
+        "venue": "University of California Press",
+        "isbn": "9780520267251",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
   }
 ]
