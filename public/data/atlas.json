@@ -24746,5 +24746,109 @@
         "license": "Copyright (facts cited; cite-don't-copy)"
       }
     ]
+  },
+  {
+    "id": "kerma-bronze",
+    "region": "Kingdom of Kerma",
+    "thread": "africa",
+    "lat": 19.6,
+    "lng": 30.41,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.8,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.65,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.6,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "trade_networks",
+      "monumental_religion",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.5,
+    "contested": true,
+    "note": "Kerma (c. 2500-1500 BCE) was sub-Saharan Africa's earliest urban state and a serious rival to Middle Kingdom Egypt, controlling the Nile trade in gold, ivory, and ebony. Its monumental mudbrick deffufa and enormous royal tumuli — some accompanied by large-scale retainer sacrifice — signal a steeply hierarchical sacral kingship before its conquest by New Kingdom Egypt.",
+    "altReading": "Because much of what survives is mortuary and monumental, the 'steep hierarchy' reading may over-weight elite display relative to the texture of ordinary Kerman life, which is far less documented.",
+    "cost": "Royal funerals at Kerma involved the sacrificial killing of large numbers of retainers buried with the king.",
+    "successor": "meroe-axial",
+    "schemaVersion": 2,
+    "sources": [
+      "Edwards, D. N. (2004). The Nubian Past. Routledge."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Kerma concentrated power in a sacral monarchy visible through monumental architecture and vast royal tumuli, financed by control of the Nubian trade corridor and sustained by militarized rivalry with Egypt. The profile reads as deep-time hierarchy coupled to temple piety and martial competition.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Value intensities are inferred largely from mortuary and monumental evidence; everyday social structure is poorly documented — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "edwards2004nubian"
+            ]
+          },
+          {
+            "text": "Alt reading: the surviving record is dominated by elite tombs and monuments, so 'steep hierarchy' may overstate elite display relative to less-visible ordinary life."
+          },
+          {
+            "text": "The Shadow / Cost: royal burials at Kerma included the sacrificial killing of many retainers interred with the ruler."
+          }
+        ]
+      },
+      {
+        "type": "architecture",
+        "readings": [
+          {
+            "text": "The two massive mudbrick structures known as the deffufa dominated the city as religious monuments, while the royal cemetery held some of the largest burial tumuli known from the ancient Nile beyond Egypt itself.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "edwards2004nubian"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "religion",
+        "readings": [
+          {
+            "text": "Mortuary practice — monumental tumuli, sacrificed retainers, and rich grave goods — points to a religious ideology that fused kingship, ancestors, and an afterlife requiring an entourage for the dead ruler.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Inferring religious ideology from burial practice is interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "edwards2004nubian"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "edwards2004nubian",
+        "title": "The Nubian Past: An Archaeology of the Sudan",
+        "authors": [
+          "David N. Edwards"
+        ],
+        "year": 2004,
+        "venue": "Routledge",
+        "isbn": "9780415369879",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
   }
 ]
