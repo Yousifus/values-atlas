@@ -24091,5 +24091,110 @@
         "license": "Copyright (facts cited; cite-don't-copy)"
       }
     ]
+  },
+  {
+    "id": "tiwanaku-medieval",
+    "region": "Tiwanaku (Lake Titicaca)",
+    "thread": "americas",
+    "lat": -16.55,
+    "lng": -68.67,
+    "epoch": "medieval",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.78,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.75,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.7,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "hydraulic_coordination",
+      "monumental_religion",
+      "institutional_scale",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.55,
+    "contested": true,
+    "note": "Tiwanaku was a high-altitude Andean center (c. 500-1000 CE) whose suka kollu raised-field agriculture fed a population around Lake Titicaca and whose monumental core (Akapana, Kalasasaya, the Gateway of the Sun) anchored a far-flung religious and colonial sphere. It looks less militaristic than its Wari contemporary, integrating its hinterland through ceremony, pilgrimage, and corporate labor.",
+    "altReading": "The 'peaceful ceremonial state' image may reflect preservation bias; the reach of Tiwanaku influence could also rest on under-documented coercion, elite control of surplus, and asymmetric colonial relations.",
+    "cost": "Concentration of surplus and labor in an elite ceremonial core dependent on fragile high-altitude raised-field systems.",
+    "successor": "inca-early-mod",
+    "schemaVersion": 2,
+    "sources": [
+      "Kolata, A. L. (1993). The Tiwanaku: Portrait of an Andean Civilization. Blackwell."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Tiwanaku coupled corporate raised-field labor on the altiplano to a monumental religious core, projecting influence across the south-central Andes through ceremony and colonization more than overt conquest. The reading is one of collectivism bound to ritual hierarchy.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "Value intensities and the relatively low militarism are interpretive; Tiwanaku's political integration is actively debated — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "kolata1993tiwanaku"
+            ]
+          },
+          {
+            "text": "Alt reading: the ceremonial-state image may understate coercion, elite surplus control, and unequal colonial relations that are simply harder to read archaeologically."
+          },
+          {
+            "text": "The Shadow / Cost: surplus and labor concentrated in an elite core reliant on fragile high-altitude raised-field systems."
+          }
+        ]
+      },
+      {
+        "type": "architecture",
+        "readings": [
+          {
+            "text": "The monumental core — the Akapana platform, the Kalasasaya enclosure, and the carved Gateway of the Sun — combined precision stonework with a planned ceremonial layout that materialized the polity's cosmology.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "kolata1993tiwanaku"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "religion",
+        "readings": [
+          {
+            "text": "Tiwanaku iconography (the 'Staff God' and related imagery) circulated widely as part of a shared Andean religious horizon, suggesting that pilgrimage and cult helped integrate a dispersed, multi-ethnic sphere.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Treating shared iconography as evidence of a pilgrimage-integrated religious sphere is interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "kolata1993tiwanaku"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "kolata1993tiwanaku",
+        "title": "The Tiwanaku: Portrait of an Andean Civilization",
+        "authors": [
+          "Alan L. Kolata"
+        ],
+        "year": 1993,
+        "venue": "Blackwell",
+        "isbn": "9781557861832",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
   }
 ]
