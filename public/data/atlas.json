@@ -24408,5 +24408,122 @@
         "license": "Copyright (facts cited; cite-don't-copy)"
       }
     ]
+  },
+  {
+    "id": "lapita-iron",
+    "region": "Remote Oceania (Bismarcks to West Polynesia)",
+    "thread": "oceania",
+    "lat": -17.7,
+    "lng": 168.3,
+    "epoch": "iron",
+    "values": [
+      {
+        "valueId": "curiosity",
+        "intensity": 0.7,
+        "role": "primary"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.65,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hospitality",
+        "intensity": 0.6,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "maritime_expansion",
+      "open_frontier",
+      "kinship_intensity",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.5,
+    "contested": true,
+    "note": "The Lapita cultural complex (c. 1600-500 BCE) was the founding horizon of human settlement in Remote Oceania, carrying voyaging communities from the Bismarck Archipelago out across previously uninhabited Pacific islands to western Polynesia. Its dentate-stamped pottery and long-distance movement of obsidian and other goods imply deliberate exploration, founder-colony cooperation, and sustained exchange ties.",
+    "altReading": "Reading 'curiosity' into Lapita expansion risks romanticizing it; the same evidence fits population pressure, social fissioning, or fortuitous drift voyaging rather than a value of exploration per se.",
+    "cost": "The frontier of colonization brought waves of island faunal extinctions in the newly reached archipelagos.",
+    "schemaVersion": 2,
+    "sources": [
+      "Kirch, P. V. (1997). The Lapita Peoples: Ancestors of the Oceanic World. Blackwell.",
+      "Kirch, P. V. (2017). On the Road of the Winds (rev. ed.). University of California Press."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Lapita communities crossed open water to settle uninhabited islands, sustaining founder colonies and a shared material culture across vast distances. The configuration reads as exploratory curiosity bound to kin-based cooperation and reciprocal exchange.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Coding 'curiosity' as a primary value from a colonization horizon is interpretive; demographic and social-fissioning explanations are equally available — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "kirch2017winds",
+              "kirch1997lapita"
+            ]
+          },
+          {
+            "text": "Alt reading: the expansion is also consistent with population pressure, lineage fissioning, or opportunistic voyaging rather than a cultural value of exploration."
+          },
+          {
+            "text": "The Shadow / Cost: first human arrival drove waves of island bird and other faunal extinctions across newly colonized archipelagos."
+          }
+        ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Obsidian sourced to the Bismarck Archipelago and other exotics travel hundreds to thousands of kilometers in Lapita contexts, evidencing long-distance exchange networks that linked dispersed island communities.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "kirch1997lapita"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "art",
+        "readings": [
+          {
+            "text": "The diagnostic Lapita ceramics carry intricate dentate-stamped designs whose shared motifs across the region signal a common symbolic and social identity among the colonizing communities.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "kirch1997lapita",
+              "kirch2017winds"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "kirch1997lapita",
+        "title": "The Lapita Peoples: Ancestors of the Oceanic World",
+        "authors": [
+          "Patrick V. Kirch"
+        ],
+        "year": 1997,
+        "venue": "Blackwell",
+        "isbn": "9781577180364",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      },
+      {
+        "key": "kirch2017winds",
+        "title": "On the Road of the Winds: An Archaeological History of the Pacific Islands before European Contact (rev. ed.)",
+        "authors": [
+          "Patrick V. Kirch"
+        ],
+        "year": 2017,
+        "venue": "University of California Press",
+        "isbn": "9780520292819",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
   }
 ]
