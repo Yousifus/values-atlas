@@ -23861,5 +23861,1100 @@
         "sourceDataset": "D-PLACE-Pulotu"
       }
     ]
+  },
+  {
+    "id": "inca-early-mod",
+    "region": "Inca Empire (Cusco)",
+    "thread": "americas",
+    "lat": -13.52,
+    "lng": -71.98,
+    "epoch": "early-mod",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.82,
+        "role": "coupled"
+      },
+      {
+        "valueId": "order",
+        "intensity": 0.8,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hospitality",
+        "intensity": 0.6,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "institutional_scale",
+      "hydraulic_coordination",
+      "trade_networks",
+      "military_revolution"
+    ],
+    "status": "adaptive",
+    "evidence": "textual",
+    "confidence": 0.6,
+    "contested": true,
+    "note": "Tawantinsuyu fused ayllu reciprocity (ayni) with state command: the mit'a labor tax built roads, terraces, and qollqa storehouses, while a decimal administration recorded by quipu organized people and goods across the largest empire of the pre-Columbian Americas. State feasting redistributed maize beer as a political bond, making generosity an instrument of rule under a divine Sapa Inca.",
+    "altReading": "What reads as benevolent redistribution was also coercive extraction: resettled mitmaqkuna populations, conscripted labor, and a sacralized elite whose 'reciprocity' the provinces could not refuse.",
+    "cost": "Forced resettlement, military conquest of resistant polities, and ritual killing (capacocha) of children at the empire's margins.",
+    "schemaVersion": 2,
+    "sources": [
+      "D'Altroy, T. N. (2014). The Incas (2nd ed.). Wiley-Blackwell."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Tawantinsuyu fused ayllu reciprocity (ayni) with state command: the mit'a labor tax built roads, terraces, and storehouses, while decimal administration recorded by quipu coordinated people and goods at imperial scale. State-sponsored feasting turned generosity into a tool of rule under the divine Sapa Inca.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Intensities and the collectivism/hierarchy weighting are an interpretive reading of Andean reciprocity and statecraft — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "daltroy2014incas"
+            ]
+          },
+          {
+            "text": "Alt reading: what looks like benevolent redistribution was also coercion — resettled mitmaqkuna, conscripted labor, and an elite whose reciprocity the provinces could not decline."
+          },
+          {
+            "text": "The Shadow / Cost: forced resettlement, conquest, and the ritual killing (capacocha) of children at the empire's frontiers."
+          }
+        ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "Administration was organized decimally (units nominally of 10 to 10,000 households) and recorded on knotted-cord quipu, enabling census, tribute, and labor allocation without alphabetic writing — an unusually bureaucratic state for a non-literate society.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "The crosswalk from decimal/quipu administration to an 'order' value intensity is interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "daltroy2014incas"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "The economy ran on redistribution rather than markets: the state claimed labor (not goods) through mit'a, stockpiled the surplus in qollqa storehouses along the road network, and reallocated it for provisioning, ritual, and emergencies.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Characterizing the Inca economy as non-market redistribution is a defensible but interpretive synthesis — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "daltroy2014incas"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "daltroy2014incas",
+        "title": "The Incas (2nd ed.)",
+        "authors": [
+          "Terence N. D'Altroy"
+        ],
+        "year": 2014,
+        "venue": "Wiley-Blackwell",
+        "isbn": "9781444331158",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
+  },
+  {
+    "id": "caral-bronze",
+    "region": "Norte Chico (Supe Valley)",
+    "thread": "americas",
+    "lat": -10.89,
+    "lng": -77.52,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.8,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.12,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "hydraulic_coordination",
+      "monumental_religion",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.5,
+    "contested": true,
+    "note": "The Norte Chico / Caral complex is the earliest urban, monumental society in the Americas (c. 3000-1800 BCE) — preceramic platform mounds and sunken circular plazas built by corporate labor, without fortifications or clear evidence of warfare. It pairs irrigation farming of the Supe Valley with cotton-for-seafood exchange to the coast, suggesting integration through shared ceremony rather than conquest.",
+    "altReading": "The 'peaceful' reading is partly an argument from absence: monumental labor on this scale still implies the power to mobilize people, and emergent inequality may simply be archaeologically quiet.",
+    "cost": "Sustained corporate labor obligations channeled into elite-directed ceremonial construction.",
+    "schemaVersion": 2,
+    "sources": [
+      "Shady Solis, R., Haas, J., & Creamer, W. (2001). Science 292:723-726.",
+      "Haas, J., Creamer, W., & Ruiz, A. (2004). Nature 432:1020-1023."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Caral and its neighbors show monumentality preceding the state: corporate labor raised platform mounds and sunken plazas in a preceramic society apparently organized around shared ceremony and irrigation farming rather than war. The configuration reads as deep-time collectivism coupled to ritual authority.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Reconstructing values from preceramic architecture alone is highly inferential; the low-aggression coding rests on the absence of fortifications — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "shady2001caral",
+              "haas2004nortechico"
+            ]
+          },
+          {
+            "text": "Alt reading: large-scale construction still presupposes the authority to direct labor, so 'egalitarian monumentality' may understate emergent hierarchy that left little trace."
+          },
+          {
+            "text": "The Shadow / Cost: recurrent corporate labor obligations funneled into elite-directed ceremonial building."
+          }
+        ]
+      },
+      {
+        "type": "architecture",
+        "readings": [
+          {
+            "text": "The signature forms are stepped platform mounds paired with sunken circular plazas, dated by radiocarbon at Caral to the third millennium BCE — among the oldest monumental architecture anywhere in the Americas.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "shady2001caral"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Inland cotton (for nets and textiles) and coastal anchovy/shellfish appear to have moved in a complementary maritime-agricultural exchange, knitting Supe Valley centers to the Pacific shore.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "The cotton-for-seafood exchange model is a widely cited but interpretive reconstruction — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "haas2004nortechico"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "shady2001caral",
+        "title": "Dating Caral, a Preceramic Site in the Supe Valley on the Central Coast of Peru",
+        "authors": [
+          "Ruth Shady Solis",
+          "Jonathan Haas",
+          "Winifred Creamer"
+        ],
+        "year": 2001,
+        "venue": "Science 292:723-726",
+        "doi": "10.1126/science.1059519",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      },
+      {
+        "key": "haas2004nortechico",
+        "title": "Dating the Late Archaic occupation of the Norte Chico region in Peru",
+        "authors": [
+          "Jonathan Haas",
+          "Winifred Creamer",
+          "Alvaro Ruiz"
+        ],
+        "year": 2004,
+        "venue": "Nature 432:1020-1023",
+        "doi": "10.1038/nature03146",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
+  },
+  {
+    "id": "tiwanaku-medieval",
+    "region": "Tiwanaku (Lake Titicaca)",
+    "thread": "americas",
+    "lat": -16.55,
+    "lng": -68.67,
+    "epoch": "medieval",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.78,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.75,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.7,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "hydraulic_coordination",
+      "monumental_religion",
+      "institutional_scale",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.55,
+    "contested": true,
+    "note": "Tiwanaku was a high-altitude Andean center (c. 500-1000 CE) whose suka kollu raised-field agriculture fed a population around Lake Titicaca and whose monumental core (Akapana, Kalasasaya, the Gateway of the Sun) anchored a far-flung religious and colonial sphere. It looks less militaristic than its Wari contemporary, integrating its hinterland through ceremony, pilgrimage, and corporate labor.",
+    "altReading": "The 'peaceful ceremonial state' image may reflect preservation bias; the reach of Tiwanaku influence could also rest on under-documented coercion, elite control of surplus, and asymmetric colonial relations.",
+    "cost": "Concentration of surplus and labor in an elite ceremonial core dependent on fragile high-altitude raised-field systems.",
+    "successor": "inca-early-mod",
+    "schemaVersion": 2,
+    "sources": [
+      "Kolata, A. L. (1993). The Tiwanaku: Portrait of an Andean Civilization. Blackwell."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Tiwanaku coupled corporate raised-field labor on the altiplano to a monumental religious core, projecting influence across the south-central Andes through ceremony and colonization more than overt conquest. The reading is one of collectivism bound to ritual hierarchy.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "Value intensities and the relatively low militarism are interpretive; Tiwanaku's political integration is actively debated — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "kolata1993tiwanaku"
+            ]
+          },
+          {
+            "text": "Alt reading: the ceremonial-state image may understate coercion, elite surplus control, and unequal colonial relations that are simply harder to read archaeologically."
+          },
+          {
+            "text": "The Shadow / Cost: surplus and labor concentrated in an elite core reliant on fragile high-altitude raised-field systems."
+          }
+        ]
+      },
+      {
+        "type": "architecture",
+        "readings": [
+          {
+            "text": "The monumental core — the Akapana platform, the Kalasasaya enclosure, and the carved Gateway of the Sun — combined precision stonework with a planned ceremonial layout that materialized the polity's cosmology.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "kolata1993tiwanaku"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "religion",
+        "readings": [
+          {
+            "text": "Tiwanaku iconography (the 'Staff God' and related imagery) circulated widely as part of a shared Andean religious horizon, suggesting that pilgrimage and cult helped integrate a dispersed, multi-ethnic sphere.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Treating shared iconography as evidence of a pilgrimage-integrated religious sphere is interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "kolata1993tiwanaku"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "kolata1993tiwanaku",
+        "title": "The Tiwanaku: Portrait of an Andean Civilization",
+        "authors": [
+          "Alan L. Kolata"
+        ],
+        "year": 1993,
+        "venue": "Blackwell",
+        "isbn": "9781557861832",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
+  },
+  {
+    "id": "cahokia-medieval",
+    "region": "Cahokia (American Bottom)",
+    "thread": "americas",
+    "lat": 38.66,
+    "lng": -90.06,
+    "epoch": "medieval",
+    "values": [
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.72,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.68,
+        "role": "coupled"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.55,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "monumental_religion",
+      "institutional_scale",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.5,
+    "contested": true,
+    "note": "Cahokia (c. 1050-1350 CE) was the largest pre-Columbian settlement north of Mexico — a planned city of earthen mounds and plazas around Monks Mound, integrated by mass feasting and a shared cosmology. Elite power is visible in the staged, partly sacrificial burials of Mound 72, even as the degree of centralization remains debated.",
+    "altReading": "Whether Cahokia was a true state, a powerful chiefdom, or a more heterarchical ritual confederation is genuinely contested; 'hierarchy as primary' takes one side of an open argument.",
+    "cost": "Evidence from Mound 72 for retainer/sacrificial killing tied to elite mortuary ritual.",
+    "schemaVersion": 2,
+    "sources": [
+      "Pauketat, T. R. (2009). Cahokia: Ancient America's Great City on the Mississippi. Viking."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Cahokia fused emergent chiefly hierarchy with monumental religion and large-scale feasting: a planned mound-and-plaza city that drew people and goods across the mid-continent and bound them through ritual integration. Mound 72 shows that elite authority could be lethal.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Coding hierarchy as primary is interpretive — the chiefdom-versus-state question is unresolved — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "pauketat2009cahokia"
+            ]
+          },
+          {
+            "text": "Alt reading: Cahokia may have been less a centralized state than a powerful chiefdom or ritual confederation, in which 'hierarchy' coexisted with considerable local autonomy."
+          },
+          {
+            "text": "The Shadow / Cost: the staged burials of Mound 72 include apparent retainer/sacrificial killing linked to elite mortuary display."
+          }
+        ]
+      },
+      {
+        "type": "architecture",
+        "readings": [
+          {
+            "text": "The city was laid out around vast earthen platform mounds — Monks Mound is the largest pre-Columbian earthwork north of Mexico — fronting planned open plazas used for gatherings and games.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "pauketat2009cahokia"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "religion",
+        "readings": [
+          {
+            "text": "Mound, plaza, and post alignments appear to encode a layered cosmology, and mass feasting episodes (visible in dense refuse pits) suggest religion and commensality were central instruments of integration.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Reconstructing Mississippian cosmology and the political role of feasting is interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "pauketat2009cahokia"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "pauketat2009cahokia",
+        "title": "Cahokia: Ancient America's Great City on the Mississippi",
+        "authors": [
+          "Timothy R. Pauketat"
+        ],
+        "year": 2009,
+        "venue": "Viking",
+        "isbn": "9780670020904",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
+  },
+  {
+    "id": "yamnaya-bronze",
+    "region": "Pontic-Caspian Steppe",
+    "thread": "steppe",
+    "lat": 48,
+    "lng": 42,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "honor",
+        "intensity": 0.78,
+        "role": "primary"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.65,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hospitality",
+        "intensity": 0.62,
+        "role": "coupled"
+      },
+      {
+        "valueId": "individualism",
+        "intensity": 0.6,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "nomadic_mobility",
+      "open_frontier",
+      "metallurgy",
+      "kinship_intensity"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.45,
+    "contested": true,
+    "note": "The Yamnaya horizon (c. 3300-2600 BCE) spread wagon-and-horse mobile pastoralism across the Pontic-Caspian steppe, marking elite men with individual kurgan (barrow) burials and weapons. It is widely read as the deep root of later steppe value-complexes — warrior honor, raiding, and guest-host/patron-client bonds — and is linked to the dispersal of early Indo-European languages.",
+    "altReading": "Much of the 'warrior honor' reading is reconstructed from mortuary display plus comparative Indo-European philology, not from direct testimony; the social meaning of kurgans is inferred, not observed.",
+    "cost": "A mobile, weapon-bearing elite culture in which raiding and feud could be routine instruments of status.",
+    "schemaVersion": 2,
+    "sources": [
+      "Anthony, D. W. (2007). The Horse, the Wheel, and Language. Princeton University Press."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Wagon transport and the horse let Yamnaya households exploit the open steppe, dispersing herding families while concentrating prestige in individual male kurgan burials with weapons. The reading is a warrior-honor ethos coupled to mobility, raiding, and guest-host reciprocity.",
+            "confidence": 0.45,
+            "contested": true,
+            "contestNote": "Values are inferred from mortuary archaeology and comparative Indo-European reconstruction rather than direct evidence; intensities are interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "anthony2007horse"
+            ]
+          },
+          {
+            "text": "Alt reading: the honor/raiding complex leans heavily on philological reconstruction and the display logic of kurgans, so it may project later steppe stereotypes back onto the Bronze Age."
+          },
+          {
+            "text": "The Shadow / Cost: a weapon-bearing mobile elite for whom raiding and feud could be normal means of acquiring status."
+          }
+        ]
+      },
+      {
+        "type": "myth",
+        "readings": [
+          {
+            "text": "Yamnaya is a leading candidate for the speakers of early Indo-European, and comparative reconstruction of those traditions (patron-client oaths, guest-host obligation, heroic praise) is often used to flesh out steppe values — a powerful but indirect line of inference.",
+            "confidence": 0.4,
+            "contested": true,
+            "contestNote": "Mapping reconstructed Indo-European institutions onto the Yamnaya archaeological horizon is contested — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "anthony2007horse"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "daily-life",
+        "readings": [
+          {
+            "text": "Subsistence centered on herding cattle and sheep across grassland, with wheeled wagons enabling residence away from river valleys; diet, mobility, and dispersed kin households defined everyday life.",
+            "confidence": 0.55,
+            "contested": false,
+            "citationKeys": [
+              "anthony2007horse"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "anthony2007horse",
+        "title": "The Horse, the Wheel, and Language: How Bronze-Age Riders from the Eurasian Steppes Shaped the Modern World",
+        "authors": [
+          "David W. Anthony"
+        ],
+        "year": 2007,
+        "venue": "Princeton University Press",
+        "isbn": "9780691058870",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
+  },
+  {
+    "id": "lapita-iron",
+    "region": "Remote Oceania (Bismarcks to West Polynesia)",
+    "thread": "oceania",
+    "lat": -17.7,
+    "lng": 168.3,
+    "epoch": "iron",
+    "values": [
+      {
+        "valueId": "curiosity",
+        "intensity": 0.7,
+        "role": "primary"
+      },
+      {
+        "valueId": "solidarity",
+        "intensity": 0.65,
+        "role": "coupled"
+      },
+      {
+        "valueId": "hospitality",
+        "intensity": 0.6,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "maritime_expansion",
+      "open_frontier",
+      "kinship_intensity",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.5,
+    "contested": true,
+    "note": "The Lapita cultural complex (c. 1600-500 BCE) was the founding horizon of human settlement in Remote Oceania, carrying voyaging communities from the Bismarck Archipelago out across previously uninhabited Pacific islands to western Polynesia. Its dentate-stamped pottery and long-distance movement of obsidian and other goods imply deliberate exploration, founder-colony cooperation, and sustained exchange ties.",
+    "altReading": "Reading 'curiosity' into Lapita expansion risks romanticizing it; the same evidence fits population pressure, social fissioning, or fortuitous drift voyaging rather than a value of exploration per se.",
+    "cost": "The frontier of colonization brought waves of island faunal extinctions in the newly reached archipelagos.",
+    "schemaVersion": 2,
+    "sources": [
+      "Kirch, P. V. (1997). The Lapita Peoples: Ancestors of the Oceanic World. Blackwell.",
+      "Kirch, P. V. (2017). On the Road of the Winds (rev. ed.). University of California Press."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Lapita communities crossed open water to settle uninhabited islands, sustaining founder colonies and a shared material culture across vast distances. The configuration reads as exploratory curiosity bound to kin-based cooperation and reciprocal exchange.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Coding 'curiosity' as a primary value from a colonization horizon is interpretive; demographic and social-fissioning explanations are equally available — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "kirch2017winds",
+              "kirch1997lapita"
+            ]
+          },
+          {
+            "text": "Alt reading: the expansion is also consistent with population pressure, lineage fissioning, or opportunistic voyaging rather than a cultural value of exploration."
+          },
+          {
+            "text": "The Shadow / Cost: first human arrival drove waves of island bird and other faunal extinctions across newly colonized archipelagos."
+          }
+        ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Obsidian sourced to the Bismarck Archipelago and other exotics travel hundreds to thousands of kilometers in Lapita contexts, evidencing long-distance exchange networks that linked dispersed island communities.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "kirch1997lapita"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "art",
+        "readings": [
+          {
+            "text": "The diagnostic Lapita ceramics carry intricate dentate-stamped designs whose shared motifs across the region signal a common symbolic and social identity among the colonizing communities.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "kirch1997lapita",
+              "kirch2017winds"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "kirch1997lapita",
+        "title": "The Lapita Peoples: Ancestors of the Oceanic World",
+        "authors": [
+          "Patrick V. Kirch"
+        ],
+        "year": 1997,
+        "venue": "Blackwell",
+        "isbn": "9781577180364",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      },
+      {
+        "key": "kirch2017winds",
+        "title": "On the Road of the Winds: An Archaeological History of the Pacific Islands before European Contact (rev. ed.)",
+        "authors": [
+          "Patrick V. Kirch"
+        ],
+        "year": 2017,
+        "venue": "University of California Press",
+        "isbn": "9780520292819",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
+  },
+  {
+    "id": "hawaii-early-mod",
+    "region": "Hawaiian Islands",
+    "thread": "oceania",
+    "lat": 19.6,
+    "lng": -155.5,
+    "epoch": "early-mod",
+    "values": [
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.85,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.72,
+        "role": "coupled"
+      },
+      {
+        "valueId": "honor",
+        "intensity": 0.6,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "monumental_religion",
+      "hydraulic_coordination",
+      "institutional_scale",
+      "resource_competition"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.55,
+    "contested": true,
+    "note": "Pre-contact Hawai'i (c. 1600-1795 CE) is a textbook case of primary state formation in isolation: a steep ali'i/maka'ainana rank order enforced by the kapu system, divine paramount chiefs, and a heiau temple cult, supported by intensified irrigated and dryland agriculture. Kirch argues these 'archaic states' crossed the threshold from chiefship to kingship before sustained European contact.",
+    "altReading": "Whether late pre-contact Hawai'i had truly become a 'state' versus an unusually complex chiefdom is debated; the label depends on contested definitions of statehood.",
+    "cost": "A sacred ruling order in which kapu violations could be punished by death and surplus was extracted from commoner cultivators.",
+    "schemaVersion": 2,
+    "sources": [
+      "Kirch, P. V. (2010). How Chiefs Became Kings. University of California Press."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Hawaiian society coupled a steep hereditary hierarchy (ali'i over maka'ainana, policed by kapu) to a sacralized chiefship and temple cult, financed by agricultural intensification. Competition for mana among chiefs drove an honor dimension alongside the dominant hierarchy.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "Value intensities and the 'archaic state' framing are interpretive; the chiefdom-versus-state status is contested — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "kirch2010chiefs"
+            ]
+          },
+          {
+            "text": "Alt reading: late pre-contact Hawai'i may be better described as an unusually complex chiefdom than a state, depending on how statehood is defined."
+          },
+          {
+            "text": "The Shadow / Cost: a sacred order in which kapu breaches could be capital and chiefly elites extracted surplus from commoner farmers."
+          }
+        ]
+      },
+      {
+        "type": "religion",
+        "readings": [
+          {
+            "text": "Monumental heiau (temple platforms), a priesthood, and the worship of akua underwrote chiefly authority; ritual cycles tied the legitimacy of paramount chiefs to divine sanction.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "kirch2010chiefs"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "Islands were divided into radial land units (ahupua'a) running mountain-to-sea, administered by chiefly appointees (konohiki) who managed labor and tribute — an administrative apparatus beyond simple kin authority.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "Reading the ahupua'a/konohiki system as evidence of state-level administration is interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "kirch2010chiefs"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "kirch2010chiefs",
+        "title": "How Chiefs Became Kings: Divine Kingship and the Rise of Archaic States in Ancient Hawai'i",
+        "authors": [
+          "Patrick V. Kirch"
+        ],
+        "year": 2010,
+        "venue": "University of California Press",
+        "isbn": "9780520267251",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
+  },
+  {
+    "id": "meroe-axial",
+    "region": "Kingdom of Kush (Meroe)",
+    "thread": "africa",
+    "lat": 16.93,
+    "lng": 33.72,
+    "epoch": "axial",
+    "values": [
+      {
+        "valueId": "piety",
+        "intensity": 0.75,
+        "role": "primary"
+      },
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.72,
+        "role": "coupled"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.55,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "literacy",
+      "monumental_religion",
+      "metallurgy",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.55,
+    "contested": true,
+    "note": "The Kingdom of Kush (Napatan then Meroitic, c. 700 BCE-350 CE) was a literate, iron-working Nile state that briefly ruled Egypt as the 25th Dynasty and then flourished independently from Meroe. Sacral kingship (including ruling queens, the kandakes), an Amun and Apedemak temple cult, royal pyramid burials, and the development of an indigenous Meroitic script define its values profile.",
+    "altReading": "Older scholarship framed Kush as a derivative of Egypt; current work stresses its distinct institutions and indigenous innovations, so an 'Egyptianizing piety' reading can understate Meroitic originality.",
+    "cost": "A surplus-extracting sacral monarchy whose monumental and mortuary display rested on subject labor.",
+    "schemaVersion": 2,
+    "sources": [
+      "Welsby, D. A. (1996). The Kingdom of Kush. British Museum Press.",
+      "Edwards, D. N. (2004). The Nubian Past. Routledge."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Kush combined a temple-centered piety (Amun inherited from Egypt, the lion-god Apedemak as a distinctly Kushite cult) with sacral kingship and an emergent literate bureaucracy. Iron-working and Nile/Red Sea trade underwrote a state that both absorbed and reworked Egyptian models.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "Value intensities and the piety/hierarchy balance are interpretive, and the degree of Egyptian versus indigenous character is debated — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "welsby1996kush",
+              "edwards2004nubian"
+            ]
+          },
+          {
+            "text": "Alt reading: long framed as a pale copy of Egypt, Kush is now stressed for indigenous institutions, so an 'Egyptianizing' reading risks understating Meroitic originality."
+          },
+          {
+            "text": "The Shadow / Cost: monumental temples and royal pyramids were sustained by surplus extraction and subject labor."
+          }
+        ]
+      },
+      {
+        "type": "script",
+        "readings": [
+          {
+            "text": "By around the 2nd century BCE Meroe developed the Meroitic script, an indigenous alphabetic system (with hieroglyphic and cursive forms) — one of the earliest writing systems native to sub-Saharan Africa, though the language remains only partly understood.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "welsby1996kush"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "religion",
+        "readings": [
+          {
+            "text": "State religion paired the inherited Amun cult with the indigenous warrior lion-god Apedemak, while rulers were buried beneath steep royal pyramids at sites such as Meroe and Nuri — fusing Nilotic monumental religion with local tradition.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "welsby1996kush",
+              "edwards2004nubian"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "welsby1996kush",
+        "title": "The Kingdom of Kush: The Napatan and Meroitic Empires",
+        "authors": [
+          "Derek A. Welsby"
+        ],
+        "year": 1996,
+        "venue": "British Museum Press",
+        "isbn": "9780714109862",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      },
+      {
+        "key": "edwards2004nubian",
+        "title": "The Nubian Past: An Archaeology of the Sudan",
+        "authors": [
+          "David N. Edwards"
+        ],
+        "year": 2004,
+        "venue": "Routledge",
+        "isbn": "9780415369879",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
+  },
+  {
+    "id": "kerma-bronze",
+    "region": "Kingdom of Kerma",
+    "thread": "africa",
+    "lat": 19.6,
+    "lng": 30.41,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.8,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.65,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.6,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "trade_networks",
+      "monumental_religion",
+      "institutional_scale"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.5,
+    "contested": true,
+    "note": "Kerma (c. 2500-1500 BCE) was sub-Saharan Africa's earliest urban state and a serious rival to Middle Kingdom Egypt, controlling the Nile trade in gold, ivory, and ebony. Its monumental mudbrick deffufa and enormous royal tumuli — some accompanied by large-scale retainer sacrifice — signal a steeply hierarchical sacral kingship before its conquest by New Kingdom Egypt.",
+    "altReading": "Because much of what survives is mortuary and monumental, the 'steep hierarchy' reading may over-weight elite display relative to the texture of ordinary Kerman life, which is far less documented.",
+    "cost": "Royal funerals at Kerma involved the sacrificial killing of large numbers of retainers buried with the king.",
+    "successor": "meroe-axial",
+    "schemaVersion": 2,
+    "sources": [
+      "Edwards, D. N. (2004). The Nubian Past. Routledge."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Kerma concentrated power in a sacral monarchy visible through monumental architecture and vast royal tumuli, financed by control of the Nubian trade corridor and sustained by militarized rivalry with Egypt. The profile reads as deep-time hierarchy coupled to temple piety and martial competition.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Value intensities are inferred largely from mortuary and monumental evidence; everyday social structure is poorly documented — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "edwards2004nubian"
+            ]
+          },
+          {
+            "text": "Alt reading: the surviving record is dominated by elite tombs and monuments, so 'steep hierarchy' may overstate elite display relative to less-visible ordinary life."
+          },
+          {
+            "text": "The Shadow / Cost: royal burials at Kerma included the sacrificial killing of many retainers interred with the ruler."
+          }
+        ]
+      },
+      {
+        "type": "architecture",
+        "readings": [
+          {
+            "text": "The two massive mudbrick structures known as the deffufa dominated the city as religious monuments, while the royal cemetery held some of the largest burial tumuli known from the ancient Nile beyond Egypt itself.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "edwards2004nubian"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "religion",
+        "readings": [
+          {
+            "text": "Mortuary practice — monumental tumuli, sacrificed retainers, and rich grave goods — points to a religious ideology that fused kingship, ancestors, and an afterlife requiring an entourage for the dead ruler.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Inferring religious ideology from burial practice is interpretive — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "edwards2004nubian"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "edwards2004nubian",
+        "title": "The Nubian Past: An Archaeology of the Sudan",
+        "authors": [
+          "David N. Edwards"
+        ],
+        "year": 2004,
+        "venue": "Routledge",
+        "isbn": "9780415369879",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
+  },
+  {
+    "id": "monte-alban-axial",
+    "region": "Monte Alban (Oaxaca Valley)",
+    "thread": "americas",
+    "lat": 17.04,
+    "lng": -96.77,
+    "epoch": "axial",
+    "values": [
+      {
+        "valueId": "hierarchy",
+        "intensity": 0.78,
+        "role": "primary"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.62,
+        "role": "coupled"
+      },
+      {
+        "valueId": "curiosity",
+        "intensity": 0.55,
+        "role": "coupled"
+      }
+    ],
+    "drivers": [
+      "literacy",
+      "monumental_religion",
+      "institutional_scale",
+      "resource_competition"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.55,
+    "contested": true,
+    "note": "Founded around 500 BCE on a hilltop above the Oaxaca Valley, Monte Alban was a 'disembedded capital' for an emergent Zapotec state, carrying one of the earliest Mesoamerican writing and calendar systems. Its carved 'danzantes' and Building J conquest slabs read as elite propaganda of domination and military victory.",
+    "altReading": "The 'danzantes' are variously interpreted as slain captives, sacrificial victims, or even medical/ritual figures, so reading them straightforwardly as conquest propaganda is contested.",
+    "cost": "State formation here is bound up with coercion and the commemoration of conquered or sacrificed enemies.",
+    "schemaVersion": 2,
+    "sources": [
+      "Marcus, J., & Flannery, K. V. (1996). Zapotec Civilization. Thames & Hudson."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Monte Alban's foundation as a hilltop capital above competing valley centers marks emergent state hierarchy, advertised through monumental building, early writing, and martial iconography. The profile reads as hierarchy coupled to militarism and the novelty of glyphic literacy.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "Value intensities and the militarism reading depend on contested interpretations of the carved monuments — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "marcusflannery1996zapotec"
+            ]
+          },
+          {
+            "text": "Alt reading: the 'danzantes' have been read as captives, sacrificial victims, or ritual/medical figures, so treating them as conquest propaganda is only one interpretation."
+          },
+          {
+            "text": "The Shadow / Cost: early statehood here is entangled with coercion and the public commemoration of defeated or sacrificed enemies."
+          }
+        ]
+      },
+      {
+        "type": "script",
+        "readings": [
+          {
+            "text": "Zapotec carved monuments bear some of the earliest writing and calendrical notation in Mesoamerica (a 260-day ritual count among them), placing Monte Alban near the origins of New World literacy.",
+            "confidence": 0.6,
+            "contested": true,
+            "contestNote": "Claims to the 'earliest' Mesoamerican writing are debated relative to Olmec and other early scripts — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "marcusflannery1996zapotec"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "governance",
+        "readings": [
+          {
+            "text": "Settlement-pattern survey suggests Monte Alban was deliberately founded on neutral high ground as a 'disembedded capital' integrating formerly competing valley polities under a new political center.",
+            "confidence": 0.55,
+            "contested": true,
+            "contestNote": "The 'disembedded capital' model is an influential but interpretive reconstruction of Zapotec state formation — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "marcusflannery1996zapotec"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "marcusflannery1996zapotec",
+        "title": "Zapotec Civilization: How Urban Society Evolved in Mexico's Oaxaca Valley",
+        "authors": [
+          "Joyce Marcus",
+          "Kent V. Flannery"
+        ],
+        "year": 1996,
+        "venue": "Thames & Hudson",
+        "isbn": "9780500050781",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
   }
 ]
