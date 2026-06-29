@@ -1,0 +1,851 @@
+{
+  "_meta": {
+    "title": "Values Atlas — thin-spines candidate points (STAGING QUEUE)",
+    "purpose": "Cited candidate civilization-at-epoch points proposed to densify the thinnest cells of the thread x epoch coverage grid. This is a PROPOSAL / staging queue for later human-reviewed ingestion.",
+    "DO_NOT_INGEST_AS_IS": "This file is NOT public/data/atlas.json and must NOT be wired into the app. Every draftValue / draftDriver below is an INTERPRETIVE HYPOTHESIS that needs scholarly review before any point is written to the live dataset.",
+    "generatedFrom": "public/data/atlas.json (67 points) parsed on branch feature/thin-spines-sourcing, off main.",
+    "schemaNote": "Shape is deliberately different from AtlasPoint (top-level object, not a bare array; 'draftValues'/'draftDrivers' instead of 'values'/'drivers') so it cannot be mistaken for atlas.json. See lib/schema.ts for the real AtlasPoint shape used at ingestion time.",
+    "licensingPolicy": "Path A (see LICENSING.md). Books are cited for NON-COPYRIGHTABLE FACTS + our own derivation (cite-don't-copy); CC-BY/CC0 datasets (D-PLACE, Pulotu, DRH) may be incorporated with attribution; Seshat is CC-BY-NC-SA and is therefore CITE-ONLY (no table/coded-value copying into the CC-BY-4.0 core).",
+    "epochVocabulary": {
+      "hunter": "~100k BCE (mobile/foraging exemplars)",
+      "early-agr": "~10k BCE",
+      "bronze": "~3000 BCE",
+      "iron": "~1200 BCE",
+      "axial": "~500 BCE",
+      "imperial": "~200 CE",
+      "medieval": "~1000 CE",
+      "early-mod": "~1600 CE",
+      "industrial": "~1820 CE",
+      "modern": "~1900 CE",
+      "now": "2020s"
+    },
+    "epochAssignmentNote": "Epoch is the NEAREST coarse bucket to a society's florescence, not an exact date. 'epochApproxDate' records the real archaeological/historical range for reviewers.",
+    "threadGap": "Oceania/Austronesia, Japan, Persia, and Pharaonic Egypt currently have NO dedicated thread in lib/schema.ts and land in thread:'none'. Oceanic candidates below use thread:'none' for consistency with existing points (papua-hg, polynesia-med, arnhem-hg) and carry threadNote recommending a new 'oceania' thread be added to THREADS before ingestion.",
+    "tierOneReuse": "Where the in-flight Tier 1 ingestion sources (DRH/SCCSR, Reba urbanization 3700BC-AD2000, Maddison Project, D-PLACE, Pulotu) already cover a candidate, it is listed in 'tierOneSources' so ingestion can reuse them rather than re-source.",
+    "candidateCount": 31
+  },
+  "candidates": [
+    {
+      "id": "cand-inca",
+      "title": "Inca / Tawantinsuyu @ early-mod",
+      "region": "Inca Empire (Cusco)",
+      "thread": "americas",
+      "epoch": "early-mod",
+      "epochApproxDate": "c. 1438-1533 CE",
+      "lat": -13.52,
+      "lng": -71.98,
+      "fillsEmptyCell": false,
+      "priority": "ingest-first",
+      "rank": 1,
+      "rationale": "The largest empire of the pre-Columbian Americas is entirely absent from the atlas - a glaring salience gap. Its reciprocity/redistribution economy (mit'a, ayni), road/storehouse logistics, and command agriculture are a distinctive values configuration unlike any Old-World state already covered.",
+      "draftValues": [
+        { "valueId": "collectivism", "intensity": 0.85, "role": "primary", "note": "NEEDS REVIEW - interpretive: ayllu reciprocity + state redistribution" },
+        { "valueId": "order", "intensity": 0.8, "role": "coupled", "note": "NEEDS REVIEW - interpretive: census/quipu administration, decimal labor org" },
+        { "valueId": "hierarchy", "intensity": 0.82, "role": "coupled", "note": "NEEDS REVIEW - interpretive: divine Sapa Inca, nested elite ranks" },
+        { "valueId": "hospitality", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: state feasting/chicha as political reciprocity" }
+      ],
+      "draftDrivers": ["institutional_scale", "hydraulic_coordination", "military_revolution", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive. Values/drivers are hypotheses pending scholarly check.",
+      "suggestedAspects": ["values-synthesis", "governance", "commerce", "religion", "architecture"],
+      "citations": [
+        { "key": "daltroy2014incas", "title": "The Incas", "authors": ["Terence N. D'Altroy"], "year": 2014, "venue": "Wiley-Blackwell (2nd ed.)", "isbn": "9781444331158", "license": "Copyright (facts non-copyrightable; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Seshat (Inca polity; CITE-ONLY, CC-BY-NC-SA)", "Reba urbanization (Cusco)", "DRH (Inca state religion)"]
+    },
+    {
+      "id": "cand-caral",
+      "title": "Caral / Norte Chico @ bronze",
+      "region": "Norte Chico (Supe Valley)",
+      "thread": "americas",
+      "epoch": "bronze",
+      "epochApproxDate": "c. 3000-1800 BCE",
+      "lat": -10.89,
+      "lng": -77.52,
+      "fillsEmptyCell": true,
+      "priority": "ingest-first",
+      "rank": 2,
+      "rationale": "Fills the EMPTY americas/bronze cell. The earliest urban, monumental society in the Americas - pre-ceramic, apparently without warfare/fortifications - is a powerful deep-time data point on monumentality preceding the state.",
+      "draftValues": [
+        { "valueId": "collectivism", "intensity": 0.8, "role": "primary", "note": "NEEDS REVIEW - interpretive: corporate labor on platform mounds" },
+        { "valueId": "piety", "intensity": 0.7, "role": "coupled", "note": "NEEDS REVIEW - interpretive: temple/plaza ceremonial focus" },
+        { "valueId": "aggression", "intensity": 0.12, "role": "counter", "note": "NEEDS REVIEW - interpretive: no fortifications/weapons reported" }
+      ],
+      "draftDrivers": ["hydraulic_coordination", "monumental_religion", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "architecture", "religion", "commerce"],
+      "citations": [
+        { "key": "haas2004nortechico", "title": "Dating the Late Archaic occupation of the Norte Chico region in Peru", "authors": ["Jonathan Haas", "Winifred Creamer", "Alvaro Ruiz"], "year": 2004, "venue": "Nature 432:1020-1023", "doi": "10.1038/nature03146", "license": "Copyright (facts only; cite-don't-copy)" },
+        { "key": "shady2001caral", "title": "Dating Caral, a Preceramic Site in the Supe Valley on the Central Coast of Peru", "authors": ["Ruth Shady Solis", "Jonathan Haas", "Winifred Creamer"], "year": 2001, "venue": "Science 292:723-726", "doi": "10.1126/science.1059519", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Caral/Supe)"]
+    },
+    {
+      "id": "cand-tiwanaku",
+      "title": "Tiwanaku @ medieval",
+      "region": "Tiwanaku (Lake Titicaca)",
+      "thread": "americas",
+      "epoch": "medieval",
+      "epochApproxDate": "c. 500-1000 CE",
+      "lat": -16.55,
+      "lng": -68.67,
+      "fillsEmptyCell": true,
+      "priority": "ingest-first",
+      "rank": 3,
+      "rationale": "Fills the EMPTY americas/medieval cell. High-altitude raised-field (suka kollu) agriculture + a religious/colonial hinterland model; a non-militaristic-looking Andean state contrasting with Wari.",
+      "draftValues": [
+        { "valueId": "collectivism", "intensity": 0.78, "role": "primary", "note": "NEEDS REVIEW - interpretive: corporate raised-field labor" },
+        { "valueId": "piety", "intensity": 0.75, "role": "coupled", "note": "NEEDS REVIEW - interpretive: Akapana/Kalasasaya ceremonial core" },
+        { "valueId": "hierarchy", "intensity": 0.7, "role": "coupled", "note": "NEEDS REVIEW - interpretive" }
+      ],
+      "draftDrivers": ["hydraulic_coordination", "monumental_religion", "institutional_scale", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "architecture", "religion", "commerce"],
+      "citations": [
+        { "key": "kolata1993tiwanaku", "title": "The Tiwanaku: Portrait of an Andean Civilization", "authors": ["Alan L. Kolata"], "year": 1993, "venue": "Blackwell", "isbn": "9781557861832", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Seshat (Tiwanaku; CITE-ONLY)", "Reba urbanization (Tiwanaku)", "UNESCO WHS 567 (https://whc.unesco.org/en/list/567)"]
+    },
+    {
+      "id": "cand-cahokia",
+      "title": "Cahokia / Mississippian @ medieval",
+      "region": "Cahokia (American Bottom)",
+      "thread": "americas",
+      "epoch": "medieval",
+      "epochApproxDate": "c. 1050-1350 CE",
+      "lat": 38.66,
+      "lng": -90.06,
+      "fillsEmptyCell": true,
+      "priority": "ingest-first",
+      "rank": 4,
+      "rationale": "Fills the EMPTY americas/medieval cell and adds North America north of Mexico (currently only frontier/modern USA). Largest pre-Columbian city north of Mexico; mound monumentality, feasting, and evidence of sacrifice.",
+      "draftValues": [
+        { "valueId": "hierarchy", "intensity": 0.72, "role": "primary", "note": "NEEDS REVIEW - interpretive: chiefly elites, Mound 72 burials" },
+        { "valueId": "piety", "intensity": 0.68, "role": "coupled", "note": "NEEDS REVIEW - interpretive: plaza/mound cosmology" },
+        { "valueId": "solidarity", "intensity": 0.55, "role": "coupled", "note": "NEEDS REVIEW - interpretive: mass feasting as integration" }
+      ],
+      "draftDrivers": ["monumental_religion", "institutional_scale", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive. Degree of centralization (chiefdom vs. state) is contested.",
+      "suggestedAspects": ["values-synthesis", "architecture", "religion", "myth"],
+      "citations": [
+        { "key": "pauketat2009cahokia", "title": "Cahokia: Ancient America's Great City on the Mississippi", "authors": ["Timothy R. Pauketat"], "year": 2009, "venue": "Viking", "isbn": "9780670020904", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Cahokia)", "D-PLACE/SCCS (Mississippian-descendant ethnography, partial)"]
+    },
+    {
+      "id": "cand-yamnaya",
+      "title": "Yamnaya / Pontic-Caspian pastoralists @ bronze",
+      "region": "Pontic-Caspian Steppe",
+      "thread": "steppe",
+      "epoch": "bronze",
+      "epochApproxDate": "c. 3300-2600 BCE",
+      "lat": 48.0,
+      "lng": 42.0,
+      "fillsEmptyCell": true,
+      "priority": "ingest-first",
+      "rank": 5,
+      "rationale": "Fills the EMPTY steppe/bronze cell on the THINNEST spine (steppe has only 3 points). Wagon+horse mobile pastoralism and kurgan elite/patron-client institutions - the deep root of later steppe value-complexes (honor, raiding, hospitality).",
+      "draftValues": [
+        { "valueId": "honor", "intensity": 0.78, "role": "primary", "note": "NEEDS REVIEW - interpretive: warrior prestige, kurgan display" },
+        { "valueId": "individualism", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: mounted mobility, dispersed herding households" },
+        { "valueId": "hospitality", "intensity": 0.62, "role": "coupled", "note": "NEEDS REVIEW - interpretive: guest-host / patron-client bonds" },
+        { "valueId": "aggression", "intensity": 0.65, "role": "coupled", "note": "NEEDS REVIEW - interpretive: raiding economy" }
+      ],
+      "draftDrivers": ["nomadic_mobility", "open_frontier", "metallurgy", "kinship_intensity"],
+      "reviewFlag": "NEEDS REVIEW - interpretive. Values inferred from mortuary archaeology + comparative IE reconstruction.",
+      "suggestedAspects": ["values-synthesis", "myth", "daily-life"],
+      "citations": [
+        { "key": "anthony2007horse", "title": "The Horse, the Wheel, and Language: How Bronze-Age Riders from the Eurasian Steppes Shaped the Modern World", "authors": ["David W. Anthony"], "year": 2007, "venue": "Princeton University Press", "isbn": "9780691058870", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": []
+    },
+    {
+      "id": "cand-lapita",
+      "title": "Lapita cultural complex @ iron",
+      "region": "Remote Oceania (Bismarcks to West Polynesia)",
+      "thread": "none",
+      "threadNote": "RECOMMEND adding 'oceania' thread to THREADS; currently lands in thread:'none' like papua-hg/polynesia-med/arnhem-hg.",
+      "epoch": "iron",
+      "epochApproxDate": "c. 1600-500 BCE",
+      "lat": -17.7,
+      "lng": 168.3,
+      "fillsEmptyCell": false,
+      "priority": "ingest-first",
+      "rank": 6,
+      "rationale": "Opens up the badly under-covered Oceania/Austronesia cluster (only 3 points exist). The Lapita expansion is the founding maritime-colonization horizon for the Pacific; values of exploration, kin-based voyaging, and long-distance exchange.",
+      "draftValues": [
+        { "valueId": "curiosity", "intensity": 0.7, "role": "primary", "note": "NEEDS REVIEW - interpretive: deliberate open-ocean exploration/colonization" },
+        { "valueId": "solidarity", "intensity": 0.65, "role": "coupled", "note": "NEEDS REVIEW - interpretive: founder-colony cooperation" },
+        { "valueId": "hospitality", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: exchange-network reciprocity (obsidian, pottery)" }
+      ],
+      "draftDrivers": ["maritime_expansion", "open_frontier", "kinship_intensity", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "commerce", "daily-life", "art"],
+      "citations": [
+        { "key": "kirch1997lapita", "title": "The Lapita Peoples: Ancestors of the Oceanic World", "authors": ["Patrick V. Kirch"], "year": 1997, "venue": "Blackwell", "isbn": "9781577180364", "license": "Copyright (facts only; cite-don't-copy)" },
+        { "key": "kirch2017winds", "title": "On the Road of the Winds: An Archaeological History of the Pacific Islands before European Contact (rev. ed.)", "authors": ["Patrick V. Kirch"], "year": 2017, "venue": "University of California Press", "isbn": "9780520292819", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Pulotu (Austronesian context; CC-BY)"]
+    },
+    {
+      "id": "cand-hawaii",
+      "title": "Hawaiian archaic states @ early-mod",
+      "region": "Hawaiian Islands",
+      "thread": "none",
+      "threadNote": "RECOMMEND 'oceania' thread.",
+      "epoch": "early-mod",
+      "epochApproxDate": "c. 1600-1795 CE (pre-/proto-contact)",
+      "lat": 19.6,
+      "lng": -155.5,
+      "fillsEmptyCell": false,
+      "priority": "ingest-first",
+      "rank": 7,
+      "rationale": "A textbook case of primary state formation / 'divine kingship' arising in isolation - kapu system, mana, heiau temple cult, irrigated and dryland intensification. Strong, well-licensed Austronesian scholarship.",
+      "draftValues": [
+        { "valueId": "hierarchy", "intensity": 0.85, "role": "primary", "note": "NEEDS REVIEW - interpretive: ali'i/maka'ainana ranking, kapu" },
+        { "valueId": "piety", "intensity": 0.72, "role": "coupled", "note": "NEEDS REVIEW - interpretive: heiau cult, divine chiefship" },
+        { "valueId": "honor", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: mana competition among chiefs" }
+      ],
+      "draftDrivers": ["monumental_religion", "hydraulic_coordination", "institutional_scale", "resource_competition"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "religion", "governance", "architecture"],
+      "citations": [
+        { "key": "kirch2010chiefs", "title": "How Chiefs Became Kings: Divine Kingship and the Rise of Archaic States in Ancient Hawai'i", "authors": ["Patrick V. Kirch"], "year": 2010, "venue": "University of California Press", "isbn": "9780520267251", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Pulotu (Hawaiians; CC-BY)", "D-PLACE/SCCS (Hawaiians)"]
+    },
+    {
+      "id": "cand-meroe",
+      "title": "Kush / Meroe @ axial",
+      "region": "Kingdom of Kush (Meroe)",
+      "thread": "africa",
+      "epoch": "axial",
+      "epochApproxDate": "c. 700 BCE-350 CE (Napatan-Meroitic)",
+      "lat": 16.93,
+      "lng": 33.72,
+      "fillsEmptyCell": true,
+      "priority": "ingest-first",
+      "rank": 8,
+      "rationale": "Fills the EMPTY africa/axial cell. A literate (Meroitic script), iron-working Nile state that ruled Egypt (25th Dynasty) and later flourished independently - counters the 'Africa = non-literate' bias and adds an indigenous sub-Saharan script.",
+      "draftValues": [
+        { "valueId": "piety", "intensity": 0.72, "role": "primary", "note": "NEEDS REVIEW - interpretive: Amun/Apedemak cult, pyramid burials" },
+        { "valueId": "hierarchy", "intensity": 0.75, "role": "coupled", "note": "NEEDS REVIEW - interpretive: sacral kingship, candaces" },
+        { "valueId": "curiosity", "intensity": 0.5, "role": "coupled", "note": "NEEDS REVIEW - interpretive: development of Meroitic writing" }
+      ],
+      "draftDrivers": ["literacy", "monumental_religion", "metallurgy", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "script", "religion", "architecture"],
+      "citations": [
+        { "key": "welsby1996kush", "title": "The Kingdom of Kush: The Napatan and Meroitic Empires", "authors": ["Derek A. Welsby"], "year": 1996, "venue": "British Museum Press", "isbn": "9780714109862", "license": "Copyright (facts only; cite-don't-copy)" },
+        { "key": "edwards2004nubian", "title": "The Nubian Past: An Archaeology of the Sudan", "authors": ["David N. Edwards"], "year": 2004, "venue": "Routledge", "isbn": "9780415369879", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Meroe)", "UNESCO WHS 1336 (https://whc.unesco.org/en/list/1336)"]
+    },
+    {
+      "id": "cand-kerma",
+      "title": "Kerma (Nubia) @ bronze",
+      "region": "Kingdom of Kerma",
+      "thread": "africa",
+      "epoch": "bronze",
+      "epochApproxDate": "c. 2500-1500 BCE",
+      "lat": 19.6,
+      "lng": 30.41,
+      "fillsEmptyCell": true,
+      "priority": "ingest-first",
+      "rank": 9,
+      "rationale": "Fills the EMPTY africa/bronze cell. Sub-Saharan Africa's earliest urban state, rival to Middle Kingdom Egypt - monumental deffufa, royal tumuli with retainer sacrifice, deep-time African complexity.",
+      "draftValues": [
+        { "valueId": "hierarchy", "intensity": 0.8, "role": "primary", "note": "NEEDS REVIEW - interpretive: huge royal tumuli + retainer sacrifice" },
+        { "valueId": "piety", "intensity": 0.65, "role": "coupled", "note": "NEEDS REVIEW - interpretive: deffufa temple monumentality" },
+        { "valueId": "aggression", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: militarized rivalry with Egypt" }
+      ],
+      "draftDrivers": ["trade_networks", "monumental_religion", "institutional_scale"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "architecture", "religion"],
+      "citations": [
+        { "key": "edwards2004nubian", "title": "The Nubian Past: An Archaeology of the Sudan", "authors": ["David N. Edwards"], "year": 2004, "venue": "Routledge", "isbn": "9780415369879", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Kerma)"]
+    },
+    {
+      "id": "cand-montealban",
+      "title": "Monte Alban / Zapotec @ axial",
+      "region": "Monte Alban (Oaxaca Valley)",
+      "thread": "americas",
+      "epoch": "axial",
+      "epochApproxDate": "c. 500 BCE-200 CE (founding/early)",
+      "lat": 17.04,
+      "lng": -96.77,
+      "fillsEmptyCell": true,
+      "priority": "ingest-first",
+      "rank": 10,
+      "rationale": "Fills the EMPTY americas/axial cell. A hilltop disembedded capital with one of the earliest Mesoamerican writing/calendar systems and conquest-slab propaganda - early state formation + literacy in the New World.",
+      "draftValues": [
+        { "valueId": "hierarchy", "intensity": 0.78, "role": "primary", "note": "NEEDS REVIEW - interpretive: emergent state elites" },
+        { "valueId": "aggression", "intensity": 0.62, "role": "coupled", "note": "NEEDS REVIEW - interpretive: 'danzantes'/conquest slabs" },
+        { "valueId": "curiosity", "intensity": 0.55, "role": "coupled", "note": "NEEDS REVIEW - interpretive: early glyphic writing + calendar" }
+      ],
+      "draftDrivers": ["literacy", "monumental_religion", "institutional_scale", "resource_competition"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "script", "governance", "architecture"],
+      "citations": [
+        { "key": "marcusflannery1996zapotec", "title": "Zapotec Civilization: How Urban Society Evolved in Mexico's Oaxaca Valley", "authors": ["Joyce Marcus", "Kent V. Flannery"], "year": 1996, "venue": "Thames & Hudson", "isbn": "9780500050781", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Monte Alban)", "DRH (Zapotec religion)"]
+    },
+    {
+      "id": "cand-olmec",
+      "title": "Olmec (San Lorenzo / La Venta) @ iron",
+      "region": "Olmec heartland (Gulf Coast)",
+      "thread": "americas",
+      "epoch": "iron",
+      "epochApproxDate": "c. 1500-400 BCE",
+      "lat": 17.77,
+      "lng": -94.73,
+      "fillsEmptyCell": true,
+      "priority": "shortlist",
+      "rank": 11,
+      "rationale": "Fills the EMPTY americas/iron cell. Mesoamerica's 'mother culture' - colossal heads, early ritual complexity and long-distance jade/obsidian exchange that seeds later Maya/Zapotec.",
+      "draftValues": [
+        { "valueId": "hierarchy", "intensity": 0.72, "role": "primary", "note": "NEEDS REVIEW - interpretive: colossal-head ruler portraits" },
+        { "valueId": "piety", "intensity": 0.7, "role": "coupled", "note": "NEEDS REVIEW - interpretive: were-jaguar/rain cosmology" }
+      ],
+      "draftDrivers": ["monumental_religion", "trade_networks", "hydraulic_coordination"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "art", "religion"],
+      "citations": [
+        { "key": "diehl2004olmecs", "title": "The Olmecs: America's First Civilization", "authors": ["Richard A. Diehl"], "year": 2004, "venue": "Thames & Hudson", "isbn": "9780500285039", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (San Lorenzo/La Venta)"]
+    },
+    {
+      "id": "cand-maya-classic",
+      "title": "Classic Maya (Tikal) @ imperial",
+      "region": "Classic Maya lowlands (Tikal)",
+      "thread": "americas",
+      "epoch": "imperial",
+      "epochApproxDate": "c. 250-900 CE",
+      "lat": 17.22,
+      "lng": -89.62,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 12,
+      "rationale": "Americas/imperial holds only Teotihuacan. Classic Maya add a fully literate, astronomically sophisticated, politically fragmented civilization (divine kingship + endemic inter-polity war) - a distinct values mix (honor/prestige war + literacy + piety).",
+      "draftValues": [
+        { "valueId": "honor", "intensity": 0.72, "role": "primary", "note": "NEEDS REVIEW - interpretive: prestige warfare, captive-taking" },
+        { "valueId": "piety", "intensity": 0.7, "role": "coupled", "note": "NEEDS REVIEW - interpretive: k'uhul ajaw divine kingship, bloodletting" },
+        { "valueId": "curiosity", "intensity": 0.62, "role": "coupled", "note": "NEEDS REVIEW - interpretive: Long Count, astronomy, full writing" }
+      ],
+      "draftDrivers": ["literacy", "monumental_religion", "resource_competition", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "script", "religion", "myth", "architecture"],
+      "citations": [
+        { "key": "martingrube2008maya", "title": "Chronicle of the Maya Kings and Queens (2nd ed.)", "authors": ["Simon Martin", "Nikolai Grube"], "year": 2008, "venue": "Thames & Hudson", "isbn": "9780500287262", "license": "Copyright (facts only; cite-don't-copy)" },
+        { "key": "sharertraxler2006maya", "title": "The Ancient Maya (6th ed.)", "authors": ["Robert J. Sharer", "Loa P. Traxler"], "year": 2006, "venue": "Stanford University Press", "isbn": "9780804748179", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Tikal)", "DRH (Classic Maya religion)", "Seshat (Maya polities; CITE-ONLY)"]
+    },
+    {
+      "id": "cand-chavin",
+      "title": "Chavin de Huantar @ iron",
+      "region": "Chavin (Peruvian highlands)",
+      "thread": "americas",
+      "epoch": "iron",
+      "epochApproxDate": "c. 900-200 BCE",
+      "lat": -9.59,
+      "lng": -77.18,
+      "fillsEmptyCell": true,
+      "priority": "shortlist",
+      "rank": 13,
+      "rationale": "Reinforces the EMPTY americas/iron cell with an Andean pan-regional religious/oracle center - a 'cult horizon' that integrated diverse peoples through ritual rather than conquest.",
+      "draftValues": [
+        { "valueId": "piety", "intensity": 0.8, "role": "primary", "note": "NEEDS REVIEW - interpretive: oracle/pilgrimage cult, Lanzon" },
+        { "valueId": "hierarchy", "intensity": 0.55, "role": "coupled", "note": "NEEDS REVIEW - interpretive: emergent religious elite" }
+      ],
+      "draftDrivers": ["monumental_religion", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "religion", "art", "architecture"],
+      "citations": [
+        { "key": "burger1992chavin", "title": "Chavin and the Origins of Andean Civilization", "authors": ["Richard L. Burger"], "year": 1992, "venue": "Thames & Hudson", "isbn": "9780500277010", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["UNESCO WHS 330 (https://whc.unesco.org/en/list/330)"]
+    },
+    {
+      "id": "cand-chaco",
+      "title": "Ancestral Puebloan / Chaco Canyon @ medieval",
+      "region": "Chaco Canyon (San Juan Basin)",
+      "thread": "americas",
+      "epoch": "medieval",
+      "epochApproxDate": "c. 850-1150 CE",
+      "lat": 36.06,
+      "lng": -107.96,
+      "fillsEmptyCell": true,
+      "priority": "shortlist",
+      "rank": 14,
+      "rationale": "Adds a Southwest US data point to the empty americas/medieval cell: great-house monumentality + road network in an arid landscape, with a debated egalitarian-vs-hierarchical social order (rich contestable reading).",
+      "draftValues": [
+        { "valueId": "piety", "intensity": 0.65, "role": "primary", "note": "NEEDS REVIEW - interpretive: great kivas, ritual landscape" },
+        { "valueId": "collectivism", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: communal labor, redistribution" },
+        { "valueId": "hierarchy", "intensity": 0.45, "role": "counter", "note": "NEEDS REVIEW - interpretive: CONTESTED degree of elite control" }
+      ],
+      "draftDrivers": ["hydraulic_coordination", "monumental_religion", "trade_networks", "resource_scarcity"],
+      "reviewFlag": "NEEDS REVIEW - interpretive. Hierarchy strongly contested - flag contestNote at ingestion.",
+      "suggestedAspects": ["values-synthesis", "architecture", "religion", "daily-life"],
+      "citations": [
+        { "key": "plog2008southwest", "title": "Ancient Peoples of the American Southwest (2nd ed.)", "authors": ["Stephen Plog"], "year": 2008, "venue": "Thames & Hudson", "isbn": "9780500287842", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["D-PLACE/SCCS (Hopi/Zuni descendant ethnography, partial)", "UNESCO WHS 353 (https://whc.unesco.org/en/list/353)"]
+    },
+    {
+      "id": "cand-haudenosaunee",
+      "title": "Haudenosaunee (Iroquois Confederacy) @ early-mod",
+      "region": "Haudenosaunee homelands (NE Woodlands)",
+      "thread": "americas",
+      "epoch": "early-mod",
+      "epochApproxDate": "Great Law formation c. 1450-1600; contact era 1500-1700",
+      "lat": 43.0,
+      "lng": -76.1,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 15,
+      "rationale": "A non-state confederal polity with consensus governance, clan-matron authority and the Great Law of Peace - a rare egalitarian/individual-autonomy + collective-kinship configuration, and ethnographically very well documented (D-PLACE/SCCS).",
+      "draftValues": [
+        { "valueId": "egalitarianism", "intensity": 0.72, "role": "primary", "note": "NEEDS REVIEW - interpretive: consensus council, dispersed authority" },
+        { "valueId": "collectivism", "intensity": 0.7, "role": "coupled", "note": "NEEDS REVIEW - interpretive: matrilineal clan/longhouse" },
+        { "valueId": "individualism", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: strong personal autonomy norm" },
+        { "valueId": "order", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: Great Law of Peace, condolence" }
+      ],
+      "draftDrivers": ["kinship_intensity", "trade_networks", "open_frontier"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "governance", "gender", "law"],
+      "citations": [
+        { "key": "richter1992longhouse", "title": "The Ordeal of the Longhouse: The Peoples of the Iroquois League in the Era of European Colonization", "authors": ["Daniel K. Richter"], "year": 1992, "venue": "University of North Carolina Press", "isbn": "9780807843949", "license": "Copyright (facts only; cite-don't-copy)" },
+        { "key": "fenton1998greatlaw", "title": "The Great Law and the Longhouse: A Political History of the Iroquois Confederacy", "authors": ["William N. Fenton"], "year": 1998, "venue": "University of Oklahoma Press", "isbn": "9780806130033", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["D-PLACE/SCCS (Iroquois)", "DRH (Iroquois religion)"]
+    },
+    {
+      "id": "cand-songhai",
+      "title": "Songhai Empire @ early-mod",
+      "region": "Songhai (Gao / Timbuktu)",
+      "thread": "africa",
+      "epoch": "early-mod",
+      "epochApproxDate": "c. 1464-1591 CE",
+      "lat": 16.27,
+      "lng": -0.05,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 16,
+      "rationale": "Africa/early-mod currently holds only Igbo. Songhai adds the largest West African empire - Timbuktu scholarship/literacy, codified administration, trans-Saharan trade - directly served by the verified Gomez (2018) synthesis.",
+      "draftValues": [
+        { "valueId": "piety", "intensity": 0.7, "role": "primary", "note": "NEEDS REVIEW - interpretive: Islamic statecraft, ulama" },
+        { "valueId": "order", "intensity": 0.68, "role": "coupled", "note": "NEEDS REVIEW - interpretive: provincial administration under Askia Muhammad" },
+        { "valueId": "curiosity", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: Timbuktu manuscript scholarship" }
+      ],
+      "draftDrivers": ["trade_networks", "literacy", "institutional_scale", "military_revolution"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "governance", "script", "commerce", "religion"],
+      "citations": [
+        { "key": "gomez2018african", "title": "African Dominion: A New History of Empire in Early and Medieval West Africa", "authors": ["Michael A. Gomez"], "year": 2018, "venue": "Princeton University Press", "isbn": "9780691177427", "license": "Copyright (facts only; cite-don't-copy)" },
+        { "key": "hunwick2003timbuktu", "title": "Timbuktu and the Songhay Empire", "authors": ["John O. Hunwick"], "year": 2003, "venue": "Brill", "isbn": "9789004128224", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Gao/Timbuktu)", "Seshat (Songhai; CITE-ONLY)"]
+    },
+    {
+      "id": "cand-ghana",
+      "title": "Ghana Empire (Wagadu) @ medieval",
+      "region": "Ghana / Wagadu (Koumbi Saleh)",
+      "thread": "africa",
+      "epoch": "medieval",
+      "epochApproxDate": "c. 700-1240 CE",
+      "lat": 15.77,
+      "lng": -7.97,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 17,
+      "rationale": "Africa/medieval holds only Mali. Ghana adds the earlier trans-Saharan gold-salt state and dual-town (royal/Muslim-merchant) urban model, deepening West African time-depth before Mali.",
+      "draftValues": [
+        { "valueId": "hierarchy", "intensity": 0.68, "role": "primary", "note": "NEEDS REVIEW - interpretive: sacral kingship, court ritual" },
+        { "valueId": "hospitality", "intensity": 0.55, "role": "coupled", "note": "NEEDS REVIEW - interpretive: merchant-protection, dual-town tolerance" }
+      ],
+      "draftDrivers": ["trade_networks", "institutional_scale", "literacy"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "commerce", "governance"],
+      "citations": [
+        { "key": "gomez2018african", "title": "African Dominion: A New History of Empire in Early and Medieval West Africa", "authors": ["Michael A. Gomez"], "year": 2018, "venue": "Princeton University Press", "isbn": "9780691177427", "license": "Copyright (facts only; cite-don't-copy)" },
+        { "key": "levtzion1973ghanamali", "title": "Ancient Ghana and Mali", "authors": ["Nehemia Levtzion"], "year": 1973, "venue": "Methuen", "isbn": "9780841904316", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Koumbi Saleh)"]
+    },
+    {
+      "id": "cand-greatzimbabwe",
+      "title": "Great Zimbabwe @ medieval",
+      "region": "Great Zimbabwe (Zimbabwe plateau)",
+      "thread": "africa",
+      "epoch": "medieval",
+      "epochApproxDate": "c. 1100-1450 CE",
+      "lat": -20.27,
+      "lng": 30.93,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 18,
+      "rationale": "Iconic dry-stone monumental state linking interior cattle/gold wealth to the Indian Ocean trade via the Swahili coast; also corrects a long colonial-era denial of indigenous African authorship (good contested/altReading material).",
+      "draftValues": [
+        { "valueId": "hierarchy", "intensity": 0.72, "role": "primary", "note": "NEEDS REVIEW - interpretive: elite enclosure, cattle wealth" },
+        { "valueId": "piety", "intensity": 0.55, "role": "coupled", "note": "NEEDS REVIEW - interpretive: ritual use of the Hill Complex" }
+      ],
+      "draftDrivers": ["trade_networks", "institutional_scale", "maritime_expansion"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "architecture", "commerce"],
+      "citations": [
+        { "key": "pikirayi2001zimbabwe", "title": "The Zimbabwe Culture: Origins and Decline of Southern Zambezian States", "authors": ["Innocent Pikirayi"], "year": 2001, "venue": "AltaMira Press", "isbn": "9780759100916", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Great Zimbabwe)", "UNESCO WHS 364 (https://whc.unesco.org/en/list/364)"]
+    },
+    {
+      "id": "cand-swahili",
+      "title": "Swahili coast (Kilwa) @ medieval",
+      "region": "Swahili city-states (Kilwa Kisiwani)",
+      "thread": "africa",
+      "epoch": "medieval",
+      "epochApproxDate": "c. 1000-1500 CE",
+      "lat": -8.96,
+      "lng": 39.51,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 19,
+      "rationale": "A cosmopolitan, Islamic, mercantile African urban network on the Indian Ocean - commerce, maritime exchange and a hybrid Afro-Arab-Persian culture. Complements Great Zimbabwe (its trade partner).",
+      "draftValues": [
+        { "valueId": "hospitality", "intensity": 0.62, "role": "primary", "note": "NEEDS REVIEW - interpretive: cosmopolitan merchant hospitality" },
+        { "valueId": "piety", "intensity": 0.62, "role": "coupled", "note": "NEEDS REVIEW - interpretive: Islam, stone mosques" },
+        { "valueId": "individualism", "intensity": 0.5, "role": "coupled", "note": "NEEDS REVIEW - interpretive: merchant enterprise" }
+      ],
+      "draftDrivers": ["maritime_expansion", "trade_networks", "literacy"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "commerce", "religion", "architecture"],
+      "citations": [
+        { "key": "hortonmiddleton2000swahili", "title": "The Swahili: The Social Landscape of a Mercantile Society", "authors": ["Mark Horton", "John Middleton"], "year": 2000, "venue": "Blackwell", "isbn": "9780631189190", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Kilwa)", "UNESCO WHS 144 (https://whc.unesco.org/en/list/144)"]
+    },
+    {
+      "id": "cand-kongo",
+      "title": "Kingdom of Kongo @ early-mod",
+      "region": "Kingdom of Kongo (Mbanza Kongo)",
+      "thread": "africa",
+      "epoch": "early-mod",
+      "epochApproxDate": "c. 1390-1700s (Christianization from 1491)",
+      "lat": -6.27,
+      "lng": 14.25,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 20,
+      "rationale": "A Central African kingdom that adopted Christianity on its own terms and engaged Atlantic diplomacy/trade - a powerful case of African agency under intensifying colonial/slave-trade pressure (strong cost/altReading dimension).",
+      "draftValues": [
+        { "valueId": "piety", "intensity": 0.68, "role": "primary", "note": "NEEDS REVIEW - interpretive: syncretic Kongo Christianity" },
+        { "valueId": "hierarchy", "intensity": 0.66, "role": "coupled", "note": "NEEDS REVIEW - interpretive: provincial appointive kingship" },
+        { "valueId": "honor", "intensity": 0.5, "role": "coupled", "note": "NEEDS REVIEW - interpretive: court prestige, diplomacy" }
+      ],
+      "draftDrivers": ["trade_networks", "colonial_pressure", "kinship_intensity", "institutional_scale"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "religion", "governance", "commerce"],
+      "citations": [
+        { "key": "thornton2020wca", "title": "A History of West Central Africa to 1850", "authors": ["John K. Thornton"], "year": 2020, "venue": "Cambridge University Press", "isbn": "9781107565937", "license": "Copyright (facts only; cite-don't-copy)" },
+        { "key": "hilton1985kongo", "title": "The Kingdom of Kongo", "authors": ["Anne Hilton"], "year": 1985, "venue": "Oxford University Press", "isbn": "9780198228356", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Mbanza Kongo)", "DRH (Kongo Christianity)"]
+    },
+    {
+      "id": "cand-ethiopia-solomonic",
+      "title": "Christian Ethiopia (Zagwe/Solomonic, Lalibela) @ medieval",
+      "region": "Ethiopian highlands (Lalibela)",
+      "thread": "africa",
+      "epoch": "medieval",
+      "epochApproxDate": "Zagwe c. 1137-1270; Solomonic from 1270",
+      "lat": 12.03,
+      "lng": 39.04,
+      "fillsEmptyCell": false,
+      "priority": "tail",
+      "rank": 21,
+      "rationale": "Extends the Aksum thread forward: a long-lived Christian African state with rock-hewn church monumentality and a distinctive sacral monarchy/honor culture.",
+      "draftValues": [
+        { "valueId": "piety", "intensity": 0.8, "role": "primary", "note": "NEEDS REVIEW - interpretive: Ethiopian Orthodox Christianity" },
+        { "valueId": "hierarchy", "intensity": 0.7, "role": "coupled", "note": "NEEDS REVIEW - interpretive: sacral Solomonic kingship" }
+      ],
+      "draftDrivers": ["monumental_religion", "institutional_scale", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "religion", "architecture"],
+      "citations": [
+        { "key": "phillipson2012aksum", "title": "Foundations of an African Civilisation: Aksum and the Northern Horn 1000 BC-AD 1300", "authors": ["David W. Phillipson"], "year": 2012, "venue": "James Currey", "isbn": "9781847010414", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["UNESCO WHS 18 (Lalibela; https://whc.unesco.org/en/list/18)"]
+    },
+    {
+      "id": "cand-wari",
+      "title": "Wari Empire @ medieval",
+      "region": "Wari (Ayacucho highlands)",
+      "thread": "americas",
+      "epoch": "medieval",
+      "epochApproxDate": "c. 600-1000 CE",
+      "lat": -13.06,
+      "lng": -74.22,
+      "fillsEmptyCell": false,
+      "priority": "tail",
+      "rank": 22,
+      "rationale": "The more militaristic/administrative Andean counterpart to Tiwanaku (orthogonal compounds, colonies, road precursors). Pairs with Tiwanaku to contrast two Middle Horizon state strategies.",
+      "draftValues": [
+        { "valueId": "order", "intensity": 0.72, "role": "primary", "note": "NEEDS REVIEW - interpretive: planned administrative compounds" },
+        { "valueId": "hierarchy", "intensity": 0.7, "role": "coupled", "note": "NEEDS REVIEW - interpretive" },
+        { "valueId": "aggression", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: expansionist statecraft" }
+      ],
+      "draftDrivers": ["institutional_scale", "military_revolution", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "governance", "architecture"],
+      "citations": [
+        { "key": "schreiber1992wari", "title": "Wari Imperialism in Middle Horizon Peru", "authors": ["Katharina J. Schreiber"], "year": 1992, "venue": "Museum of Anthropology, University of Michigan", "isbn": "9780915703272", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Seshat (Wari; CITE-ONLY)", "Reba urbanization (Huari)"]
+    },
+    {
+      "id": "cand-toltec",
+      "title": "Toltec (Tula) @ medieval",
+      "region": "Tula (central Mexico)",
+      "thread": "americas",
+      "epoch": "medieval",
+      "epochApproxDate": "c. 900-1150 CE",
+      "lat": 20.06,
+      "lng": -99.34,
+      "fillsEmptyCell": false,
+      "priority": "tail",
+      "rank": 23,
+      "rationale": "Bridges Teotihuacan (imperial) and Mexica (early-mod) in central Mexico; the Toltec became the legitimating 'classical' reference for later Mesoamerican dynasties (militarism + craft prestige).",
+      "draftValues": [
+        { "valueId": "aggression", "intensity": 0.66, "role": "primary", "note": "NEEDS REVIEW - interpretive: warrior cult (Atlantean columns)" },
+        { "valueId": "honor", "intensity": 0.58, "role": "coupled", "note": "NEEDS REVIEW - interpretive: militarized prestige" }
+      ],
+      "draftDrivers": ["military_revolution", "trade_networks", "monumental_religion"],
+      "reviewFlag": "NEEDS REVIEW - interpretive. Toltec history is heavily mythologized - flag contested.",
+      "suggestedAspects": ["values-synthesis", "myth", "architecture"],
+      "citations": [
+        { "key": "cobean2012tula", "title": "Tula", "authors": ["Robert H. Cobean", "Elizabeth Jimenez Garcia", "Alba Guadalupe Mastache"], "year": 2012, "venue": "El Colegio de Mexico / FCE", "isbn": "9786074626056", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Reba urbanization (Tula)"]
+    },
+    {
+      "id": "cand-saka-pazyryk",
+      "title": "Saka / Pazyryk nomads @ axial",
+      "region": "Altai-Central Asian steppe (Pazyryk)",
+      "thread": "steppe",
+      "epoch": "axial",
+      "epochApproxDate": "c. 600-300 BCE",
+      "lat": 50.74,
+      "lng": 86.13,
+      "fillsEmptyCell": true,
+      "priority": "shortlist",
+      "rank": 24,
+      "rationale": "Fills the EMPTY steppe/axial cell. Frozen-tomb (kurgan) preservation gives unusually direct evidence of dress, tattoo, horse gear and feasting - rich material for honor/individualism + art/dress aspects. (Related to but east of the iron-age Scythians already in the atlas.)",
+      "draftValues": [
+        { "valueId": "honor", "intensity": 0.75, "role": "primary", "note": "NEEDS REVIEW - interpretive: warrior burials, weapon grave goods" },
+        { "valueId": "individualism", "intensity": 0.58, "role": "coupled", "note": "NEEDS REVIEW - interpretive: personal adornment/tattoo, mounted autonomy" },
+        { "valueId": "generosity", "intensity": 0.5, "role": "coupled", "note": "NEEDS REVIEW - interpretive: competitive feasting/gifting" }
+      ],
+      "draftDrivers": ["nomadic_mobility", "metallurgy", "trade_networks", "resource_competition"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "dress", "art", "daily-life"],
+      "citations": [
+        { "key": "cunliffe2019scythians", "title": "The Scythians: Nomad Warriors of the Steppe", "authors": ["Barry Cunliffe"], "year": 2019, "venue": "Oxford University Press", "isbn": "9780198820123", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": []
+    },
+    {
+      "id": "cand-gokturk",
+      "title": "Gokturk Khaganate (Orkhon) @ medieval",
+      "region": "First/Second Turkic Khaganate (Orkhon Valley)",
+      "thread": "steppe",
+      "epoch": "medieval",
+      "epochApproxDate": "c. 552-744 CE",
+      "lat": 47.42,
+      "lng": 102.2,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 25,
+      "rationale": "Steppe/medieval holds only the Mongols. The Gokturks add the FIRST indigenous Turkic writing (Orkhon runiform inscriptions) - a literate steppe empire, countering the 'nomads = non-literate' assumption and giving a script aspect.",
+      "draftValues": [
+        { "valueId": "honor", "intensity": 0.72, "role": "primary", "note": "NEEDS REVIEW - interpretive: heroic ethos in Orkhon inscriptions" },
+        { "valueId": "curiosity", "intensity": 0.5, "role": "coupled", "note": "NEEDS REVIEW - interpretive: development of runiform script" },
+        { "valueId": "aggression", "intensity": 0.62, "role": "coupled", "note": "NEEDS REVIEW - interpretive: cavalry conquest" }
+      ],
+      "draftDrivers": ["nomadic_mobility", "literacy", "military_revolution", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "script", "governance"],
+      "citations": [
+        { "key": "golden1992turkic", "title": "An Introduction to the History of the Turkic Peoples", "authors": ["Peter B. Golden"], "year": 1992, "venue": "Otto Harrassowitz", "isbn": "9783447032742", "license": "Copyright (facts only; cite-don't-copy)" },
+        { "key": "sinor1990innerasia", "title": "The Cambridge History of Early Inner Asia", "authors": ["Denis Sinor (ed.)"], "year": 1990, "venue": "Cambridge University Press", "isbn": "9780521243049", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": []
+    },
+    {
+      "id": "cand-dzungar",
+      "title": "Dzungar / Kazakh Khanate @ early-mod",
+      "region": "Dzungaria / Kazakh steppe",
+      "thread": "steppe",
+      "epoch": "early-mod",
+      "epochApproxDate": "c. 1450-1750 CE",
+      "lat": 45.0,
+      "lng": 82.0,
+      "fillsEmptyCell": true,
+      "priority": "shortlist",
+      "rank": 26,
+      "rationale": "Fills the EMPTY steppe/early-mod cell. The last great independent steppe powers in the gunpowder age - their destruction by the Qing marks the historical 'closing' of the steppe frontier (strong colonial_pressure / cost narrative).",
+      "draftValues": [
+        { "valueId": "honor", "intensity": 0.7, "role": "primary", "note": "NEEDS REVIEW - interpretive: clan honor, mobile warfare" },
+        { "valueId": "hospitality", "intensity": 0.55, "role": "coupled", "note": "NEEDS REVIEW - interpretive: steppe guest custom" },
+        { "valueId": "aggression", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive" }
+      ],
+      "draftDrivers": ["nomadic_mobility", "military_revolution", "resource_competition", "colonial_pressure"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "governance", "daily-life"],
+      "citations": [
+        { "key": "perdue2005chinamarcheswest", "title": "China Marches West: The Qing Conquest of Central Eurasia", "authors": ["Peter C. Perdue"], "year": 2005, "venue": "Harvard University Press", "isbn": "9780674016842", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": []
+    },
+    {
+      "id": "cand-tonga",
+      "title": "Tu'i Tonga maritime chiefdom @ medieval",
+      "region": "Tongan archipelago (Lapaha, Tongatapu)",
+      "thread": "none",
+      "threadNote": "RECOMMEND 'oceania' thread.",
+      "epoch": "medieval",
+      "epochApproxDate": "c. 950-1500 CE (peak 13th-15th c.)",
+      "lat": -21.13,
+      "lng": -175.16,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 27,
+      "rationale": "A Polynesian maritime 'empire' integrating islands across vast ocean distances via tribute and the langi monumental tombs - distinct from the Society Islands point already present (polynesia-med). Pulotu (CC-BY) directly supplies Tongan data.",
+      "draftValues": [
+        { "valueId": "hierarchy", "intensity": 0.82, "role": "primary", "note": "NEEDS REVIEW - interpretive: paramount Tu'i Tonga, sacred chiefship" },
+        { "valueId": "honor", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: rank/prestige tribute" },
+        { "valueId": "piety", "intensity": 0.55, "role": "coupled", "note": "NEEDS REVIEW - interpretive: langi tomb cult" }
+      ],
+      "draftDrivers": ["maritime_expansion", "institutional_scale", "monumental_religion", "trade_networks"],
+      "reviewFlag": "NEEDS REVIEW - interpretive.",
+      "suggestedAspects": ["values-synthesis", "governance", "architecture", "religion"],
+      "citations": [
+        { "key": "kirch2017winds", "title": "On the Road of the Winds (rev. ed.)", "authors": ["Patrick V. Kirch"], "year": 2017, "venue": "University of California Press", "isbn": "9780520292819", "license": "Copyright (facts only; cite-don't-copy)" },
+        { "key": "watts2015pulotu", "title": "Pulotu: Database of Austronesian Supernatural Beliefs and Practices", "authors": ["Joseph Watts", "Oliver Sheehan", "Simon J. Greenhill", "et al."], "year": 2015, "venue": "PLoS ONE 10(9):e0136783", "doi": "10.1371/journal.pone.0136783", "license": "CC-BY-4.0", "sourceDataset": "Pulotu" }
+      ],
+      "tierOneSources": ["Pulotu (Tonga; CC-BY)"]
+    },
+    {
+      "id": "cand-maori",
+      "title": "Maori (Aotearoa) @ early-mod",
+      "region": "Aotearoa / New Zealand",
+      "thread": "none",
+      "threadNote": "RECOMMEND 'oceania' thread.",
+      "epoch": "early-mod",
+      "epochApproxDate": "Settlement c. 1250-1300; classic Maori society to 1769 contact",
+      "lat": -38.14,
+      "lng": 176.25,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 28,
+      "rationale": "The southernmost Polynesian colonization, with a distinctive kin/honor complex (mana, utu, tapu, whakapapa) and well-documented ethnography (D-PLACE/SCCS) and CC-BY Pulotu coverage.",
+      "draftValues": [
+        { "valueId": "honor", "intensity": 0.78, "role": "primary", "note": "NEEDS REVIEW - interpretive: mana/utu, reciprocity of offense" },
+        { "valueId": "collectivism", "intensity": 0.7, "role": "coupled", "note": "NEEDS REVIEW - interpretive: iwi/hapu descent groups" },
+        { "valueId": "hospitality", "intensity": 0.62, "role": "coupled", "note": "NEEDS REVIEW - interpretive: manaakitanga" },
+        { "valueId": "aggression", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: inter-hapu warfare, pa fortifications" }
+      ],
+      "draftDrivers": ["kinship_intensity", "resource_competition", "open_frontier", "maritime_expansion"],
+      "reviewFlag": "NEEDS REVIEW - interpretive. Engage Maori scholarship/communities for framing at ingestion.",
+      "suggestedAspects": ["values-synthesis", "myth", "governance", "art"],
+      "citations": [
+        { "key": "anderson2014tangata", "title": "Tangata Whenua: An Illustrated History", "authors": ["Atholl Anderson", "Judith Binney", "Aroha Harris"], "year": 2014, "venue": "Bridget Williams Books", "isbn": "9781927131419", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["D-PLACE/SCCS (Maori)", "Pulotu (Maori; CC-BY)"]
+    },
+    {
+      "id": "cand-rapanui",
+      "title": "Rapa Nui (Easter Island) @ medieval",
+      "region": "Rapa Nui (Easter Island)",
+      "thread": "none",
+      "threadNote": "RECOMMEND 'oceania' thread.",
+      "epoch": "medieval",
+      "epochApproxDate": "Settlement c. 1200; moai-building c. 1250-1600",
+      "lat": -27.12,
+      "lng": -109.37,
+      "fillsEmptyCell": false,
+      "priority": "tail",
+      "rank": 29,
+      "rationale": "The most isolated human society on Earth, famous for moai monumentality and a fiercely contested 'collapse' narrative - an ideal point for contested/altReading treatment (ecocide vs. resilience-and-genocide debates).",
+      "draftValues": [
+        { "valueId": "piety", "intensity": 0.7, "role": "primary", "note": "NEEDS REVIEW - interpretive: ancestor moai cult" },
+        { "valueId": "hierarchy", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: competitive lineages" },
+        { "valueId": "collectivism", "intensity": 0.55, "role": "coupled", "note": "NEEDS REVIEW - interpretive: corporate statue-building labor" }
+      ],
+      "draftDrivers": ["monumental_religion", "kinship_intensity", "open_frontier", "resource_scarcity"],
+      "reviewFlag": "NEEDS REVIEW - interpretive. 'Collapse' is strongly contested - require contestNote + altReading.",
+      "suggestedAspects": ["values-synthesis", "religion", "art", "myth"],
+      "citations": [
+        { "key": "hunt2011statues", "title": "The Statues That Walked: Unraveling the Mystery of Easter Island", "authors": ["Terry Hunt", "Carl Lipo"], "year": 2011, "venue": "Free Press", "isbn": "9781439150313", "license": "Copyright (facts only; cite-don't-copy)" },
+        { "key": "kirch2017winds", "title": "On the Road of the Winds (rev. ed.)", "authors": ["Patrick V. Kirch"], "year": 2017, "venue": "University of California Press", "isbn": "9780520292819", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["Pulotu (Rapa Nui; CC-BY)"]
+    },
+    {
+      "id": "cand-jomon",
+      "title": "Jomon affluent foragers (Sannai-Maruyama) @ hunter",
+      "region": "Jomon Japan (Sannai-Maruyama, Aomori)",
+      "thread": "none",
+      "threadNote": "Japan currently lands in thread:'none' (cf. meiji-japan, tokugawa-em).",
+      "epoch": "hunter",
+      "epochApproxDate": "c. 14000-300 BCE (Sannai-Maruyama c. 3900-2300 BCE)",
+      "lat": 40.81,
+      "lng": 140.7,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 30,
+      "rationale": "The hunter cell is well stocked with MOBILE, egalitarian foragers (San, Hadza, Inuit, Yanomami). Jomon adds the contrasting 'complex/affluent sedentary forager' case - permanent villages, storage, pottery and ritual WITHOUT agriculture - widening the deep-time value space.",
+      "draftValues": [
+        { "valueId": "collectivism", "intensity": 0.68, "role": "primary", "note": "NEEDS REVIEW - interpretive: sedentary village cooperation" },
+        { "valueId": "piety", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: dogu figurines, stone circles" },
+        { "valueId": "egalitarianism", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: limited but debated status differences" }
+      ],
+      "draftDrivers": ["trade_networks", "kinship_intensity", "maritime_expansion"],
+      "reviewFlag": "NEEDS REVIEW - interpretive. Degree of social complexity/inequality is actively debated.",
+      "suggestedAspects": ["values-synthesis", "daily-life", "art", "religion"],
+      "citations": [
+        { "key": "habu2004jomon", "title": "Ancient Jomon of Japan", "authors": ["Junko Habu"], "year": 2004, "venue": "Cambridge University Press", "isbn": "9780521776707", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": []
+    },
+    {
+      "id": "cand-kuk",
+      "title": "Kuk Swamp / New Guinea Highlands agriculture @ early-agr",
+      "region": "Kuk Swamp (Wahgi Valley, PNG Highlands)",
+      "thread": "none",
+      "threadNote": "RECOMMEND 'oceania' thread (or 'sahul').",
+      "epoch": "early-agr",
+      "epochApproxDate": "c. 10000-7000 cal BP (independent agricultural origin)",
+      "lat": -5.78,
+      "lng": 144.33,
+      "fillsEmptyCell": false,
+      "priority": "shortlist",
+      "rank": 31,
+      "rationale": "early-agr is dominated by Old-World/Andean cases. Kuk is one of the FEW independent global centres of plant domestication (taro, banana) and produced big-man reciprocity rather than hereditary hierarchy - a key non-state agricultural value-path. Verified DOI.",
+      "draftValues": [
+        { "valueId": "egalitarianism", "intensity": 0.7, "role": "primary", "note": "NEEDS REVIEW - interpretive: achieved (big-man) rather than ascribed status" },
+        { "valueId": "solidarity", "intensity": 0.62, "role": "coupled", "note": "NEEDS REVIEW - interpretive: exchange/obligation networks" },
+        { "valueId": "generosity", "intensity": 0.6, "role": "coupled", "note": "NEEDS REVIEW - interpretive: competitive gift/feasting (moka-type, later analogues)" }
+      ],
+      "draftDrivers": ["hydraulic_coordination", "kinship_intensity", "trade_networks", "open_frontier"],
+      "reviewFlag": "NEEDS REVIEW - interpretive. Value reconstruction blends archaeology with later Highlands ethnography - flag the inference.",
+      "suggestedAspects": ["values-synthesis", "commerce", "daily-life"],
+      "citations": [
+        { "key": "denham2003kuk", "title": "Origins of Agriculture at Kuk Swamp in the Highlands of New Guinea", "authors": ["Tim P. Denham", "Simon G. Haberle", "Carol Lentfer", "et al."], "year": 2003, "venue": "Science 301(5630):189-193", "doi": "10.1126/science.1085255", "license": "Copyright (facts only; cite-don't-copy)" }
+      ],
+      "tierOneSources": ["D-PLACE/SCCS (Highlands New Guinea ethnography)", "UNESCO WHS 887 (Kuk; https://whc.unesco.org/en/list/887)"]
+    }
+  ]
+}
