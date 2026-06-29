@@ -23971,5 +23971,125 @@
         "license": "Copyright (facts cited; cite-don't-copy)"
       }
     ]
+  },
+  {
+    "id": "caral-bronze",
+    "region": "Norte Chico (Supe Valley)",
+    "thread": "americas",
+    "lat": -10.89,
+    "lng": -77.52,
+    "epoch": "bronze",
+    "values": [
+      {
+        "valueId": "collectivism",
+        "intensity": 0.8,
+        "role": "primary"
+      },
+      {
+        "valueId": "piety",
+        "intensity": 0.7,
+        "role": "coupled"
+      },
+      {
+        "valueId": "aggression",
+        "intensity": 0.12,
+        "role": "counter"
+      }
+    ],
+    "drivers": [
+      "hydraulic_coordination",
+      "monumental_religion",
+      "trade_networks"
+    ],
+    "status": "adaptive",
+    "evidence": "archaeological",
+    "confidence": 0.5,
+    "contested": true,
+    "note": "The Norte Chico / Caral complex is the earliest urban, monumental society in the Americas (c. 3000-1800 BCE) — preceramic platform mounds and sunken circular plazas built by corporate labor, without fortifications or clear evidence of warfare. It pairs irrigation farming of the Supe Valley with cotton-for-seafood exchange to the coast, suggesting integration through shared ceremony rather than conquest.",
+    "altReading": "The 'peaceful' reading is partly an argument from absence: monumental labor on this scale still implies the power to mobilize people, and emergent inequality may simply be archaeologically quiet.",
+    "cost": "Sustained corporate labor obligations channeled into elite-directed ceremonial construction.",
+    "schemaVersion": 2,
+    "sources": [
+      "Shady Solis, R., Haas, J., & Creamer, W. (2001). Science 292:723-726.",
+      "Haas, J., Creamer, W., & Ruiz, A. (2004). Nature 432:1020-1023."
+    ],
+    "aspects": [
+      {
+        "type": "values-synthesis",
+        "readings": [
+          {
+            "text": "Caral and its neighbors show monumentality preceding the state: corporate labor raised platform mounds and sunken plazas in a preceramic society apparently organized around shared ceremony and irrigation farming rather than war. The configuration reads as deep-time collectivism coupled to ritual authority.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "Reconstructing values from preceramic architecture alone is highly inferential; the low-aggression coding rests on the absence of fortifications — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "shady2001caral",
+              "haas2004nortechico"
+            ]
+          },
+          {
+            "text": "Alt reading: large-scale construction still presupposes the authority to direct labor, so 'egalitarian monumentality' may understate emergent hierarchy that left little trace."
+          },
+          {
+            "text": "The Shadow / Cost: recurrent corporate labor obligations funneled into elite-directed ceremonial building."
+          }
+        ]
+      },
+      {
+        "type": "architecture",
+        "readings": [
+          {
+            "text": "The signature forms are stepped platform mounds paired with sunken circular plazas, dated by radiocarbon at Caral to the third millennium BCE — among the oldest monumental architecture anywhere in the Americas.",
+            "confidence": 0.6,
+            "contested": false,
+            "citationKeys": [
+              "shady2001caral"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "commerce",
+        "readings": [
+          {
+            "text": "Inland cotton (for nets and textiles) and coastal anchovy/shellfish appear to have moved in a complementary maritime-agricultural exchange, knitting Supe Valley centers to the Pacific shore.",
+            "confidence": 0.5,
+            "contested": true,
+            "contestNote": "The cotton-for-seafood exchange model is a widely cited but interpretive reconstruction — NEEDS HUMAN REVIEW.",
+            "citationKeys": [
+              "haas2004nortechico"
+            ]
+          }
+        ]
+      }
+    ],
+    "bibliography": [
+      {
+        "key": "shady2001caral",
+        "title": "Dating Caral, a Preceramic Site in the Supe Valley on the Central Coast of Peru",
+        "authors": [
+          "Ruth Shady Solis",
+          "Jonathan Haas",
+          "Winifred Creamer"
+        ],
+        "year": 2001,
+        "venue": "Science 292:723-726",
+        "doi": "10.1126/science.1059519",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      },
+      {
+        "key": "haas2004nortechico",
+        "title": "Dating the Late Archaic occupation of the Norte Chico region in Peru",
+        "authors": [
+          "Jonathan Haas",
+          "Winifred Creamer",
+          "Alvaro Ruiz"
+        ],
+        "year": 2004,
+        "venue": "Nature 432:1020-1023",
+        "doi": "10.1038/nature03146",
+        "license": "Copyright (facts cited; cite-don't-copy)"
+      }
+    ]
   }
 ]
