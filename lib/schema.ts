@@ -114,6 +114,7 @@ export const THREADS: ThreadDef[] = [
   {id:'steppe',  label:'Eurasian Steppe'},
   {id:'africa',  label:'Sub-Saharan Africa'},
   {id:'americas',label:'Americas'},
+  {id:'oceania', label:'Oceania'},
 ];
 
 // A single civilization-at-epoch data point from public/data/atlas.json.

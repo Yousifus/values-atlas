@@ -191,7 +191,7 @@
   {
     "id": "papua-hg",
     "region": "Papua Highlands",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -6,
     "lng": 144,
     "epoch": "hunter",
@@ -1533,7 +1533,7 @@
   {
     "id": "polynesia-med",
     "region": "Polynesia (Pacific)",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -17.7,
     "lng": -149.4,
     "epoch": "medieval",
@@ -6170,7 +6170,7 @@
   {
     "id": "arnhem-hg",
     "region": "Arnhem Land, Australia",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -12.5,
     "lng": 134,
     "epoch": "hunter",
@@ -6733,7 +6733,7 @@
   {
     "id": "pulotu-puyuma",
     "region": "Puyuma",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 22.8,
     "lng": 121.1,
     "epoch": "modern",
@@ -6894,7 +6894,7 @@
   {
     "id": "pulotu-subanun",
     "region": "Subanun",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 7.1,
     "lng": 122.1,
     "epoch": "modern",
@@ -7015,7 +7015,7 @@
   {
     "id": "pulotu-tanna",
     "region": "Tanna",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -19.5,
     "lng": 169.4,
     "epoch": "industrial",
@@ -7131,7 +7131,7 @@
   {
     "id": "pulotu-tsou",
     "region": "Tsou",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 23.4,
     "lng": 120.7,
     "epoch": "modern",
@@ -7297,7 +7297,7 @@
   {
     "id": "pulotu-tanimbar",
     "region": "Tanimbar",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -7.5,
     "lng": 131.5,
     "epoch": "modern",
@@ -7418,7 +7418,7 @@
   {
     "id": "pulotu-toabaita",
     "region": "To'abaita",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.4,
     "lng": 160.6,
     "epoch": "modern",
@@ -7539,7 +7539,7 @@
   {
     "id": "pulotu-waropen",
     "region": "Waropen",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -2.3,
     "lng": 136.5,
     "epoch": "modern",
@@ -7660,7 +7660,7 @@
   {
     "id": "pulotu-minahasa",
     "region": "Minahasa",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 1.3,
     "lng": 124.9,
     "epoch": "early-mod",
@@ -7781,7 +7781,7 @@
   {
     "id": "pulotu-lakalai",
     "region": "Lakalai",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -5.4,
     "lng": 150.4,
     "epoch": "modern",
@@ -7897,7 +7897,7 @@
   {
     "id": "pulotu-manam",
     "region": "Manam",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -4.1,
     "lng": 145,
     "epoch": "modern",
@@ -8013,7 +8013,7 @@
   {
     "id": "pulotu-motu",
     "region": "Motu",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.5,
     "lng": 147.1,
     "epoch": "modern",
@@ -8134,7 +8134,7 @@
   {
     "id": "pulotu-southern-toraja",
     "region": "Southern Toraja",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -3.1,
     "lng": 119.8,
     "epoch": "modern",
@@ -8300,7 +8300,7 @@
   {
     "id": "pulotu-maori",
     "region": "Māori",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -39,
     "lng": 175.8,
     "epoch": "industrial",
@@ -8416,7 +8416,7 @@
   {
     "id": "pulotu-palau",
     "region": "Palau",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 7.4,
     "lng": 134.6,
     "epoch": "modern",
@@ -8537,7 +8537,7 @@
   {
     "id": "pulotu-roviana",
     "region": "Roviana",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.1,
     "lng": 157.5,
     "epoch": "modern",
@@ -8658,7 +8658,7 @@
   {
     "id": "pulotu-rarotonga",
     "region": "Rarotonga",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -21.2,
     "lng": -159.8,
     "epoch": "industrial",
@@ -8779,7 +8779,7 @@
   {
     "id": "pulotu-tonga",
     "region": "Tonga",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -21.2,
     "lng": -175.2,
     "epoch": "industrial",
@@ -8900,7 +8900,7 @@
   {
     "id": "pulotu-savu",
     "region": "Savu",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -10.5,
     "lng": 121.9,
     "epoch": "industrial",
@@ -9021,7 +9021,7 @@
   {
     "id": "pulotu-rennell",
     "region": "Rennell",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -11.6,
     "lng": 160.3,
     "epoch": "modern",
@@ -9137,7 +9137,7 @@
   {
     "id": "pulotu-palawan-batak",
     "region": "Palawan Batak",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 10.1,
     "lng": 119.1,
     "epoch": "modern",
@@ -9258,7 +9258,7 @@
   {
     "id": "pulotu-ifugao",
     "region": "Ifugao",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 16.7,
     "lng": 121.2,
     "epoch": "industrial",
@@ -9424,7 +9424,7 @@
   {
     "id": "pulotu-ami",
     "region": "Ami",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 23.4,
     "lng": 121.4,
     "epoch": "modern",
@@ -9590,7 +9590,7 @@
   {
     "id": "pulotu-dobuans",
     "region": "Dobuans",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.6,
     "lng": 150.8,
     "epoch": "modern",
@@ -9706,7 +9706,7 @@
   {
     "id": "pulotu-kiribati",
     "region": "Kiribati",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -1.2,
     "lng": 174.7,
     "epoch": "modern",
@@ -9822,7 +9822,7 @@
   {
     "id": "pulotu-chuuk",
     "region": "Chuuk",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 7.3,
     "lng": 151.6,
     "epoch": "modern",
@@ -9943,7 +9943,7 @@
   {
     "id": "pulotu-kwaio",
     "region": "Kwaio",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9,
     "lng": 160.9,
     "epoch": "modern",
@@ -10064,7 +10064,7 @@
   {
     "id": "pulotu-marshall-islands",
     "region": "Marshall Islands",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 7.1,
     "lng": 171.7,
     "epoch": "industrial",
@@ -10180,7 +10180,7 @@
   {
     "id": "pulotu-ulithi",
     "region": "Ulithi",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 10.1,
     "lng": 139.7,
     "epoch": "modern",
@@ -10301,7 +10301,7 @@
   {
     "id": "pulotu-lau",
     "region": "Lau",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.3,
     "lng": 160.8,
     "epoch": "modern",
@@ -10422,7 +10422,7 @@
   {
     "id": "pulotu-tanala",
     "region": "Tanala",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -20.9,
     "lng": 47.6,
     "epoch": "modern",
@@ -10588,7 +10588,7 @@
   {
     "id": "pulotu-atayal",
     "region": "Atayal",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 24.4,
     "lng": 121.3,
     "epoch": "modern",
@@ -10754,7 +10754,7 @@
   {
     "id": "pulotu-atoni",
     "region": "Atoni",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.7,
     "lng": 124.3,
     "epoch": "modern",
@@ -10875,7 +10875,7 @@
   {
     "id": "pulotu-chamorro",
     "region": "Chamorro",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 13.5,
     "lng": 144.8,
     "epoch": "early-mod",
@@ -10996,7 +10996,7 @@
   {
     "id": "pulotu-bunun",
     "region": "Bunun",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 23.5,
     "lng": 120.5,
     "epoch": "modern",
@@ -11162,7 +11162,7 @@
   {
     "id": "pulotu-besemah",
     "region": "Besemah",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -4.1,
     "lng": 103.3,
     "epoch": "industrial",
@@ -11328,7 +11328,7 @@
   {
     "id": "pulotu-cheke-holo",
     "region": "Cheke Holo",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.3,
     "lng": 159.6,
     "epoch": "modern",
@@ -11444,7 +11444,7 @@
   {
     "id": "pulotu-futuna",
     "region": "Futuna",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -14.3,
     "lng": -178,
     "epoch": "industrial",
@@ -11560,7 +11560,7 @@
   {
     "id": "pulotu-kayan",
     "region": "Kayan",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 2.1,
     "lng": 115.1,
     "epoch": "modern",
@@ -11681,7 +11681,7 @@
   {
     "id": "pulotu-kedang",
     "region": "Kedang",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.2,
     "lng": 123.8,
     "epoch": "modern",
@@ -11802,7 +11802,7 @@
   {
     "id": "pulotu-tagbanuwa",
     "region": "Tagbanuwa",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 9.5,
     "lng": 118.4,
     "epoch": "modern",
@@ -11923,7 +11923,7 @@
   {
     "id": "pulotu-moken",
     "region": "Moken",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 11.7,
     "lng": 98.3,
     "epoch": "industrial",
@@ -12039,7 +12039,7 @@
   {
     "id": "pulotu-lifou",
     "region": "Lifou",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -21,
     "lng": 167.2,
     "epoch": "industrial",
@@ -12160,7 +12160,7 @@
   {
     "id": "pulotu-manggarai",
     "region": "Manggarai",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.6,
     "lng": 120.4,
     "epoch": "modern",
@@ -12281,7 +12281,7 @@
   {
     "id": "pulotu-manus-titan",
     "region": "Manus (Titan)",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -2.2,
     "lng": 147.2,
     "epoch": "modern",
@@ -12402,7 +12402,7 @@
   {
     "id": "pulotu-nguna",
     "region": "Nguna",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -17.4,
     "lng": 168.4,
     "epoch": "modern",
@@ -12518,7 +12518,7 @@
   {
     "id": "pulotu-siraya",
     "region": "Siraya",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 22.9,
     "lng": 120.4,
     "epoch": "early-mod",
@@ -12679,7 +12679,7 @@
   {
     "id": "pulotu-nuaulu",
     "region": "Nuaulu",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -3.2,
     "lng": 129,
     "epoch": "now",
@@ -12795,7 +12795,7 @@
   {
     "id": "pulotu-mare",
     "region": "Mare",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -21.5,
     "lng": 168,
     "epoch": "industrial",
@@ -12916,7 +12916,7 @@
   {
     "id": "pulotu-moriori",
     "region": "Moriori",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -43.8,
     "lng": -176.5,
     "epoch": "industrial",
@@ -13037,7 +13037,7 @@
   {
     "id": "pulotu-nendo",
     "region": "Nendo",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -10.7,
     "lng": 165.9,
     "epoch": "modern",
@@ -13153,7 +13153,7 @@
   {
     "id": "pulotu-nias",
     "region": "Nias",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 1.2,
     "lng": 97.5,
     "epoch": "modern",
@@ -13319,7 +13319,7 @@
   {
     "id": "pulotu-merina",
     "region": "Merina",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -18.9,
     "lng": 47.5,
     "epoch": "industrial",
@@ -13440,7 +13440,7 @@
   {
     "id": "pulotu-dusun",
     "region": "Dusun",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 5.7,
     "lng": 116.4,
     "epoch": "modern",
@@ -13561,7 +13561,7 @@
   {
     "id": "pulotu-iban",
     "region": "Iban",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 1.2,
     "lng": 111.6,
     "epoch": "industrial",
@@ -13682,7 +13682,7 @@
   {
     "id": "pulotu-kalinga",
     "region": "Kalinga",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 17.5,
     "lng": 121.3,
     "epoch": "modern",
@@ -13803,7 +13803,7 @@
   {
     "id": "pulotu-kelabit",
     "region": "Kelabit",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 3.7,
     "lng": 115.5,
     "epoch": "modern",
@@ -13924,7 +13924,7 @@
   {
     "id": "pulotu-kaoka",
     "region": "Kaoka",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.7,
     "lng": 160.7,
     "epoch": "modern",
@@ -14040,7 +14040,7 @@
   {
     "id": "pulotu-ontong-java",
     "region": "Ontong Java",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -5.5,
     "lng": 159.7,
     "epoch": "modern",
@@ -14161,7 +14161,7 @@
   {
     "id": "pulotu-paiwan",
     "region": "Paiwan",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 22.5,
     "lng": 120.9,
     "epoch": "modern",
@@ -14327,7 +14327,7 @@
   {
     "id": "pulotu-mangareva",
     "region": "Mangareva",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -23.1,
     "lng": -135,
     "epoch": "industrial",
@@ -14443,7 +14443,7 @@
   {
     "id": "pulotu-rejang",
     "region": "Rejang",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -3.4,
     "lng": 102.8,
     "epoch": "industrial",
@@ -14609,7 +14609,7 @@
   {
     "id": "pulotu-tokelau",
     "region": "Tokelau",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.4,
     "lng": -171.2,
     "epoch": "industrial",
@@ -14725,7 +14725,7 @@
   {
     "id": "pulotu-mangaia",
     "region": "Mangaia",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -21.9,
     "lng": -157.9,
     "epoch": "industrial",
@@ -14846,7 +14846,7 @@
   {
     "id": "pulotu-pukapuka",
     "region": "Pukapuka",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -10.9,
     "lng": -165.8,
     "epoch": "industrial",
@@ -14967,7 +14967,7 @@
   {
     "id": "pulotu-mekeo",
     "region": "Mekeo",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.6,
     "lng": 146.6,
     "epoch": "modern",
@@ -15083,7 +15083,7 @@
   {
     "id": "pulotu-kwaraae",
     "region": "Kwara'ae",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.7,
     "lng": 160.8,
     "epoch": "modern",
@@ -15204,7 +15204,7 @@
   {
     "id": "pulotu-nage",
     "region": "Nage",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.7,
     "lng": 121.2,
     "epoch": "modern",
@@ -15325,7 +15325,7 @@
   {
     "id": "pulotu-south-pentecost",
     "region": "South Pentecost",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -15.9,
     "lng": 168.2,
     "epoch": "modern",
@@ -15441,7 +15441,7 @@
   {
     "id": "pulotu-yap",
     "region": "Yap",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 9.5,
     "lng": 138.1,
     "epoch": "modern",
@@ -15557,7 +15557,7 @@
   {
     "id": "pulotu-mota",
     "region": "Mota",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -13.8,
     "lng": 167.7,
     "epoch": "modern",
@@ -15678,7 +15678,7 @@
   {
     "id": "pulotu-tetum",
     "region": "Tetum",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.3,
     "lng": 125.2,
     "epoch": "now",
@@ -15799,7 +15799,7 @@
   {
     "id": "pulotu-tolai",
     "region": "Tolai",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -4.4,
     "lng": 152.2,
     "epoch": "modern",
@@ -15915,7 +15915,7 @@
   {
     "id": "pulotu-toba-batak",
     "region": "Toba Batak",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 2.3,
     "lng": 99,
     "epoch": "modern",
@@ -16081,7 +16081,7 @@
   {
     "id": "pulotu-seniang",
     "region": "Seniang",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -16.5,
     "lng": 167.4,
     "epoch": "modern",
@@ -16202,7 +16202,7 @@
   {
     "id": "pulotu-mentawai",
     "region": "Mentawai",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -1.4,
     "lng": 98.9,
     "epoch": "modern",
@@ -16368,7 +16368,7 @@
   {
     "id": "pulotu-kapingamarangi",
     "region": "Kapingamarangi",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 1,
     "lng": 154.8,
     "epoch": "modern",
@@ -16489,7 +16489,7 @@
   {
     "id": "pulotu-ata-tana-aai",
     "region": "Ata Tana 'Ai",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.6,
     "lng": 122.6,
     "epoch": "now",
@@ -16610,7 +16610,7 @@
   {
     "id": "pulotu-gaddang-pagan",
     "region": "Ga'dang",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 17.2,
     "lng": 121.5,
     "epoch": "now",
@@ -16771,7 +16771,7 @@
   {
     "id": "pulotu-karo",
     "region": "Karo",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 3.5,
     "lng": 98.3,
     "epoch": "modern",
@@ -16937,7 +16937,7 @@
   {
     "id": "pulotu-ifaluk",
     "region": "Ifaluk",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 7.2,
     "lng": 144.5,
     "epoch": "modern",
@@ -17058,7 +17058,7 @@
   {
     "id": "pulotu-pohnpei",
     "region": "Pohnpei",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 6.9,
     "lng": 158.2,
     "epoch": "industrial",
@@ -17174,7 +17174,7 @@
   {
     "id": "pulotu-simbo",
     "region": "Simbo",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.3,
     "lng": 156.5,
     "epoch": "modern",
@@ -17290,7 +17290,7 @@
   {
     "id": "pulotu-rapa-nui",
     "region": "Rapa Nui",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -27.1,
     "lng": -109.4,
     "epoch": "modern",
@@ -17411,7 +17411,7 @@
   {
     "id": "pulotu-ngaju",
     "region": "Ngaju",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -1.7,
     "lng": 114,
     "epoch": "modern",
@@ -17532,7 +17532,7 @@
   {
     "id": "pulotu-roti",
     "region": "Roti",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -10.7,
     "lng": 123.2,
     "epoch": "industrial",
@@ -17648,7 +17648,7 @@
   {
     "id": "pulotu-arosi",
     "region": "Arosi",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -10.3,
     "lng": 161.3,
     "epoch": "industrial",
@@ -17764,7 +17764,7 @@
   {
     "id": "pulotu-landdayak",
     "region": "Land Dayak",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 0.2,
     "lng": 110.5,
     "epoch": "industrial",
@@ -17885,7 +17885,7 @@
   {
     "id": "pulotu-biak",
     "region": "Biak",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -1,
     "lng": 136,
     "epoch": "modern",
@@ -18006,7 +18006,7 @@
   {
     "id": "pulotu-bontok",
     "region": "Bontok",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 17.1,
     "lng": 121.1,
     "epoch": "modern",
@@ -18172,7 +18172,7 @@
   {
     "id": "pulotu-isneg",
     "region": "Isneg",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 18.1,
     "lng": 121.2,
     "epoch": "modern",
@@ -18288,7 +18288,7 @@
   {
     "id": "pulotu-aeta",
     "region": "Aeta",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 15.3,
     "lng": 120.4,
     "epoch": "modern",
@@ -18449,7 +18449,7 @@
   {
     "id": "pulotu-berawan",
     "region": "Berawan",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 3.8,
     "lng": 114.5,
     "epoch": "modern",
@@ -18570,7 +18570,7 @@
   {
     "id": "pulotu-eastern-sumbanese",
     "region": "Eastern Sumbanese",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.9,
     "lng": 120.3,
     "epoch": "modern",
@@ -18691,7 +18691,7 @@
   {
     "id": "pulotu-sama-dilaut",
     "region": "Sama Dilaut (Tawi-Tawi)",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 5.1,
     "lng": 119.8,
     "epoch": "now",
@@ -18807,7 +18807,7 @@
   {
     "id": "pulotu-wogeo",
     "region": "Wogeo",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -3.2,
     "lng": 144.1,
     "epoch": "modern",
@@ -18928,7 +18928,7 @@
   {
     "id": "pulotu-trobriand-islands",
     "region": "Trobriand Islands",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.5,
     "lng": 151.1,
     "epoch": "modern",
@@ -19044,7 +19044,7 @@
   {
     "id": "pulotu-samoan",
     "region": "Samoa",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -13.9,
     "lng": -171.8,
     "epoch": "industrial",
@@ -19160,7 +19160,7 @@
   {
     "id": "pulotu-tinguian",
     "region": "Tinguian",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 17.6,
     "lng": 120.8,
     "epoch": "modern",
@@ -19276,7 +19276,7 @@
   {
     "id": "pulotu-tikopia",
     "region": "Tikopia",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -12.3,
     "lng": 168.8,
     "epoch": "modern",
@@ -19392,7 +19392,7 @@
   {
     "id": "pulotu-laboya",
     "region": "Laboya",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.7,
     "lng": 119.4,
     "epoch": "now",
@@ -19513,7 +19513,7 @@
   {
     "id": "pulotu-niue",
     "region": "Niue",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -19.1,
     "lng": -169.9,
     "epoch": "industrial",
@@ -19629,7 +19629,7 @@
   {
     "id": "pulotu-kosrae",
     "region": "Kosrae",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 5.3,
     "lng": 163,
     "epoch": "industrial",
@@ -19745,7 +19745,7 @@
   {
     "id": "pulotu-buka",
     "region": "Buka",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -5.2,
     "lng": 154.6,
     "epoch": "modern",
@@ -19866,7 +19866,7 @@
   {
     "id": "pulotu-anuta",
     "region": "Anuta",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -11.6,
     "lng": 169.8,
     "epoch": "modern",
@@ -19982,7 +19982,7 @@
   {
     "id": "pulotu-ajie",
     "region": "Ajie",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -21.3,
     "lng": 165.6,
     "epoch": "modern",
@@ -20098,7 +20098,7 @@
   {
     "id": "pulotu-bughotu",
     "region": "Bughotu",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.5,
     "lng": 159.8,
     "epoch": "modern",
@@ -20219,7 +20219,7 @@
   {
     "id": "pulotu-goodenough-island",
     "region": "Goodenough Island",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.3,
     "lng": 150.2,
     "epoch": "modern",
@@ -20335,7 +20335,7 @@
   {
     "id": "pulotu-belep",
     "region": "Belep",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -19.7,
     "lng": 163.6,
     "epoch": "industrial",
@@ -20451,7 +20451,7 @@
   {
     "id": "pulotu-kei",
     "region": "Kei",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -5.8,
     "lng": 132.8,
     "epoch": "modern",
@@ -20547,7 +20547,7 @@
   {
     "id": "pulotu-varisi",
     "region": "Varisi",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -6.8,
     "lng": 156.7,
     "epoch": "modern",
@@ -20668,7 +20668,7 @@
   {
     "id": "pulotu-visayans",
     "region": "Visayans",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 11.2,
     "lng": 122.4,
     "epoch": "early-mod",
@@ -20784,7 +20784,7 @@
   {
     "id": "pulotu-marovo",
     "region": "Marovo",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -8.5,
     "lng": 157.8,
     "epoch": "modern",
@@ -20905,7 +20905,7 @@
   {
     "id": "pulotu-saa",
     "region": "Sa'a",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.6,
     "lng": 161.5,
     "epoch": "modern",
@@ -21026,7 +21026,7 @@
   {
     "id": "pulotu-mussau",
     "region": "Mussau",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -1.4,
     "lng": 149.6,
     "epoch": "modern",
@@ -21142,7 +21142,7 @@
   {
     "id": "pulotu-nukuoro",
     "region": "Nukuoro",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 3.8,
     "lng": 155,
     "epoch": "modern",
@@ -21258,7 +21258,7 @@
   {
     "id": "pulotu-futuna-west",
     "region": "Futuna-Aniwa",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -19.5,
     "lng": 170.2,
     "epoch": "modern",
@@ -21379,7 +21379,7 @@
   {
     "id": "pulotu-maohi",
     "region": "Maohi",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -17.6,
     "lng": -149.4,
     "epoch": "industrial",
@@ -21495,7 +21495,7 @@
   {
     "id": "pulotu-marquesas",
     "region": "Marquesas",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.8,
     "lng": -139,
     "epoch": "industrial",
@@ -21611,7 +21611,7 @@
   {
     "id": "pulotu-uvea",
     "region": "Uvea",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -13.3,
     "lng": -176.2,
     "epoch": "industrial",
@@ -21722,7 +21722,7 @@
   {
     "id": "pulotu-main-reef-islands",
     "region": "Main Reef Islands",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -10.3,
     "lng": 166.3,
     "epoch": "modern",
@@ -21838,7 +21838,7 @@
   {
     "id": "pulotu-fijians",
     "region": "Fijians",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -17.8,
     "lng": 178,
     "epoch": "industrial",
@@ -21954,7 +21954,7 @@
   {
     "id": "pulotu-small-islands",
     "region": "Small Islands",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -16.1,
     "lng": 167.5,
     "epoch": "modern",
@@ -22070,7 +22070,7 @@
   {
     "id": "pulotu-taumako",
     "region": "Taumako",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.9,
     "lng": 167.2,
     "epoch": "modern",
@@ -22186,7 +22186,7 @@
   {
     "id": "pulotu-rotuma",
     "region": "Rotuma",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -12.5,
     "lng": 177.1,
     "epoch": "industrial",
@@ -22302,7 +22302,7 @@
   {
     "id": "pulotu-tongareva",
     "region": "Tongareva",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9,
     "lng": -158,
     "epoch": "industrial",
@@ -22403,7 +22403,7 @@
   {
     "id": "pulotu-yami",
     "region": "Yami",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 22,
     "lng": 121.5,
     "epoch": "modern",
@@ -22544,7 +22544,7 @@
   {
     "id": "pulotu-nggela",
     "region": "Nggela",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.1,
     "lng": 160.2,
     "epoch": "modern",
@@ -22660,7 +22660,7 @@
   {
     "id": "pulotu-bellona",
     "region": "Bellona",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -11.3,
     "lng": 159.8,
     "epoch": "modern",
@@ -22776,7 +22776,7 @@
   {
     "id": "pulotu-aneityum",
     "region": "Aneityum",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -20.2,
     "lng": 169.8,
     "epoch": "industrial",
@@ -22897,7 +22897,7 @@
   {
     "id": "pulotu-bukidnon",
     "region": "Bukidnon",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 8.2,
     "lng": 125,
     "epoch": "modern",
@@ -23018,7 +23018,7 @@
   {
     "id": "pulotu-alune",
     "region": "Alune",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -3.1,
     "lng": 128.5,
     "epoch": "modern",
@@ -23134,7 +23134,7 @@
   {
     "id": "pulotu-eastern-toraja",
     "region": "Eastern Toraja",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -1.9,
     "lng": 120.6,
     "epoch": "modern",
@@ -23255,7 +23255,7 @@
   {
     "id": "pulotu-casiguran-dumagat",
     "region": "Casiguran Dumagat",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 16.3,
     "lng": 122,
     "epoch": "modern",
@@ -23416,7 +23416,7 @@
   {
     "id": "pulotu-erromango",
     "region": "Erromango",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -18.8,
     "lng": 169.2,
     "epoch": "industrial",
@@ -23532,7 +23532,7 @@
   {
     "id": "pulotu-hawaiians",
     "region": "Hawaiians",
-    "thread": "none",
+    "thread": "oceania",
     "lat": 19.6,
     "lng": -155.5,
     "epoch": "industrial",
@@ -23653,7 +23653,7 @@
   {
     "id": "pulotu-kodi",
     "region": "Kodi",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -9.6,
     "lng": 119,
     "epoch": "now",
@@ -23749,7 +23749,7 @@
   {
     "id": "pulotu-manihiki-rakahanga",
     "region": "Manihiki-Rakahanga",
-    "thread": "none",
+    "thread": "oceania",
     "lat": -10.4,
     "lng": -161,
     "epoch": "industrial",
