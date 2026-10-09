@@ -50,6 +50,10 @@ jobs:
       - name: Escaping regression test
         run: pnpm test:escaping
 
+      # Grouping must never lose or duplicate a point, at any zoom, in any epoch.
+      - name: Clustering regression test
+        run: pnpm test:clustering
+
       - name: Audit production dependencies (fails on high or critical)
         run: pnpm audit --prod --audit-level high
 
