@@ -10,8 +10,11 @@ import {
   t, tValue, tDriver, tEpoch, tThread,
 } from '@/lib/i18n';
 import { initTour, startTour, destroyTour } from '@/lib/tour';
+import { sanitizeAtlas } from '@/lib/validate';
 import { createAtlasMap, type AtlasMap, type AtlasState } from '@/components/atlas/mapController';
 import { buildDrawerBody } from '@/components/atlas/drawerContent';
+import { buildClusterBody, clusterTitle } from '@/components/atlas/clusterContent';
+import { epochDensity, densityBarPx } from '@/lib/density';
 import {
   Sheet, SheetContent, SheetClose, SheetTitle, SheetDescription, SheetTrigger,
 } from '@/components/ui/sheet';
@@ -156,6 +159,9 @@ export default function ValuesAtlas() {
   const [thread, setThread] = useState('all');
   const [activeValues, setActiveValues] = useState<Set<string>>(() => new Set(VALUES.map((v) => v.id)));
   const [openId, setOpenId] = useState<string | null>(null);
+  // A grouped bubble that was clicked. Tied to the epoch it was opened in, so it
+  // closes by itself when the timeline moves (no effect needed).
+  const [openClusterRaw, setOpenClusterRaw] = useState<{ epoch: string; ids: string[] } | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   const mapElRef = useRef<HTMLDivElement>(null);
@@ -183,11 +189,33 @@ export default function ValuesAtlas() {
     [openId, langCode, data],
   );
 
+  // The grouped bubble's drawer: shown only for the epoch it was opened in.
+  const openCluster = openClusterRaw && openClusterRaw.epoch === epoch ? openClusterRaw.ids : null;
+  const clusterMembers = useMemo(() => {
+    if (!openCluster) return [];
+    const wanted = new Set(openCluster);
+    return data.filter((d) => wanted.has(d.id));
+  }, [openCluster, data]);
+  const clusterBodyHTML = useMemo(
+    () => (clusterMembers.length ? buildClusterBody(clusterMembers) : ''),
+    // langCode is included so the body re-renders into the active language.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [clusterMembers, langCode],
+  );
+
+  // How many points each epoch holds, for the density strip under the timeline.
+  const density = useMemo(() => epochDensity(data, EPOCHS.map((e) => e.id)), [data]);
+
   // ── Create the Leaflet map once; React state drives it via render(). ──
   useEffect(() => {
     const el = mapElRef.current;
     if (!el) return;
-    const ctrl = createAtlasMap(el, () => stateRef.current, (id) => setOpenId(id));
+    const ctrl = createAtlasMap(
+      el,
+      () => stateRef.current,
+      (id) => { setOpenClusterRaw(null); setOpenId(id); },
+      (ids) => { setOpenId(null); setOpenClusterRaw({ epoch: stateRef.current.epoch, ids }); },
+    );
     ctrlRef.current = ctrl;
     ctrl.render();
     return () => {
@@ -210,7 +238,14 @@ export default function ValuesAtlas() {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
       })
-      .then((d: AtlasPoint[]) => { if (!cancelled) setData(d); })
+      .then((raw: unknown) => {
+        // Normalise before anything renders: a malformed point is dropped with a
+        // console warning instead of blanking the whole map.
+        const { points, problems } = sanitizeAtlas(raw);
+        if (problems.length) console.warn(`atlas.json: ${problems.length} problem(s)\n${problems.join('\n')}`);
+        if (!points.length) throw new Error('no renderable points in atlas.json');
+        if (!cancelled) setData(points);
+      })
       .catch((err) => {
         console.error('Failed to load atlas data:', err);
         if (!cancelled) setLoadError(true);
@@ -249,7 +284,22 @@ export default function ValuesAtlas() {
   // the drawer on that era's point. Event delegation reliably catches clicks
   // bubbling from the HTML injected via dangerouslySetInnerHTML.
   function onDrawerClick(e: React.MouseEvent<HTMLDivElement>) {
-    const row = (e.target as HTMLElement).closest('.lin-row');
+    const target = e.target as HTMLElement;
+
+    // Grouped bubble: "zoom in to separate" and "open this member".
+    if (target.closest('.cl-zoom')) {
+      if (openCluster) ctrlRef.current?.zoomToPoints(openCluster);
+      setOpenClusterRaw(null);
+      return;
+    }
+    const member = target.closest('.cl-row');
+    if (member) {
+      const pid = member.getAttribute('data-pid');
+      if (pid) { setOpenClusterRaw(null); setOpenId(pid); }
+      return;
+    }
+
+    const row = target.closest('.lin-row');
     if (!row) return;
     const epid = row.getAttribute('data-epid');
     const pid = row.getAttribute('data-pid');
@@ -421,7 +471,15 @@ export default function ValuesAtlas() {
                   key={ep.id}
                   className={'tl-lab' + (ep.id === epoch ? ' active' : '')}
                   onClick={() => selectEpoch(ep.id)}
+                  title={`${density.counts[ep.id] ?? 0} ${t('pointsWord')}`}
                 >
+                  {/* Density strip: how many points this epoch holds (log-scaled),
+                      so an unbalanced timeline is visible instead of hidden. */}
+                  <i
+                    className="tl-bar"
+                    aria-hidden="true"
+                    style={{ height: `${densityBarPx(density.counts[ep.id] ?? 0, density.max)}px` }}
+                  />
                   {ep.short}
                 </span>
               ))}
@@ -441,9 +499,9 @@ export default function ValuesAtlas() {
 
         {/* ── DETAIL DRAWER (non-modal: map stays interactive) ── */}
         <Sheet
-          open={!!openId}
+          open={!!openId || !!openCluster}
           modal={false}
-          onOpenChange={(o) => { if (!o) setOpenId(null); }}
+          onOpenChange={(o) => { if (!o) { setOpenId(null); setOpenClusterRaw(null); } }}
         >
           <SheetContent
             side="right"
@@ -455,7 +513,9 @@ export default function ValuesAtlas() {
           >
             <div className="drawer-head">
               <SheetTitle asChild>
-                <div className="drawer-region">{drawerPoint?.region ?? '—'}</div>
+                <div className="drawer-region">
+                  {openCluster ? clusterTitle(clusterMembers.length) : (drawerPoint?.region ?? '—')}
+                </div>
               </SheetTitle>
               <SheetClose className="drawer-close" aria-label="Close drawer">✕</SheetClose>
             </div>
@@ -463,7 +523,7 @@ export default function ValuesAtlas() {
             <div
               className="drawer-body"
               onClick={onDrawerClick}
-              dangerouslySetInnerHTML={{ __html: drawerBodyHTML }}
+              dangerouslySetInnerHTML={{ __html: openCluster ? clusterBodyHTML : drawerBodyHTML }}
             />
           </SheetContent>
         </Sheet>
