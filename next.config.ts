@@ -18,23 +18,36 @@ const isDev = process.env.NODE_ENV !== "production";
 //   server.arcgisonline.com  Esri map tiles (img)
 //   api.fontshare.com        Satoshi + Boska stylesheet; fonts from cdn.fontshare.com
 //   fonts.googleapis.com     Space Mono stylesheet;      fonts from fonts.gstatic.com
+//
+// Vercel preview deployments inject a toolbar (comments / feedback) from
+// vercel.live. It is allowed on preview builds only; production never loads it,
+// so production keeps the strict policy.
+const isPreview = process.env.VERCEL_ENV === "preview";
+const toolbar = (...hosts: string[]) => (isPreview ? ` ${hosts.join(" ")}` : "");
+
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
-  "style-src 'self' 'unsafe-inline' https://api.fontshare.com https://fonts.googleapis.com",
-  "font-src 'self' https://cdn.fontshare.com https://fonts.gstatic.com",
-  "img-src 'self' data: https://server.arcgisonline.com",
-  `connect-src 'self'${isDev ? " ws: wss:" : ""}`,
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}${toolbar("https://vercel.live")}`,
+  `style-src 'self' 'unsafe-inline' https://api.fontshare.com https://fonts.googleapis.com${toolbar("https://vercel.live")}`,
+  `font-src 'self' https://cdn.fontshare.com https://fonts.gstatic.com${toolbar("https://vercel.live", "https://assets.vercel.com")}`,
+  `img-src 'self' data: https://server.arcgisonline.com${toolbar("https://vercel.live", "https://vercel.com", "blob:")}`,
+  `connect-src 'self'${isDev ? " ws: wss:" : ""}${toolbar("https://vercel.live", "wss://ws-us3.pusher.com")}`,
+  isPreview ? "frame-src https://vercel.live" : "frame-src 'none'",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
   "frame-ancestors 'none'",
 ].join("; ");
 
+// Set to false to fall back to Report-Only (violations are logged in the browser
+// console but nothing is blocked), e.g. while adding a new third-party host.
+const ENFORCE_CSP = true;
+
 const securityHeaders = [
-  // Report-Only first: violations show in the browser console without blocking
-  // anything. Flip to "Content-Security-Policy" once a preview loads clean.
-  { key: "Content-Security-Policy-Report-Only", value: csp },
+  {
+    key: ENFORCE_CSP ? "Content-Security-Policy" : "Content-Security-Policy-Report-Only",
+    value: csp,
+  },
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "X-Frame-Options", value: "DENY" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },

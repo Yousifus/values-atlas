@@ -11,7 +11,8 @@
     "lint": "eslint",
     "ingest": "node scripts/ingest/run.mjs",
     "ingest:check": "node scripts/ingest/run.mjs --check",
-    "validate:data": "node scripts/validate-data.mjs"
+    "validate:data": "node scripts/validate-data.mjs",
+    "test:escaping": "node scripts/check-escaping.mjs"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.3.0",
