@@ -26,6 +26,7 @@ Portability and legibility are the *point*:
 
 - **Client-side map**: no backend, no database, no auth, no tracking. The page renders a Leaflet map in the browser and reads one JSON file.
 - **Single source of truth**: adding a data point means editing only `public/data/atlas.json`. No code changes required.
+- **Balance without deletion**: bulk imports can pile many points into a few places and eras. The map never drops data to fix that; points that would overlap at the current zoom are drawn as one grouped bubble (sized on a log scale), clicking it summarizes the group (primary values, regions, evidence, and which source datasets its readings come from) and lists every member, and zooming in separates them. A small bar under each timeline label shows how many points that epoch holds, so an unbalanced timeline is visible rather than hidden. The logic lives in `lib/density.ts`.
 - **Ships in 11 languages**: the UI, schema labels, and guided tour are translated into English, Spanish, French, German, Portuguese, Italian, Chinese, Japanese, **Arabic (full RTL)**, Hindi, and Russian. The scholarly per-point readings stay in their original English by design (for now — see the roadmap).
 
 ---
@@ -150,6 +151,13 @@ URLs, and **no `<` or `>` characters anywhere in the text**, since every string 
 text and gets HTML-escaped on display). It also prints how the points spread across
 epochs, regions and values, so a bulk import that floods one of them is easy to spot.
 CI runs the same command on every pull request.
+
+Two regression tests guard the parts that must not break silently:
+
+```bash
+pnpm test:escaping    # hostile markup in any text field never reaches the page as HTML
+pnpm test:clustering  # grouping never loses or duplicates a point, at any zoom, in any epoch
+```
 
 ---
 

@@ -4,40 +4,17 @@
 //   pnpm test:escaping
 //
 // It loads the real renderers (components/atlas/drawerContent.ts, lib/validate.ts)
-// by transpiling them on the fly with the TypeScript compiler that is already a
-// dev dependency, feeds them points whose free-text fields are full of hostile
-// markup, and fails if any of it comes back unescaped. If someone adds a new
-// interpolation of a data field without esc(), this is the check that catches it.
-import { createRequire } from 'node:module';
+// through scripts/lib/load-ts.mjs, feeds them points whose free-text fields are
+// full of hostile markup, and fails if any of it comes back unescaped. If someone
+// adds a new interpolation of a data field without esc(), this is the check that
+// catches it.
 import { readFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
-import Module from 'node:module';
+import { join } from 'node:path';
+import { loadTs, root } from './lib/load-ts.mjs';
 
-const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const require = createRequire(import.meta.url);
-const ts = require('typescript');
-
-// Teach CommonJS how to load .ts files and the '@/' alias, without a build step.
-require.extensions['.ts'] = Module._extensions['.ts'] = (mod, filename) => {
-  const out = ts.transpileModule(readFileSync(filename, 'utf8'), {
-    compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020, esModuleInterop: true },
-    fileName: filename,
-  }).outputText;
-  mod._compile(out, filename);
-};
-const origResolve = Module._resolveFilename;
-Module._resolveFilename = function (request, ...rest) {
-  if (request.startsWith('@/')) request = join(root, request.slice(2));
-  if (/^[/\\]|^[A-Za-z]:/.test(request) && !/\.[a-z]+$/.test(request)) {
-    try { return origResolve.call(this, `${request}.ts`, ...rest); } catch { /* fall through */ }
-  }
-  return origResolve.call(this, request, ...rest);
-};
-
-const { buildDrawerBody } = require(join(root, 'components', 'atlas', 'drawerContent.ts'));
-const { sanitizeAtlas } = require(join(root, 'lib', 'validate.ts'));
-const { esc } = require(join(root, 'lib', 'escape.ts'));
+const { buildDrawerBody } = loadTs('components/atlas/drawerContent.ts');
+const { sanitizeAtlas } = loadTs('lib/validate.ts');
+const { esc } = loadTs('lib/escape.ts');
 
 let failures = 0;
 const check = (name, ok, detail = '') => {
