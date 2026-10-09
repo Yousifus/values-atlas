@@ -34,8 +34,13 @@ export function createAtlasMap(
   let markers: L.Marker[] = [];
 
   const map = L.map(el, { center: [22, 10], zoom: 2.2, minZoom: 2, maxZoom: 7, zoomControl: true });
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 19 }).addTo(map);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', opacity: .35, maxZoom: 19 }).addTo(map);
+  // Keyless Esri Dark Gray Canvas (base + labels). CARTO's free basemaps began
+  // requiring an API key and now stamp "API KEY REQUIRED" over every tile. Esri
+  // tile paths are {z}/{y}/{x}; the canvas stops at zoom 16 (the map caps at 7).
+  const ESRI = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas';
+  const ATTRIBUTION = 'Tiles &copy; Esri &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors';
+  L.tileLayer(`${ESRI}/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}`, { maxZoom: 16, attribution: ATTRIBUTION }).addTo(map);
+  L.tileLayer(`${ESRI}/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, { opacity: .35, maxZoom: 16 }).addTo(map);
 
   // The glyph stamped inside a marker depends on the active lens: the primary
   // value's glyph (moral) or the matching ecological/institutional driver glyph.
