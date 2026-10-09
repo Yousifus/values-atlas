@@ -1,0 +1,21 @@
+version: 2
+updates:
+  # npm / pnpm dependencies. Security updates always open their own PR; routine
+  # minor and patch bumps are grouped so review stays a single weekly diff.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
+
+  # Keeps the SHA-pinned actions in .github/workflows current.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 3
