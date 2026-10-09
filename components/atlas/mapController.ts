@@ -8,6 +8,7 @@ import {
   VALUES, DRIVERS, type AtlasPoint,
 } from '@/lib/schema';
 import { t } from '@/lib/i18n';
+import { esc } from '@/lib/escape';
 
 export interface AtlasState {
   data: AtlasPoint[];
@@ -100,7 +101,7 @@ export function createAtlasMap(
 
       const m = L.marker([d.lat, d.lng], { icon, zIndexOffset: Math.round(prim.intensity * 100) });
       if (!isDimmed) {
-        m.bindPopup(`<div class="mp"><div class="mp-region">${d.region}</div><div class="mp-hint">${t('markerHint')}</div></div>`, { maxWidth: 220 });
+        m.bindPopup(`<div class="mp"><div class="mp-region">${esc(d.region)}</div><div class="mp-hint">${t('markerHint')}</div></div>`, { maxWidth: 220 });
         m.on('click', () => onOpenPoint(d.id));
       }
       m.addTo(map);

@@ -10,6 +10,7 @@ import {
   t, tValue, tDriver, tEpoch, tThread,
 } from '@/lib/i18n';
 import { initTour, startTour, destroyTour } from '@/lib/tour';
+import { sanitizeAtlas } from '@/lib/validate';
 import { createAtlasMap, type AtlasMap, type AtlasState } from '@/components/atlas/mapController';
 import { buildDrawerBody } from '@/components/atlas/drawerContent';
 import {
@@ -210,7 +211,14 @@ export default function ValuesAtlas() {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
       })
-      .then((d: AtlasPoint[]) => { if (!cancelled) setData(d); })
+      .then((raw: unknown) => {
+        // Normalise before anything renders: a malformed point is dropped with a
+        // console warning instead of blanking the whole map.
+        const { points, problems } = sanitizeAtlas(raw);
+        if (problems.length) console.warn(`atlas.json: ${problems.length} problem(s)\n${problems.join('\n')}`);
+        if (!points.length) throw new Error('no renderable points in atlas.json');
+        if (!cancelled) setData(points);
+      })
       .catch((err) => {
         console.error('Failed to load atlas data:', err);
         if (!cancelled) setLoadError(true);

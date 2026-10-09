@@ -37,7 +37,7 @@ Portability and legibility are the *point*:
 - **Leaflet** — loaded client-only, driven imperatively behind a small controller (`components/atlas/mapController.ts`) so the divIcon markers, popups, and animated halos behave exactly as designed.
 - **pnpm** for package management, **Vercel** for hosting.
 
-The whole dataset — currently **67 data points** — is a static JSON file anyone can hand-edit, fork, and re-host. That forkability is a feature, not an accident.
+The whole dataset — currently **over 200 data points** (run `pnpm validate:data` for the exact count and spread) — is a static JSON file anyone can hand-edit, fork, and re-host. That forkability is a feature, not an accident.
 
 ---
 
@@ -138,11 +138,18 @@ postcss.config.mjs     — PostCSS / Tailwind pipeline
 
 3. That's it. No code changes required — refresh the page.
 
-### Validate (optional)
+### Validate
 
 ```bash
-npx ajv-cli validate -s public/data/atlas.schema.json -d public/data/atlas.json
+pnpm validate:data
 ```
+
+This checks `public/data/atlas.json` against `public/data/atlas.schema.json` and a few
+rules the schema can't express (unique ids, a primary value on every point, https-only
+URLs, and **no `<` or `>` characters anywhere in the text**, since every string is plain
+text and gets HTML-escaped on display). It also prints how the points spread across
+epochs, regions and values, so a bulk import that floods one of them is easy to spot.
+CI runs the same command on every pull request.
 
 ---
 
@@ -241,7 +248,13 @@ Throughout, the contribution model stays simple and transparent: **edit `public/
 2. Edit the data (`public/data/atlas.json`) or the code.
 3. Open a pull request.
 
-Every PR gets an automatic Vercel preview URL, so changes are easy to see before they merge. Adding or correcting a data point requires no build step or code change — just edit the JSON.
+Every PR gets an automatic Vercel preview URL, so changes are easy to see before they merge. Adding or correcting a data point requires no build step or code change — just edit the JSON. CI (`.github/workflows/ci.yml`) validates the data, typechecks, lints, audits dependencies and builds on every PR.
+
+---
+
+## Security
+
+No backend, no database, no accounts, no tracking. The page loads map tiles from Esri and fonts from Fontshare and Google Fonts, and its Content-Security-Policy (in `next.config.ts`) blocks every other host. To report a vulnerability, see [SECURITY.md](SECURITY.md).
 
 ---
 

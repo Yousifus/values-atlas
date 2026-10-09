@@ -12,6 +12,11 @@ import {
 import {
   t, tValue, tDriver, tEpoch, tThread, tStatus, tEvidence, tAspect,
 } from '@/lib/i18n';
+import { esc } from '@/lib/escape';
+
+// Everything that comes from atlas.json (region names, readings, notes, sources,
+// ids) is untrusted text and goes through esc() before it is interpolated below.
+// The markup itself, the SVG glyphs and the colours are first-party config.
 
 const VALUE_MAP = new Map(VALUES.map((v) => [v.id, v]));
 
@@ -68,7 +73,7 @@ function buildLineageHTML(d: AtlasPoint, data: AtlasPoint[]) {
     const val = VALUE_MAP.get(entry.valueId);
     if (!ep || !val) return '';
     const cls = 'lin-row' + (epId === d.epoch ? ' cur' : '');
-    return `<button class="${cls}" data-epid="${epId}" data-pid="${entry.point.id}">
+    return `<button class="${cls}" data-epid="${epId}" data-pid="${esc(entry.point.id)}">
       <span class="lin-node" style="color:${val.color}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${val.icon}</svg></span>
       <span class="lin-yr">${ep.short}</span>
       <span class="lin-val" style="--c:${val.color}">${tValue(entry.valueId)}</span>
@@ -106,10 +111,10 @@ function buildReadingCardHTML(r: Reading, isPrimary: boolean): string {
     ? `<div style="display:flex;gap:.65rem;flex-wrap:wrap;margin-top:.55rem;font-size:10px;font-family:var(--mono);color:var(--t3);text-transform:uppercase;letter-spacing:.06em">${chips.join('')}</div>`
     : '';
   const cnHTML = (r.contested && !isPrimary && r.contestNote)
-    ? `<p style="font-size:var(--xs);color:#dca078;line-height:1.55;margin-top:.5rem">${r.contestNote}</p>`
+    ? `<p style="font-size:var(--xs);color:#dca078;line-height:1.55;margin-top:.5rem">${esc(r.contestNote)}</p>`
     : '';
 
-  return `<div class="${cardCls}">${typeLabel}<div class="prose"${proseStyle}><p>${r.text}</p></div>${chipsHTML}${cnHTML}</div>`;
+  return `<div class="${cardCls}">${typeLabel}<div class="prose"${proseStyle}><p>${esc(r.text)}</p></div>${chipsHTML}${cnHTML}</div>`;
 }
 
 function buildAspectSectionHTML(aspect: Aspect): string {
@@ -124,7 +129,7 @@ function buildAspectSectionHTML(aspect: Aspect): string {
   // original drawer's look for contested points).
   const primary = aspect.readings[0];
   const contestedBox = (primary && primary.contested && primary.contestNote)
-    ? `<div class="contested-flag"><div class="icon">⚠</div><div><strong style="color:#e68a44;font-family:var(--display);font-size:var(--base);display:block;margin-bottom:.3rem">${t('contestedTitle')}</strong><p>${primary.contestNote}</p></div></div>`
+    ? `<div class="contested-flag"><div class="icon">⚠</div><div><strong style="color:#e68a44;font-family:var(--display);font-size:var(--base);display:block;margin-bottom:.3rem">${t('contestedTitle')}</strong><p>${esc(primary.contestNote)}</p></div></div>`
     : '';
 
   const cards = aspect.readings.map((r, i) => buildReadingCardHTML(r, i === 0)).join('');
@@ -141,12 +146,12 @@ function buildAspectsHTML(d: AtlasPoint): string {
 function buildLegacyReadingsHTML(d: AtlasPoint): string {
   let html = '';
   if (d.contested && d.contestNote) {
-    html += `<div class="contested-flag"><div class="icon">⚠</div><div><strong style="color:#e68a44;font-family:var(--display);font-size:var(--base);display:block;margin-bottom:.3rem">${t('contestedTitle')}</strong><p>${d.contestNote}</p></div></div>`;
+    html += `<div class="contested-flag"><div class="icon">⚠</div><div><strong style="color:#e68a44;font-family:var(--display);font-size:var(--base);display:block;margin-bottom:.3rem">${t('contestedTitle')}</strong><p>${esc(d.contestNote)}</p></div></div>`;
   }
   html += `<div class="dsec"><div class="dsec-title">${t('secReadings')}</div>`;
-  html += `<div class="reading-card"><span class="type-label">${t('readingPrimary')}</span><div class="prose"><p>${d.note}</p></div></div>`;
-  if (d.altReading) html += `<div class="reading-card reading-alt"><span class="type-label" style="color:#a68a5c">${t('readingAlt')}</span><div class="prose" style="color:#c6b69d"><p>${d.altReading}</p></div></div>`;
-  if (d.cost) html += `<div class="reading-cost"><span class="type-label" style="color:#a85a5a">${t('readingCost')}</span><div class="prose" style="color:#d88a8a;font-size:var(--xs)"><p>${d.cost}</p></div></div>`;
+  html += `<div class="reading-card"><span class="type-label">${t('readingPrimary')}</span><div class="prose"><p>${esc(d.note)}</p></div></div>`;
+  if (d.altReading) html += `<div class="reading-card reading-alt"><span class="type-label" style="color:#a68a5c">${t('readingAlt')}</span><div class="prose" style="color:#c6b69d"><p>${esc(d.altReading)}</p></div></div>`;
+  if (d.cost) html += `<div class="reading-cost"><span class="type-label" style="color:#a85a5a">${t('readingCost')}</span><div class="prose" style="color:#d88a8a;font-size:var(--xs)"><p>${esc(d.cost)}</p></div></div>`;
   html += `</div>`;
   return html;
 }
@@ -163,7 +168,7 @@ function buildSourcesHTML(d: AtlasPoint): string {
   }
   if (!sources.length && d.sources && d.sources.length) sources = d.sources;
   if (!sources.length) return '';
-  return `<div class="dsec" style="margin-top:.5rem"><div class="dsec-title">${t('secSources')}</div><div style="font-size:11px;font-family:var(--mono);color:var(--t3);line-height:1.6">${sources.join('<br>')}</div></div>`;
+  return `<div class="dsec" style="margin-top:.5rem"><div class="dsec-title">${t('secSources')}</div><div style="font-size:11px;font-family:var(--mono);color:var(--t3);line-height:1.6">${sources.map(esc).join('<br>')}</div></div>`;
 }
 
 // Builds the full drawer body (everything below the sticky region header).
@@ -222,7 +227,7 @@ export function buildDrawerBody(d: AtlasPoint, data: AtlasPoint[]): string {
 
   // Artifact (a representative quote; not part of the aspect model).
   const artifactHTML = d.artifact
-    ? `<div class="dsec"><div class="artifact">"${d.artifact}"</div></div>`
+    ? `<div class="dsec"><div class="artifact">"${esc(d.artifact)}"</div></div>`
     : '';
 
   // Unified sources section (aggregated across all aspect readings).
