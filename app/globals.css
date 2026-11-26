@@ -350,6 +350,14 @@ footer{grid-column:1/-1;display:flex;align-items:center;gap:1rem;padding:.75rem 
   .map-banner{font-size:11px;padding:.35rem .8rem;max-width:60vw;white-space:normal;text-align:center;line-height:1.4}
   .play{width:34px;height:34px}
   footer{padding:.65rem .85rem;gap:.65rem}
+  /* Phone header: logo, tour and language on the first row, lens tabs on a
+     full-width second row. Tabs scroll sideways if a translation is too long. */
+  .app{grid-template-rows:auto 1fr 78px}
+  header{flex-wrap:wrap;min-width:0;padding:.4rem .75rem;gap:.4rem .5rem}
+  header .logo{margin-inline-end:auto}
+  .hright{display:contents}
+  .lens-tabs{order:3;flex:1 1 100%;min-width:0;overflow-x:auto;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+  .ltab{flex:1 0 auto;white-space:nowrap}
 }
 
 /* ── SCROLLBAR ── */
